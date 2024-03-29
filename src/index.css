@@ -1,0 +1,10 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.object-cover-profile {
+  object-fit: cover;
+}
+
+
+
