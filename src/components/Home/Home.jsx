@@ -61,32 +61,16 @@ const Home = () => {
               actionable insights.
             </p>
             <div className="text-5xl flex justify-center gap-10 py-3 text-gray-600 dark:text-gray-400">
-              <a
-                href="https://github.com/Nimrod2022"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
+              <a href="https://github.com/Nimrod2022" target="_blank" rel="noopener noreferrer">
                 <FaGithub />
               </a>
-              <a
-                href="https://www.linkedin.com/in/nimrod-kibet-b6b340115/"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
+              <a href="https://www.linkedin.com/in/nimrod-kibet-b6b340115/" target="_blank" rel="noopener noreferrer">
                 <AiFillLinkedin />
               </a>
-              <a
-                href="https://www.xing.com/profile/Nimrod_Kibet/web_profiles"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
+              <a href="https://www.xing.com/profile/Nimrod_Kibet/web_profiles" target="_blank" rel="noopener noreferrer">
                 <FaXing />
               </a>
-              <a
-                href="https://twitter.com/MandelaGI"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
+              <a href="https://twitter.com/MandelaGI" target="_blank" rel="noopener noreferrer">
                 <AiFillTwitterCircle />
               </a>
             </div>

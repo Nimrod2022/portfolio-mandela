@@ -1,5 +1,7 @@
 import { useState } from "react";
 import Home from "./components/Home/Home";
+import { Routes, Route } from "react-router-dom";
+import Resume from "./components/Resume/Resume";
 
 
 function App() {
@@ -7,6 +9,7 @@ function App() {
   return (
     <>
     <Home/>
+    <Resume/>
      </>
   )
 
