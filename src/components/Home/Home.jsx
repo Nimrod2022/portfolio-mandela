@@ -4,7 +4,7 @@ import { AiFillTwitterCircle, AiFillLinkedin } from "react-icons/ai";
 import { BsFillMoonStarsFill } from "react-icons/bs";
 import { FaGithub } from "react-icons/fa";
 import { FaXing } from "react-icons/fa";
-const logo = "../../public/assets/logo-no-background.png";
+const logo = "/assets/logo-no-background.png";
 const Home = () => {
   const [darkMode, setDarkMode] = useState(false);
 
