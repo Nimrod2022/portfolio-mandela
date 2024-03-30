@@ -4,7 +4,7 @@ import { AiFillTwitterCircle, AiFillLinkedin } from "react-icons/ai";
 import { BsFillMoonStarsFill } from "react-icons/bs";
 import { FaGithub } from "react-icons/fa";
 import { FaXing } from "react-icons/fa";
-const logo = "/assets/logo-no-background.png";
+const logo = "/assets/logo-no-background.svg";
 const Home = () => {
   const [darkMode, setDarkMode] = useState(false);
 
@@ -13,15 +13,12 @@ const Home = () => {
       <main className=" bg-white px-10 dark:bg-gray-900 md:px-20 lg:px-40">
         <section className="min-h-screen">
           <nav className="py-10 mb-12 flex justify-between dark:text-white">
-            <img alt="logo" src={logo} className="h-16 " />
-            <ul
-              className="justify-en
-            d flex items-center"
-            >
+            <img alt="logo" src={logo} className="h-7 hover:cursor-pointer" />
+            <ul className="justify-end flex items-center ">
               <li>
                 <BsFillMoonStarsFill
                   onClick={() => setDarkMode(!darkMode)}
-                  className=" cursor-pointer text-2xl"
+                  className="hover:cursor-pointer text-2xl"
                 />
               </li>
 
