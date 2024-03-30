@@ -3,7 +3,6 @@ import Home from "./components/Home/Home";
 
 
 function App() {
-  const [darkMode, setDarkMode] = useState(false);
 
   return (
     <>

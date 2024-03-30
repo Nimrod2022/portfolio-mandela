@@ -2,9 +2,8 @@
 @tailwind components;
 @tailwind utilities;
 
-.object-cover-profile {
-  object-fit: cover;
+.exo {
+  font-family: "Exo", sans-serif;
 }
-
 
 
