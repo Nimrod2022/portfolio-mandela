@@ -1,7 +1,7 @@
-const Resume = () => {
+const Resume = ({ darkMode, setDarkmode }) => {
   return (
-    <>
-      <div className="exo flex justify-center items-center flex-col mt-10">
+    <div className={darkMode ? "dark" : ""}>
+      <div className="exo flex justify-center items-center flex-col pt-20 dark:bg-gray-900">
         <h1 className="left-align">Work Experience</h1>
         <div
           className="mx-4 md:mx-0 mt-5 md:mt-0 border md:w-[50%] border-gray-400 leading-7 cursor-pointer shadow-lg mb-16 rounded-lg p-10 hover:transform hover:scale-105 transition duration-300 ease-in-out"
@@ -21,7 +21,7 @@ const Resume = () => {
               <p className=" md:ml-16 w-[90%]">
                 Supporting the design and development of automated workflows for
                 dwelling extraction, flood mapping and more using deep learning
-                from remote sensing data. 
+                from remote sensing data.
               </p>
 
               <img
@@ -66,7 +66,7 @@ const Resume = () => {
           </div>
         </div>
       </div>
-    </>
+    </div>
   );
 };
 
