@@ -2,7 +2,6 @@ const Resume = ({ darkMode, setDarkmode }) => {
   return (
     <div className={darkMode ? "dark" : ""}>
       <div className="exo flex justify-center items-center flex-col pt-20 dark:bg-gray-900">
-        
         <div
           className="dark:bg-gray-200 mx-4 md:mx-0 mt-5 md:mt-0 border md:w-[50%] border-gray-400 leading-7 cursor-pointer shadow-lg mb-16 rounded-lg p-10 hover:transform hover:scale-105 transition duration-300 ease-in-out"
           id="experience"
@@ -158,6 +157,70 @@ const Resume = ({ darkMode, setDarkmode }) => {
                 alt=""
                 className="mt-7 md:ml-16 w-56"
               />
+            </div>
+          </div>
+        </div>
+
+        {/* Education Section */}
+
+        <div
+          className="dark:bg-gray-200 mx-4 md:mx-0 mt-5 md:mt-0 border md:w-[50%] border-gray-400 leading-7 cursor-pointer shadow-lg mb-16 rounded-lg p-10 hover:transform hover:scale-105 transition duration-300 ease-in-out"
+          id="experience"
+        >
+          <div className="flex flex-col md:flex-row gap-10">
+            <div className="md:w-[90%]">
+              <h2 className=" text-[#4f585b] font-bold text-xl">
+                MSc Applied Geoinformatics
+              </h2>
+              <p className="mt-3">2022 - 2025</p>
+              <p className="mt-3">University of Salzburg</p>
+              <p className="text-[#4f585b] mt-2 font-semibold">
+                Salzburg, Austria
+              </p>
+              <img src="/assets/zgis.png" alt="" className="mt-7  w-56" />
+            </div>
+
+            <div className="flex flex-col">
+              <p className=" md:ml-16 w-[90%] ">
+                This program provides hands-on skills in integrating GIS and
+                computers science concepts for multidisciplinary problem solving
+                and research with a focus on:
+              </p>
+              <p className="pt-5">
+                <ul className="list-disc md:ml-24">
+                  <li>Advanved GIS concepts and methods</li>
+                  <li>Remote Sensing & Earth Observation</li>
+                  <li>Software development</li>
+                </ul>
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div
+          className="dark:bg-gray-200 mx-4 md:mx-0 mt-5 md:mt-0 border md:w-[50%] border-gray-400 leading-7 cursor-pointer shadow-lg mb-16 rounded-lg p-10 hover:transform hover:scale-105 transition duration-300 ease-in-out"
+          id="experience"
+        >
+          <div className="flex flex-col md:flex-row gap-10">
+            <div className="md:w-[90%]">
+              <h2 className=" text-[#4f585b] font-bold text-xl">
+                BSc Disaster Mistigation & Sustainable Development
+              </h2>
+              <p className="mt-3">2014 - 2019</p>
+              <p className="mt-3">University of Salzburg</p>
+              <p className="text-[#4f585b] mt-2 font-semibold">
+                Kakamega, Kenya
+              </p>
+            </div>
+
+            <div className="flex flex-col">
+              <p className=" md:ml-16 w-[90%] ">
+                Central to the program was utilization of spatial data and GIS
+                methods for disaster and emergency management, environmental
+                management and natural resource management with a focus on
+                sustainability approaches.
+              </p>
+              {/* <img src="/assets/mmust.png" alt="" className="mt-7 h-16  w-56" /> */}
             </div>
           </div>
         </div>
