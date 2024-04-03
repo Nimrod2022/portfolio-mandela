@@ -1,11 +1,22 @@
 import { BsFillMoonStarsFill } from "react-icons/bs";
 import { Link } from "react-router-dom";
 import { useState } from "react";
+import Contact from "./Contact"; // Import your Contact component
 
 const logoDarkMode = "/assets/logo-dark-mode.svg";
 const logoLightMode = "/assets/logo-light-mode.svg";
 
 const Hero = ({ darkMode, setDarkMode }) => {
+  const [isOpen, setIsOpen] = useState(false);
+
+  const openModal = () => {
+    setIsOpen(true);
+  };
+
+  const closeModal = () => {
+    setIsOpen(false);
+  };
+
   return (
     <div className={darkMode ? "dark" : ""}>
       <main className="exo  px-10 dark:bg-gray-900 md:px-20 lg:px-40">
@@ -25,16 +36,6 @@ const Hero = ({ darkMode, setDarkMode }) => {
                   className="hover:cursor-pointer text-2xl"
                 />
               </li>
-
-              <li>
-                <Link
-                  to="/"
-                  className="bg-gradient-to-r from-cyan-500 text- to-teal-500 text-white px-4 py-2 border-none rounded-md ml-8"
-                >
-                  Home
-                </Link>
-              </li>
-
               <li>
                 <Link
                   to="/projects"
@@ -51,10 +52,19 @@ const Hero = ({ darkMode, setDarkMode }) => {
                   Resume
                 </Link>
               </li>
+              <li>
+                <button
+                  onClick={openModal}
+                  className="bg-gradient-to-r from-cyan-500 text- to-teal-500 text-white px-4 py-2 border-none rounded-md ml-8"
+                >
+                  Contact
+                </button>
+              </li>
             </ul>
           </nav>
         </section>
       </main>
+      <Contact isOpen={isOpen} closeModal={closeModal} />
     </div>
   );
 };

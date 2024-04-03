@@ -11,15 +11,15 @@ const RHero = ({ language }) => {
   return (
     <div className="mt-10 pb-10 ">
       <div className="mx-auto  flex">
-        <div className="flex gap-10 mx-4">
+        <div className="md:flex gap-10 mx-4">
           {/* Image Section */}
           <div className="border border-gray-500 rounded-lg">
             <img
               src="./assets/image.png"
               alt=""
-              className="rounded-lg w-[300px] md:w-[250px] h-[250px] object-cover md:h-[280px]"
+              className="rounded-lg w-[300px] md:w-[250px]  h-[280] "
             />
-            <div className="flex gap-2 md:justify-between py-3 px-2 md:px-5">
+            <div className="flex gap-10 md:gap-2 md:justify-between py-3 px-2 md:px-5">
               <FaXing
                 color="#026466"
                 className="cursor-pointer border-2 border-[#026466] h-[40px] p-1 w-[40px] rounded-full"
@@ -55,7 +55,9 @@ const RHero = ({ language }) => {
 
           {/* Content Section */}
           <div className="flex flex-col gap-6">
-            <h1 className="text-3xl md:text-4xl mt-32 font-medium">Resume</h1>
+            <h1 className="text-3xl md:text-4xl mt-10 md:mt-32 font-medium">
+              Resume
+            </h1>
             <div className=" flex items-center">
               <ul className="list-disc ml-4">
                 <li className="capitalize  hover:text-blue-500 cursor-pointer">
