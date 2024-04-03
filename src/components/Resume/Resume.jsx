@@ -1,10 +1,104 @@
-const Resume = ({ darkMode, setDarkmode }) => {
+import React, { useState, useRef } from "react";
+import RHero from "./RHero";
+import { FaHtml5, FaCss3Alt, FaReact, FaJs } from "react-icons/fa";
+import { SiTailwindcss, SiPython, SiPostgresql } from "react-icons/si";
+
+const Resume = ({ darkMode }) => {
+  const form = useRef();
+
+  const [firstname, setFirstname] = useState("");
+  const [lastname, setLastname] = useState("");
+  const [email, setEmail] = useState("");
+  const [subject, setSubject] = useState("");
+  const [phone, setPhone] = useState("");
+  const [message, setMessage] = useState("");
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    if (!firstname || !email || !subject || !message || !lastname || !phone) {
+      toast.error("Email not sent, Please fill in all fields", {
+        position: "top-center",
+        autoClose: 5000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+        theme: "colored",
+      });
+    }
+  };
+
   return (
     <div className={darkMode ? "dark" : ""}>
       <div className="exo flex justify-center items-center flex-col pt-2 dark:bg-gray-900">
-        <div className=" flex justify-start w-full px-5 md:px-0 md:w-[50%] mb-2 font-semibold stext-xl md:text-2xl md:mb-5">
-          <h1 className="text-start">Experience</h1>
+        <div className="bg-white px mt-5 md:mt-0 border md:w-[50%] border-gray-400 leading-7 cursor-pointer shadow-lg mb-16 rounded-lg  hover:transform hover:scale-105 transition duration-300 ease-in-out">
+          <RHero />
         </div>
+        <div
+          id="bio"
+          className="dark:bg-gray-200 mx-4 md:mx-0 mt-5 md:mt-0 border md:w-[50%] border-gray-400 leading-7 cursor-pointer shadow-lg mb-16 rounded-lg p-10 hover:transform hover:scale-105 transition duration-300 ease-in-out"
+        >
+          <p>
+            I am currently a master’s student in Applied Geoinformatics at the
+            University of Salzburg, Austria. My career goal is to harness my
+            expertise in geospatial analysis, modeling, and process automation
+            to engineer innovative, customizable, and sustainable software
+            solutions. I am excited to explore opportunities that allow me to
+            apply my skills and make meaningful contributions to the geospatial
+            community through my work.
+          </p>
+
+          <div className="flex flex-wrap mt-4 gap-4">
+            <div className="flex items-center gap-2">
+              <FaHtml5 size={36} color="#E34F26" />
+              <span>HTML</span>
+            </div>
+            <div className="flex items-center gap-2">
+              <FaCss3Alt size={36} color="#264DE4" />
+              <span>CSS</span>
+            </div>
+            <div className="flex items-center gap-2">
+              <SiTailwindcss size={36} color="#38B2AC" />
+              <span>Tailwind CSS</span>
+            </div>
+            <div className="flex items-center gap-2">
+              <FaReact size={36} color="#61DAFB" />
+              <span>React JS</span>
+            </div>
+            <div className="flex items-center gap-2">
+              <FaJs size={36} color="#FED500" />
+              <span>JavaScript</span>
+            </div>
+            <div className="flex items-center gap-2">
+              <SiPython size={24} color="#3776AB" />
+              <span>Python</span>
+            </div>
+            <div className="flex items-center gap-2">
+              <SiPostgresql size={24} color="#336791" />
+              <span>PostgreSQL</span>
+            </div>
+            <div className="items-center flex gap-x-2">
+              <img src="/assets/arcgis.png" alt="" className="h-8" />
+              <span>ArcGIS Pro/Online</span>
+            </div>
+            <div className="items-center flex gap-x-2">
+              <img src="/assets/ecognition.png" alt="" className="h-10" />
+            </div>
+            <div className="items-center flex gap-x-2">
+              <img src="/assets/qgis.png" alt="" className="h-8" />
+            </div>
+          </div>
+        </div>
+
+        <div
+          id="experience"
+          className=" flex justify-start w-full px-5 md:px-0 md:w-[50%] mb-2 font-semibold stext-xl md:text-2xl md:mb-5"
+        >
+          <h1 className="text-start dark:text-white">Experience</h1>
+        </div>
+
         <div
           className="dark:bg-gray-200 mx-4 md:mx-0 mt-5 md:mt-0 border md:w-[50%] border-gray-400 leading-7 cursor-pointer shadow-lg mb-16 rounded-lg p-10 hover:transform hover:scale-105 transition duration-300 ease-in-out"
           id="experience"
@@ -166,14 +260,14 @@ const Resume = ({ darkMode, setDarkmode }) => {
 
         {/* Education Section */}
 
-        <div className=" flex justify-start w-full px-5 md:px-0 md:w-[50%] mb-2 font-semibold stext-xl md:text-2xl md:mb-5">
-          <h1 className="text-start">Education</h1>
+        <div
+          id="education"
+          className=" flex justify-start w-full px-5 md:px-0 md:w-[50%] mb-2 font-semibold stext-xl md:text-2xl md:mb-5"
+        >
+          <h1 className="text-start dark:text-white">Education</h1>
         </div>
 
-        <div
-          className="dark:bg-gray-200 mx-4 md:mx-0 mt-5 md:mt-0 border md:w-[50%] border-gray-400 leading-7 cursor-pointer shadow-lg mb-16 rounded-lg p-10 hover:transform hover:scale-105 transition duration-300 ease-in-out"
-          id="experience"
-        >
+        <div className="dark:bg-gray-200 mx-4 md:mx-0 mt-5 md:mt-0 border md:w-[50%] border-gray-400 leading-7 cursor-pointer shadow-lg mb-16 rounded-lg p-10 hover:transform hover:scale-105 transition duration-300 ease-in-out">
           <div className="flex flex-col md:flex-row gap-10">
             <div className="md:w-[90%]">
               <h2 className=" text-[#4f585b] font-bold text-xl">
@@ -204,10 +298,7 @@ const Resume = ({ darkMode, setDarkmode }) => {
           </div>
         </div>
 
-        <div
-          className="dark:bg-gray-200 mx-4 md:mx-0 mt-5 md:mt-0 border md:w-[50%] border-gray-400 leading-7 cursor-pointer shadow-lg mb-16 rounded-lg p-10 hover:transform hover:scale-105 transition duration-300 ease-in-out"
-          id="experience"
-        >
+        <div className="dark:bg-gray-200 mx-4 md:mx-0 mt-5 md:mt-0 border md:w-[50%] border-gray-400 leading-7 cursor-pointer shadow-lg mb-16 rounded-lg p-10 hover:transform hover:scale-105 transition duration-300 ease-in-out">
           <div className="flex flex-col md:flex-row gap-10">
             <div className="md:w-[90%]">
               <h2 className=" text-[#4f585b] font-bold text-xl">
@@ -229,6 +320,143 @@ const Resume = ({ darkMode, setDarkmode }) => {
               </p>
               {/* <img src="/assets/mmust.png" alt="" className="mt-7 h-16  w-56" /> */}
             </div>
+          </div>
+        </div>
+        {/* contact */}
+
+        <div className="dark:bg-gray-200 mx-4 md:mx-0 mt-5 md:mt-0 border md:w-[50%] border-gray-400 leading-7 cursor-pointer shadow-lg mb-16 rounded-lg p-10 hover:transform hover:scale-105 transition duration-300 ease-in-out">
+          <div className="flex justify-center items-center flex-col pt-2">
+            <h1 className="font-bold text-2xl py-5">Get in Touch</h1>
+            <form
+              className="bg-[#ededed] border border-gray-400 shadow-lg px-5 md:px-10 rounded-lg pb-5"
+              id="contact"
+              action="https://formspree.io/f/mjvqjwgj"
+              method="POST"
+            >
+              <div className="flex flex-col md:flex-col gap-5">
+                <div className="w-[100%] flex flex-col  md:flex-row gap-5 pt-10">
+                  <div className="flex flex-col w-full">
+                    <label
+                      htmlFor="name"
+                      className="text-[#13182f] mb-3  text-xl font-bold"
+                    >
+                      First Name
+                    </label>
+                    <input
+                      type="text"
+                      id="name"
+                      required
+                      value={firstname}
+                      onChange={(e) => setFirstname(e.target.value)}
+                      name="first_name"
+                      placeholder="John"
+                      className="bg-[#fff]   h-12  rounded-lg p-2 font-medium focus:outline-none"
+                    />
+                  </div>
+                  <div className="flex flex-col w-full pt-5 md:pt-0">
+                    <label
+                      htmlFor="name"
+                      className="text-[#13182f] mb-3  text-xl font-bold"
+                    >
+                      Last Name
+                    </label>
+                    <input
+                      type="text"
+                      value={lastname}
+                      onChange={(e) => setLastname(e.target.value)}
+                      id="name"
+                      required
+                      name="last_name"
+                      placeholder="Doe"
+                      className="bg-[#fff]   h-12  rounded-lg p-2 font-medium focus:outline-none"
+                    />
+                  </div>
+                </div>
+                <div className="flex w-[100%] flex-col justify-center md:flex-row gap-5 pt-5 ">
+                  <div className="flex flex-col w-full">
+                    <label
+                      htmlFor="email"
+                      className="text-[#13182f] mb-3  text-xl font-bold"
+                    >
+                      Email
+                    </label>
+                    <input
+                      value={email}
+                      onChange={(e) => setEmail(e.target.value)}
+                      type="email"
+                      required
+                      id="email"
+                      name="email"
+                      placeholder="johndoe@gmail.com"
+                      className="bg-[#fff]   h-12  rounded-lg p-2 font-medium focus:outline-none"
+                    />
+                  </div>
+                  <div className="flex flex-col pt-5 md:pt-0 w-full">
+                    <label
+                      htmlFor="phone"
+                      className="text-[#13182f] mb-3  text-xl font-bold"
+                    >
+                      Phone
+                    </label>
+                    <input
+                      type="text"
+                      value={phone}
+                      onChange={(e) => setPhone(e.target.value)}
+                      id="phone"
+                      name="phone"
+                      placeholder="+43 600 000 000"
+                      className="bg-[#fff]   h-12  rounded-lg p-2 font-medium focus:outline-none"
+                    />
+                  </div>
+                </div>
+              </div>
+              <div className="flex justify-center md:flex-row mt-5 gap-5">
+                <div className="flex flex-col w-full">
+                  <label
+                    htmlFor="subject"
+                    className="text-[#13182f] mb-3  text-xl font-bold"
+                  >
+                    Subject
+                  </label>
+                  <input
+                    type="text"
+                    value={subject}
+                    onChange={(e) => setSubject(e.target.value)}
+                    id="subject"
+                    name="subject"
+                    required
+                    placeholder="Subject"
+                    className="bg-[#fff]   h-12  rounded-lg p-2 font-medium focus:outline-none"
+                  />
+                </div>
+              </div>
+              <div className="flex justify-center md:flex-row mt-5 gap-5">
+                <div className="flex flex-col w-full">
+                  <label
+                    htmlFor="message"
+                    className="text-[#13182f] mb-3  text-xl font-bold"
+                  >
+                    Message
+                  </label>
+                  <textarea
+                    type="text"
+                    id="message"
+                    value={message}
+                    onChange={(e) => setMessage(e.target.value)}
+                    name="message"
+                    required
+                    placeholder="Message"
+                    className="bg-[#fff]   h-[200px]  rounded-lg p-2 font-medium focus:outline-none"
+                  />
+                </div>
+              </div>
+              <button
+                className=" mt-10 mb-10 font-bold bg-[#3d65ff] text-[#fff] rounded-lg py-3 px-5  h-16 hover:transform hover:scale-105 transition duration-300 ease-in-out"
+                type="submit"
+              >
+                Send
+              </button>
+            </form>
           </div>
         </div>
       </div>
