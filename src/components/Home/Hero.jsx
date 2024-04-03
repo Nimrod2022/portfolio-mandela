@@ -8,7 +8,7 @@ const logoLightMode = "/assets/logo-light-mode.svg";
 const Hero = ({ darkMode, setDarkMode }) => {
   return (
     <div className={darkMode ? "dark" : ""}>
-      <main className="exo bg-white px-10 dark:bg-gray-900 md:px-20 lg:px-40">
+      <main className="exo  px-10 dark:bg-gray-900 md:px-20 lg:px-40">
         <section className="">
           <nav className="py-16 md:py-10 pb-4 md:pb-20 flex justify-center md:justify-between gap-x-4 md:gap-x-0  dark:text-white">
             <Link to="/" className="h-7">

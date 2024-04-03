@@ -1,7 +1,10 @@
 const Resume = ({ darkMode, setDarkmode }) => {
   return (
     <div className={darkMode ? "dark" : ""}>
-      <div className="exo flex justify-center items-center flex-col pt-20 dark:bg-gray-900">
+      <div className="exo flex justify-center items-center flex-col pt-2 dark:bg-gray-900">
+        <div className=" flex justify-start w-full px-5 md:px-0 md:w-[50%] mb-2 font-semibold stext-xl md:text-2xl md:mb-5">
+          <h1 className="text-start">Experience</h1>
+        </div>
         <div
           className="dark:bg-gray-200 mx-4 md:mx-0 mt-5 md:mt-0 border md:w-[50%] border-gray-400 leading-7 cursor-pointer shadow-lg mb-16 rounded-lg p-10 hover:transform hover:scale-105 transition duration-300 ease-in-out"
           id="experience"
@@ -162,6 +165,10 @@ const Resume = ({ darkMode, setDarkmode }) => {
         </div>
 
         {/* Education Section */}
+
+        <div className=" flex justify-start w-full px-5 md:px-0 md:w-[50%] mb-2 font-semibold stext-xl md:text-2xl md:mb-5">
+          <h1 className="text-start">Education</h1>
+        </div>
 
         <div
           className="dark:bg-gray-200 mx-4 md:mx-0 mt-5 md:mt-0 border md:w-[50%] border-gray-400 leading-7 cursor-pointer shadow-lg mb-16 rounded-lg p-10 hover:transform hover:scale-105 transition duration-300 ease-in-out"
