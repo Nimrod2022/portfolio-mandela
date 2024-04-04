@@ -2,10 +2,11 @@ import { AiFillTwitterCircle, AiFillLinkedin } from "react-icons/ai";
 import { FaGithub } from "react-icons/fa";
 import { FaXing } from "react-icons/fa";
 
+// 
 const Home = ({ darkMode }) => {
   return (
     <div className={darkMode ? "dark" : ""}>
-      <main className="exo bg-white px-10 dark:bg-gray-900 md:px-20 lg:px-40">
+      <main className="exo bg-[#f9fbfc]  px-10 dark:bg-gray-900 md:px-20 lg:px-40">
         <section className="min-h-screen">
           <div className="text-center p-10 py-10">
             <h2 className=" py-2 text-teal-600 font-medium dark:text-teal-400 text-3xl md:text-6xl">

@@ -7,7 +7,7 @@ import { FaXing } from "react-icons/fa";
 
 // import { BiLogoXing } from "react-icons/bi";
 
-const RHero = ({ language }) => {
+const RHero = ({  }) => {
   return (
     <div className="mt-5 mb-5 ">
       <div className="mx-auto  flex">

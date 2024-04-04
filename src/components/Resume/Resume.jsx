@@ -32,13 +32,13 @@ const Resume = ({ darkMode }) => {
 
   return (
     <div className={darkMode ? "dark" : ""}>
-      <div className="exo flex justify-center items-center flex-col pt-2 dark:bg-gray-900">
-        <div className="bg-white px mt-5 md:mt-0 border md:w-[50%] border-gray-400 leading-7 cursor-pointer shadow-lg mb-16 rounded-lg  hover:transform hover:scale-105 transition duration-300 ease-in-out">
+      <div className="exo flex justify-center items-center flex-col pt-2 bg-[#f9fbfc] dark:bg-gray-900">
+        <div className="bg-white dark:bg-gray-200  px mt-5 md:mt-0 border md:w-[50%] border-gray-400 leading-7 cursor-pointer shadow-lg mb-16 rounded-lg  hover:transform hover:scale-105 transition duration-300 ease-in-out">
           <RHero />
         </div>
         <div
           id="bio"
-          className="dark:bg-gray-200 mx-4 md:mx-0 mt-5 md:mt-0 border md:w-[50%] border-gray-400 leading-7 cursor-pointer shadow-lg mb-16 rounded-lg p-10 hover:transform hover:scale-105 transition duration-300 ease-in-out"
+          className="bg-white dark:bg-gray-200 mx-4 md:mx-0 mt-5 md:mt-0 border md:w-[50%] border-gray-400 leading-7 cursor-pointer shadow-lg mb-16 rounded-lg p-10 hover:transform hover:scale-105 transition duration-300 ease-in-out"
         >
           <p>
             I am currently a master’s student in Applied Geoinformatics at the
@@ -50,7 +50,7 @@ const Resume = ({ darkMode }) => {
             solutions. The following are tech stacks that I use regularly:
           </p>
 
-          <div className=" md:flex flex-wrap mt-4 gap-4">
+          <div className="hidden md:flex flex-wrap mt-4 gap-4">
             <div className="flex items-center gap-2">
               <FaHtml5 size={36} color="#E34F26" />
               <span>HTML</span>
@@ -90,6 +90,57 @@ const Resume = ({ darkMode }) => {
               <img src="/assets/qgis.png" alt="" className="h-8" />
             </div>
           </div>
+
+          {/* Mobile view */}
+
+          <div className="md:hidden ">
+            <div className="flex mt-5 gap-5">
+              <div className="flex items-center gap-2">
+                <FaHtml5 size={24} color="#E34F26" />
+                <span className="text-sm">HTML</span>
+              </div>
+              <div className="flex items-center gap-2">
+                <FaCss3Alt size={24} color="#264DE4" />
+                <span className="text-sm">CSS</span>
+              </div>
+              <div className="flex items-center gap-2">
+                <SiTailwindcss size={24} color="#38B2AC" />
+                <span className="text-sm">Tailwind CSS</span>
+              </div>
+            </div>
+            <div className="flex mt-5 gap-4">
+              <div className="flex items-center gap-2">
+                <FaReact size={24} color="#61DAFB" />
+                <span className="text-sm">React</span>
+              </div>
+
+              <div className="flex items-center gap-2">
+                <FaJs size={24} color="#FED500" />
+                <span className="text-sm">JavaScript</span>
+              </div>
+              <div className="flex items-center gap-2">
+                <SiPython size={24} color="#3776AB" />
+                <span className="text-sm">Python</span>
+              </div>
+            </div>
+            <div className="flex mt-5 gap-5">
+              <div className="flex items-center gap-2">
+                <SiPostgresql size={24} color="#336791" />
+                <span className="text-sm">SQL</span>
+              </div>
+              <div className="items-center flex gap-x-2">
+                <img src="/assets/arcgis.png" alt="" className="h-8" />
+                <span className="text-sm">ArcGIS</span>
+              </div>
+              <div className="items-center">
+                <img src="/assets/ecognition.png" alt="" className="h-10" />
+              </div>
+            </div>
+
+            <div className="items-center mt-5 flex gap-x-2">
+              <img src="/assets/qgis.png" alt="" className="h-8" />
+            </div>
+          </div>
         </div>
 
         <div
@@ -100,7 +151,7 @@ const Resume = ({ darkMode }) => {
         </div>
 
         <div
-          className="dark:bg-gray-200 mx-4 md:mx-0 mt-5 md:mt-0 border md:w-[50%] border-gray-400 leading-7 cursor-pointer shadow-lg mb-16 rounded-lg p-10 hover:transform hover:scale-105 transition duration-300 ease-in-out"
+          className="bg-white dark:bg-gray-200 mx-4 md:mx-0 mt-5 md:mt-0 border md:w-[50%] border-gray-400 leading-7 cursor-pointer shadow-lg mb-16 rounded-lg p-10 hover:transform hover:scale-105 transition duration-300 ease-in-out"
           id="experience"
         >
           <div className="flex flex-col md:flex-row gap-5 md:gap-10">
@@ -130,7 +181,7 @@ const Resume = ({ darkMode }) => {
         </div>
 
         <div
-          className="dark:bg-gray-200 exo mx-4 md:mx-0 mt-5 md:mt-0 border md:w-[50%] border-gray-400 leading-7 cursor-pointer shadow-lg mb-16 rounded-lg p-10 hover:transform hover:scale-105 transition duration-300 ease-in-out"
+          className="dark:bg-gray-200 bg-white exo mx-4 md:mx-0 mt-5 md:mt-0 border md:w-[50%] border-gray-400 leading-7 cursor-pointer shadow-lg mb-16 rounded-lg p-10 hover:transform hover:scale-105 transition duration-300 ease-in-out"
           id="experience"
         >
           <div className="flex flex-col md:flex-row gap-5 md:gap-10">
@@ -163,7 +214,7 @@ const Resume = ({ darkMode }) => {
         </div>
 
         <div
-          className="dark:bg-gray-200 exo mx-4 md:mx-0 mt-5 md:mt-0 border md:w-[50%] border-gray-400 leading-7 cursor-pointer shadow-lg mb-16 rounded-lg p-10 hover:transform hover:scale-105 transition duration-300 ease-in-out"
+          className="dark:bg-gray-200 bg-white exo mx-4 md:mx-0 mt-5 md:mt-0 border md:w-[50%] border-gray-400 leading-7 cursor-pointer shadow-lg mb-16 rounded-lg p-10 hover:transform hover:scale-105 transition duration-300 ease-in-out"
           id="experience"
         >
           <div className="flex flex-col md:flex-row gap-5 md:gap-10">
@@ -196,7 +247,7 @@ const Resume = ({ darkMode }) => {
         </div>
 
         <div
-          className="dark:bg-gray-200 exo mx-4 md:mx-0 mt-5 md:mt-0 border md:w-[50%] border-gray-400 leading-7 cursor-pointer shadow-lg mb-16 rounded-lg p-10 hover:transform hover:scale-105 transition duration-300 ease-in-out"
+          className="dark:bg-gray-200 bg-white exo mx-4 md:mx-0 mt-5 md:mt-0 border md:w-[50%] border-gray-400 leading-7 cursor-pointer shadow-lg mb-16 rounded-lg p-10 hover:transform hover:scale-105 transition duration-300 ease-in-out"
           id="experience"
         >
           <div className="flex flex-col md:flex-row gap-5 md:gap-10">
@@ -228,7 +279,7 @@ const Resume = ({ darkMode }) => {
         </div>
 
         <div
-          className="dark:bg-gray-200 exo mx-4 md:mx-0 mt-5 md:mt-0 border md:w-[50%] border-gray-400 leading-7 cursor-pointer shadow-lg mb-16 rounded-lg p-10 hover:transform hover:scale-105 transition duration-300 ease-in-out"
+          className="dark:bg-gray-200 bg-white exo mx-4 md:mx-0 mt-5 md:mt-0 border md:w-[50%] border-gray-400 leading-7 cursor-pointer shadow-lg mb-16 rounded-lg p-10 hover:transform hover:scale-105 transition duration-300 ease-in-out"
           id="experience"
         >
           <div className="flex flex-col md:flex-row gap-5 md:gap-10">
@@ -267,7 +318,7 @@ const Resume = ({ darkMode }) => {
           <h1 className="text-start dark:text-white">Education</h1>
         </div>
 
-        <div className="dark:bg-gray-200 mx-4 md:mx-0 mt-5 md:mt-0 border md:w-[50%] border-gray-400 leading-7 cursor-pointer shadow-lg mb-16 rounded-lg p-10 hover:transform hover:scale-105 transition duration-300 ease-in-out">
+        <div className="dark:bg-gray-200 bg-white mx-4 md:mx-0 mt-5 md:mt-0 border md:w-[50%] border-gray-400 leading-7 cursor-pointer shadow-lg mb-16 rounded-lg p-10 hover:transform hover:scale-105 transition duration-300 ease-in-out">
           <div className="flex flex-col md:flex-row gap-5 md:gap-10">
             <div className="md:w-[90%]">
               <h2 className=" text-[#4f585b] font-bold text-xl">
@@ -278,7 +329,11 @@ const Resume = ({ darkMode }) => {
               <p className="text-[#4f585b] mt-2 font-semibold">
                 Salzburg, Austria
               </p>
-              <img src="/assets/zgis.png" alt="" className="hidden md:block mt-7  w-56" />
+              <img
+                src="/assets/zgis.png"
+                alt=""
+                className="hidden md:block mt-7  w-56"
+              />
             </div>
 
             <div className="flex flex-col">
@@ -303,7 +358,7 @@ const Resume = ({ darkMode }) => {
           </div>
         </div>
 
-        <div className="dark:bg-gray-200 mx-4 md:mx-0 mt-5 md:mt-0 border md:w-[50%] border-gray-400 leading-7 cursor-pointer shadow-lg mb-16 rounded-lg p-10 hover:transform hover:scale-105 transition duration-300 ease-in-out">
+        <div className=" dark:bg-gray-200 bg-white mx-4 md:mx-0 mt-5 md:mt-0 border md:w-[50%] border-gray-400 leading-7 cursor-pointer shadow-lg mb-16 rounded-lg p-10 hover:transform hover:scale-105 transition duration-300 ease-in-out">
           <div className="flex flex-col md:flex-row gap-5 md:gap-10">
             <div className="md:w-[100%]">
               <h2 className=" text-[#4f585b] font-bold text-xl">
