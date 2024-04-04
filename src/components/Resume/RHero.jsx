@@ -9,7 +9,7 @@ import { FaXing } from "react-icons/fa";
 
 const RHero = ({ language }) => {
   return (
-    <div className="mt-10 pb-10 ">
+    <div className="mt-5 mb-5 ">
       <div className="mx-auto  flex">
         <div className="md:flex gap-10 mx-4">
           {/* Image Section */}
@@ -55,53 +55,53 @@ const RHero = ({ language }) => {
 
           {/* Content Section */}
           <div className="flex flex-col gap-6">
-            <h1 className="text-3xl md:text-4xl mt-10 md:mt-32 font-medium">
+            <h1 className="text-3xl md:text-4xl mt-10 md:mt-40 font-medium">
               Resume
             </h1>
             <div className=" flex items-center">
               <ul className="list-disc ml-4">
-                <li className="capitalize  hover:text-blue-500 cursor-pointer">
+                <li className="capitalize  hover:text-[#11B7C1] cursor-pointer">
                   <ScrollLink
                     to="bio"
                     smooth={true}
                     duration={500}
-                    className="cursor-pointer hover:text-blue-500"
+                    className="cursor-pointer hover:text-[#11B7C1]"
                   >
                     Bio & Tech stack
                   </ScrollLink>
                 </li>
 
-                <li className="mt-5 cursor-pointer hover:text-blue-500">
+                <li className="mt-5 cursor-pointer hover:text-[#11B7C1]">
                   <ScrollLink
                     to="experience"
                     smooth={true}
                     duration={500}
-                    className="cursor-pointer hover:text-blue-500"
+                    className="cursor-pointer hover:text-[#11B7C1]"
                   >
                     Work Experience
                   </ScrollLink>
                 </li>
 
-                <li className="mt-5 capitalize cursor-pointer hover:text-blue-500 ">
+                <li className="mt-5 capitalize cursor-pointer hover:text-[#11B7C1] ">
                   <ScrollLink
                     to="education"
                     smooth={true}
                     duration={500}
-                    className="cursor-pointer hover:text-blue-500"
+                    className="cursor-pointer hover:text-[#11B7C1]"
                   >
                     Education
                   </ScrollLink>
                 </li>
-                <li className="mt-5 cursor-pointer hover:text-blue-500">
+                {/* <li className="mt-5 cursor-pointer hover:text-[#11B7C1]">
                   <ScrollLink
                     to="contact"
                     smooth={true}
                     duration={1000}
-                    className="cursor-pointer hover:text-blue-500"
+                    className="cursor-pointer hover:text-[#11B7C1]"
                   >
                     Contact
                   </ScrollLink>
-                </li>
+                </li> */}
               </ul>
             </div>
           </div>

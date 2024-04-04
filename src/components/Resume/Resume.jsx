@@ -42,12 +42,12 @@ const Resume = ({ darkMode }) => {
         >
           <p>
             I am currently a master’s student in Applied Geoinformatics at the
-            University of Salzburg, Austria. My career goal is to harness my
-            expertise in geospatial analysis, modeling, and process automation
-            to engineer innovative, customizable, and sustainable software
-            solutions. I am excited to explore opportunities that allow me to
-            apply my skills and make meaningful contributions to the geospatial
-            community through my work.
+            University of Salzburg, Austria. I have a keen interest in front-end
+            and GIS development. My goal is to use my expertise in building
+            exciting and functional user interfaces. Additionally, employ my
+            geospatial analysis, modeling, and process automation skills to
+            engineer innovative, customizable, and sustainable software
+            solutions. The following are tech stacks that I use regularly:
           </p>
 
           <div className=" md:flex flex-wrap mt-4 gap-4">
@@ -103,7 +103,7 @@ const Resume = ({ darkMode }) => {
           className="dark:bg-gray-200 mx-4 md:mx-0 mt-5 md:mt-0 border md:w-[50%] border-gray-400 leading-7 cursor-pointer shadow-lg mb-16 rounded-lg p-10 hover:transform hover:scale-105 transition duration-300 ease-in-out"
           id="experience"
         >
-          <div className="flex flex-col md:flex-row gap-10">
+          <div className="flex flex-col md:flex-row gap-5 md:gap-10">
             <div className="md:w-[90%]">
               <h2 className=" text-[#4f585b] font-bold text-xl">Intern</h2>
               <p className="mt-3">2024</p>
@@ -133,7 +133,7 @@ const Resume = ({ darkMode }) => {
           className="dark:bg-gray-200 exo mx-4 md:mx-0 mt-5 md:mt-0 border md:w-[50%] border-gray-400 leading-7 cursor-pointer shadow-lg mb-16 rounded-lg p-10 hover:transform hover:scale-105 transition duration-300 ease-in-out"
           id="experience"
         >
-          <div className="flex flex-col md:flex-row gap-10">
+          <div className="flex flex-col md:flex-row gap-5 md:gap-10">
             <div className="md:w-[90%]">
               <h2 className="text-[#676E71] font-bold text-xl">
                 Student assistant
@@ -166,7 +166,7 @@ const Resume = ({ darkMode }) => {
           className="dark:bg-gray-200 exo mx-4 md:mx-0 mt-5 md:mt-0 border md:w-[50%] border-gray-400 leading-7 cursor-pointer shadow-lg mb-16 rounded-lg p-10 hover:transform hover:scale-105 transition duration-300 ease-in-out"
           id="experience"
         >
-          <div className="flex flex-col md:flex-row gap-10">
+          <div className="flex flex-col md:flex-row gap-5 md:gap-10">
             <div className="md:w-[90%]">
               <h2 className="text-[#676E71] font-bold text-xl">
                 Petroleum & Gas Officer
@@ -199,7 +199,7 @@ const Resume = ({ darkMode }) => {
           className="dark:bg-gray-200 exo mx-4 md:mx-0 mt-5 md:mt-0 border md:w-[50%] border-gray-400 leading-7 cursor-pointer shadow-lg mb-16 rounded-lg p-10 hover:transform hover:scale-105 transition duration-300 ease-in-out"
           id="experience"
         >
-          <div className="flex flex-col md:flex-row gap-10">
+          <div className="flex flex-col md:flex-row gap-5 md:gap-10">
             <div className="md:w-[90%]">
               <h2 className="text-[#676E71] font-bold text-xl">
                 Technical assistant
@@ -231,7 +231,7 @@ const Resume = ({ darkMode }) => {
           className="dark:bg-gray-200 exo mx-4 md:mx-0 mt-5 md:mt-0 border md:w-[50%] border-gray-400 leading-7 cursor-pointer shadow-lg mb-16 rounded-lg p-10 hover:transform hover:scale-105 transition duration-300 ease-in-out"
           id="experience"
         >
-          <div className="flex flex-col md:flex-row gap-10">
+          <div className="flex flex-col md:flex-row gap-5 md:gap-10">
             <div className="md:w-[90%]">
               <h2 className="text-[#676E71] font-bold text-xl">Intern</h2>
               <p className="mt-3">2018</p>
@@ -252,7 +252,7 @@ const Resume = ({ darkMode }) => {
               <img
                 src="/assets/water.png"
                 alt=""
-                className="mt-7 md:ml-16 w-56"
+                className="mt-7 md:ml-16 h-20 w-40"
               />
             </div>
           </div>
@@ -268,7 +268,7 @@ const Resume = ({ darkMode }) => {
         </div>
 
         <div className="dark:bg-gray-200 mx-4 md:mx-0 mt-5 md:mt-0 border md:w-[50%] border-gray-400 leading-7 cursor-pointer shadow-lg mb-16 rounded-lg p-10 hover:transform hover:scale-105 transition duration-300 ease-in-out">
-          <div className="flex flex-col md:flex-row gap-10">
+          <div className="flex flex-col md:flex-row gap-5 md:gap-10">
             <div className="md:w-[90%]">
               <h2 className=" text-[#4f585b] font-bold text-xl">
                 MSc Applied Geoinformatics
@@ -278,7 +278,7 @@ const Resume = ({ darkMode }) => {
               <p className="text-[#4f585b] mt-2 font-semibold">
                 Salzburg, Austria
               </p>
-              <img src="/assets/zgis.png" alt="" className="mt-7  w-56" />
+              <img src="/assets/zgis.png" alt="" className="hidden md:block mt-7  w-56" />
             </div>
 
             <div className="flex flex-col">
@@ -294,18 +294,25 @@ const Resume = ({ darkMode }) => {
                   <li>Software development</li>
                 </ul>
               </p>
+              <img
+                src="/assets/zgis.png"
+                alt=""
+                className="md:hidden mt-7  w-56"
+              />
             </div>
           </div>
         </div>
 
         <div className="dark:bg-gray-200 mx-4 md:mx-0 mt-5 md:mt-0 border md:w-[50%] border-gray-400 leading-7 cursor-pointer shadow-lg mb-16 rounded-lg p-10 hover:transform hover:scale-105 transition duration-300 ease-in-out">
-          <div className="flex flex-col md:flex-row gap-10">
-            <div className="md:w-[90%]">
+          <div className="flex flex-col md:flex-row gap-5 md:gap-10">
+            <div className="md:w-[100%]">
               <h2 className=" text-[#4f585b] font-bold text-xl">
                 BSc Disaster Mistigation & Sustainable Development
               </h2>
               <p className="mt-3">2014 - 2019</p>
-              <p className="mt-3">University of Salzburg</p>
+              <p className="mt-3">
+                Masinde Muliro University of Science & Technology
+              </p>
               <p className="text-[#4f585b] mt-2 font-semibold">
                 Kakamega, Kenya
               </p>
@@ -318,7 +325,11 @@ const Resume = ({ darkMode }) => {
                 management and natural resource management with a focus on
                 sustainability approaches.
               </p>
-              {/* <img src="/assets/mmust.png" alt="" className="mt-7 h-16  w-56" /> */}
+              <img
+                src="/assets/mmust.png"
+                alt=""
+                className="mt-5 ml-20 h-28 w-32"
+              />
             </div>
           </div>
         </div>
