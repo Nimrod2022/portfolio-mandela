@@ -97,7 +97,7 @@ const Sidebar = () => {
         </div>
         <a
           id="about"
-          className="nav__link text-[#55E5A4]"
+          className="nav__link font-semibold text-md text-[#55E5A4]"
           href="/about"
           onClick={handleLinkClick}
         >
@@ -105,7 +105,7 @@ const Sidebar = () => {
         </a>
         <a
           id="projects"
-          className="nav__link mt-5 text-[#55E5A4]"
+          className="nav__link mt-5 font-semibold text-md text-[#55E5A4]"
           href="/projects"
           onClick={handleLinkClick}
         >
@@ -113,7 +113,7 @@ const Sidebar = () => {
         </a>
         <a
           id="contact"
-          className="nav__link mt-5"
+          className="nav__link font-semibold text-md mt-5"
           href="/contact"
           onClick={handleLinkClick}
         >
