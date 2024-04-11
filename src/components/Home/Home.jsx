@@ -1,60 +1,45 @@
-import { AiFillTwitterCircle, AiFillLinkedin } from "react-icons/ai";
-import { FaGithub } from "react-icons/fa";
-import { FaXing } from "react-icons/fa";
-
-
-//
-const Home = ({ darkMode }) => {
+const Home = () => {
   return (
-    <div className={`h-[100Vh] ${darkMode ? "dark" : ""}`}>
-      <div className="exo  bg-[#f9fbfc] px-10 dark:bg-gray-900 md:px-20 lg:px-40">
-        <div className="text-center p-10 py-10">
-          <h2 className=" py-2 text-teal-600 font-medium dark:text-teal-400 text-3xl md:text-6xl">
-            Nimrod Kibet
-          </h2>
-          <h3 className=" py-2 dark:text-white text-xl md:text-3xl">
-            Frontend & GIS Developer.
-          </h3>
-          <p className=" py-5 leading-8 text-gray-800 dark:text-gray-200 max-w-xl mx-auto text-md md:text-xl">
-            I specialize in crafting immersive user experiences using the latest
-            frontend technologies and frameworks to bring your vision to life.
-            Additionally, my expertise extends to geoinformatics, where I excel
-            in harnessing the power of spatial data to uncover actionable
-            insights.
-          </p>
-          <div className="text-5xl flex justify-center gap-10 text-gray-600 dark:text-gray-400">
-            <a
-              href="https://github.com/Nimrod2022"
-              target="_blank"
-              rel="noopener noreferrer"
+    <>
+      <div className="bg-[#151C25] h-100vh satoshi">
+        <div className="container md:py-28 px-8 md:px-0 pt-10 md:mt-0 mx-auto flex flex-col text-white items-center josefin-sans">
+          <div className="flex items-center flex-col">
+            <p className="text-3xl text-white ">Nimrod Kibet</p>
+            <h1 className="md:w-[40%] text-[#55E5A4] text-center pt-6 md:pt-2 font-bold text-3xl md:text-3xl">
+              Frontend & GIS Developer
+            </h1>
+            <p className="md:w-[44%] text-lg text-center text-white pt-4 ">
+              I specialize in crafting immersive user experiences using the
+              latest frontend technologies and frameworks to bring your vision
+              to life. Additionally, my expertise extends to geoinformatics,
+              where I excel in harnessing the power of spatial data to uncover
+              actionable insights.
+            </p>
+          </div>
+
+          <div className=" justify-center items-center pt-8 hidden md:flex">
+            <button
+              type="button"
+              className="bg-[#55E5A4] text-black text-md rounded-lg px-2 py-2 mr-8"
             >
-              <FaGithub />
-            </a>
-            <a
-              href="https://www.linkedin.com/in/nimrod-kibet-b6b340115/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <AiFillLinkedin />
-            </a>
-            <a
-              href="https://www.xing.com/profile/Nimrod_Kibet/web_profiles"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <FaXing />
-            </a>
-            <a
-              href="https://twitter.com/MandelaGI"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <AiFillTwitterCircle />
-            </a>
+              Get in Touch
+            </button>
+
+            <div className="circle"></div>
+            <p className="text-center ml-3">Available for work</p>
           </div>
         </div>
+
+        <div className="items-center flex flex-col pb-10 pt-8 justify-center md:hidden">
+          <button
+            type="button"
+            className="bg-[#55E5A4] text-black text-md rounded-lg px-2 py-2"
+          >
+            Get in Touch
+          </button>
+        </div>
       </div>
-    </div>
+    </>
   );
 };
 
