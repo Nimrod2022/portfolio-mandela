@@ -1,7 +1,10 @@
+import Navbar from "./Navbar";
+
 const Home = () => {
   return (
     <>
       <div className="bg-[#151C25] h-screen satoshi">
+      <Navbar/>
         <div className="container md:py-28 px-8 md:px-0 pt-10 md:mt-0 mx-auto flex flex-col text-white items-center josefin-sans">
           <div className="flex items-center flex-col">
             <p className="text-3xl text-white ">Nimrod Kibet</p>
@@ -20,7 +23,7 @@ const Home = () => {
           <div className=" justify-center items-center pt-8 hidden md:flex">
             <button
               type="button"
-              className="bg-[#55E5A4] text-black text-md rounded-lg px-2 py-2 mr-8"
+              className="bg-[#55E5A4] text-black font-semibold text-md rounded-lg px-2 py-2 mr-8"
             >
               Get in Touch
             </button>
@@ -33,7 +36,7 @@ const Home = () => {
         <div className="items-center flex flex-col pb-10 pt-8 justify-center md:hidden">
           <button
             type="button"
-            className="bg-[#55E5A4] text-black text-md rounded-lg px-2 py-2"
+            className="bg-[#55E5A4] text-black text-md font-semibold rounded-lg px-2 py-2"
           >
             Get in Touch
           </button>

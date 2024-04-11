@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Routes, Route, BrowserRouter as Router } from "react-router-dom";
-import Navbar from "./components/Home/Navbar";
+
 import Home from "./components/Home/Home";
 
 function App() {
@@ -11,24 +11,16 @@ function App() {
   };
 
   return (
-
     <>
-
-    <Navbar/>
-    <Home/>
-    
-    
+      <Home />
     </>
-    
   );
 }
 
 export default App;
 
-
-
-
-{/* <Router>
+{
+  /* <Router>
       <Navbar darkMode={darkMode} setDarkMode={toggleDarkMode} />
       <Routes>
         <Route
@@ -52,4 +44,5 @@ export default App;
           element={<Contact darkMode={darkMode} setDarkMode={toggleDarkMode} />}
         />
       </Routes>
-    </Router> */}
+    </Router> */
+}
