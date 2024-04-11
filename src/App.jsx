@@ -14,7 +14,7 @@ function App() {
   return (
     <>
    
-      <Home />
+      <Home  darkMode={darkMode} setDarkMode={toggleDarkMode}/>
       <About/>
     </>
   );

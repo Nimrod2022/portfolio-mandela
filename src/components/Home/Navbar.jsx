@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import React, { useEffect } from "react";
 import Sidebar from "./Sidebar";
 import { useState } from "react";
+import { BsFillMoonStarsFill } from "react-icons/bs";
 
 const Navbar = () => {
   //  Sticky nav handling
@@ -66,6 +67,9 @@ const Navbar = () => {
               className="border text-white text-md font-semibold w-24 hidden md:block rounded-md py-1 px-4 "
             >
               Contact
+            </button>
+            <button>
+            <BsFillMoonStarsFill className="md:size-8"/>
             </button>
           </div>
         </nav>

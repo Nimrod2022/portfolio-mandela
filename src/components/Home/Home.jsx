@@ -1,6 +1,6 @@
 import Navbar from "./Navbar";
 
-const Home = () => {
+const Home = ({darkMode, setDarkMode}) => {
   return (
     <>
       <div className="bg-[#151C25] h-screen satoshi">
