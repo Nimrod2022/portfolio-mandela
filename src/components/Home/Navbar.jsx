@@ -53,6 +53,7 @@ const Navbar = () => {
             >
               About
             </button>
+
             <button
               type="button"
               className="bg-[#55E5A4] text-black text-md font-semibold w-24 hidden md:block rounded-md py-1 px-4 "
