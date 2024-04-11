@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { Routes, Route, BrowserRouter as Router } from "react-router-dom";
 
 import Home from "./components/Home/Home";
+import About from "./components/Home/About";
 
 function App() {
   const [darkMode, setDarkMode] = useState(false);
@@ -12,7 +13,9 @@ function App() {
 
   return (
     <>
+   
       <Home />
+      <About/>
     </>
   );
 }

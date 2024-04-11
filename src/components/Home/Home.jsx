@@ -11,7 +11,7 @@ const Home = () => {
             <h1 className="md:w-[40%] text-[#55E5A4] text-center pt-6 md:pt-2 font-bold text-3xl md:text-3xl">
               Frontend & GIS Developer
             </h1>
-            <p className="md:w-[44%] text-lg text-center text-white pt-4 ">
+            <p className="md:w-[44%] text-lg text-center text-[#A9A9A9] pt-4 ">
               I specialize in crafting immersive user experiences using the
               latest frontend technologies and frameworks to bring your vision
               to life. Additionally, my expertise extends to geoinformatics,
@@ -29,7 +29,7 @@ const Home = () => {
             </button>
 
             <div className="circle"></div>
-            <p className="text-center ml-3">Available for work</p>
+            <p className="text-center text-[#A9A9A9] ml-3">Available for work</p>
           </div>
         </div>
 
