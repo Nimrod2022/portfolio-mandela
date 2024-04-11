@@ -4,7 +4,7 @@ const Home = () => {
   return (
     <>
       <div className="bg-[#151C25] h-screen satoshi">
-      <Navbar/>
+        <Navbar />
         <div className="container md:py-28 px-8 md:px-0 pt-10 md:mt-0 mx-auto flex flex-col text-white items-center josefin-sans">
           <div className="flex items-center flex-col">
             <p className="text-3xl text-white ">Nimrod Kibet</p>
@@ -29,7 +29,9 @@ const Home = () => {
             </button>
 
             <div className="circle"></div>
-            <p className="text-center text-[#A9A9A9] ml-3">Available for work</p>
+            <p className="text-center text-[#A9A9A9] ml-3">
+              Available for work
+            </p>
           </div>
         </div>
 

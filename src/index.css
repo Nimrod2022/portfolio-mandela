@@ -90,8 +90,12 @@
   border-width: 1px;
 }
 
-/* Frame 10 */
+/* section border*/
 
-
+.section-border {
+  border-width: 0.5px; 
+  border-color: #55e5a4;
+  border-style: solid;
+}
 
 
