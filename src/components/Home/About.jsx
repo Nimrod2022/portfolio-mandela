@@ -1,12 +1,8 @@
-import React, { useRef, useEffect } from "react";
 const About = ({ darkMode }) => {
   return (
     <>
-      <div className={darkMode ? "dark" : ""}>
-        <div
-          id="/about"
-          className="dark:bg-[#151C25] bg-[#F0F0F4] md:h-screen md:gap-20 px-8 md:px-60 satoshi md:flex md:pt-20 pt-10  justify-center "
-        >
+      <div id="/about" className={darkMode ? "dark" : ""}>
+        <div className="dark:bg-[#151C25] bg-[#F0F0F4] md:h-screen md:gap-20 px-8 md:px-60 satoshi md:flex md:pt-40 pt-10  justify-center ">
           {/* Image */}
           <div className="md:px-0 px-10 ">
             <div className="relative">

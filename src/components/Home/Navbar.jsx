@@ -1,7 +1,7 @@
-import { Link, animateScroll as scroll } from "react-scroll";
+import { Link } from "react-scroll";
 import React, { useEffect } from "react";
 import Sidebar from "./Sidebar";
-import { useState, useRef } from "react";
+import { useState } from "react";
 
 const logoDarkMode = "assets/logo-dark-mode.svg";
 const logoLightMode = "assets/logo-light-mode.svg";
@@ -24,28 +24,18 @@ const Navbar = ({ darkMode, setDarkMode }) => {
     };
   }, []);
 
-  // scroll to section
-
-  // const scrollToSection = (id) => {
-  //   console.log("Scrolling to section:", id);
-  //   const element = document.getElementById(id);
-  //   if (element) {
-  //     element.scrollIntoView({ behavior: "smooth" });
-  //   }
-  // };
-
   return (
     <div className={darkMode ? "dark" : ""}>
       <header className={scrolled ? "stickynav" : ""}>
         <div className="md:pt-5 relative dark:bg-[#151C25] bg-[#F0F0F4] satoshi">
           <nav className="flex justify-between md:items-center text-lg text-white px-8 md:px-36 py-4 md:py-4">
-            <a href="/#">
+            <Link to="/#" smooth={true} duration={700}>
               <img
                 src={darkMode ? logoDarkMode : logoLightMode}
                 alt="logo"
-                className="hover:cursor-pointer size-12"
+                className="hover:cursor-pointer pt-4 md:pt-0 size-12"
               />
-            </a>
+            </Link>
 
             {/* Sidebar to cover entire screen */}
             <div className="block md:hidden fixed inset-0 z-50 items-center">
@@ -75,7 +65,7 @@ const Navbar = ({ darkMode, setDarkMode }) => {
               >
                 Contact
               </button>
-              <button>
+              <button className="md:mr-0 mr-12 size-8 pt-4 md:pt-0 md:size-auto">
                 <img
                   src={darkMode ? lightIcon : darkIcon}
                   alt="theme"
