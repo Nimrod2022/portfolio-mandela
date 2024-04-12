@@ -1,22 +1,30 @@
+const darkModeProfileAbout = "/assets/about-profile-dark.svg";
+const lightModeProfileAbout = "/assets/about-profile-light.svg";
+
 const About = ({ darkMode }) => {
   return (
     <>
       <div id="/about" className={darkMode ? "dark" : ""}>
-        <div className="dark:bg-[#151C25] bg-[#F0F0F4] md:h-screen md:gap-20 px-8 md:px-60 satoshi md:flex md:pt-40 pt-10  justify-center ">
+        <div className="dark:bg-[#151C25] bg-[#F0F0F4] md:h-screen md:gap-16 px-8 md:px-60 satoshi md:flex md:pt-40 pt-10  justify-center ">
           {/* Image */}
-          <div className="md:px-0 px-10 ">
-            <div className="relative">
+
+          <img
+            src={darkMode ? darkModeProfileAbout : lightModeProfileAbout}
+            alt="about-profile"
+            className="h-80 hidden md:block "
+          />
+          {/* <div className="relative">
               <div className="bg-[#151C25] dark:bg-[#55E5A4] h-64 w-56 md:h-72 md:w-64 rounded-sm"></div>
               <img
                 src="/assets/profile.png"
                 className="absolute md:top-4 md:left-4 top-4 left-4 md:h-72 rounded-sm"
                 alt="Your Image"
               />
-            </div>
-          </div>
+            </div> */}
+
           {/* Text */}
           <div className="">
-            <h1 className="text-3xl pt-14 md:pt-0 text-center md:text-start font-extrabold text-[#000000] dark:text-white">
+            <h1 className="text-3xl pt-10 md:pt-0 text-center md:text-start font-extrabold text-[#000000] dark:text-white">
               About Me
             </h1>
             <div className="flex gap-2 pt-2 md:justify-start  justify-center items-center">
