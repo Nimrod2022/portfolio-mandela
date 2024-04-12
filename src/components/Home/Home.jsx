@@ -13,7 +13,7 @@ const Home = ({ darkMode }) => {
               <p className="text-xl text-[#26313F] dark:text-white md:text-start text-center ">
                 Nimrod Kibet
               </p>
-              <h1 className=" text-[#26313F]  dark:text-[#55E5A4] pt-2 font-black text-2xl md:text-2xl md:text-start text-center">
+              <h1 className="  text-[#55E5A4] pt-2 font-extrabold text-2xl md:text-2xl md:text-start text-center">
                 Frontend & GIS Developer
               </h1>
               <p className="md:w-[100%] text-lg  text-[#686565] dark:text-[#A9A9A9] pt-3 md:text-start text-center ">

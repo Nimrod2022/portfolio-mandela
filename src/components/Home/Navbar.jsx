@@ -39,7 +39,7 @@ const Navbar = ({ darkMode, setDarkMode }) => {
 
             {/* Sidebar to cover entire screen */}
             <div className="block md:hidden fixed inset-0 z-50 items-center">
-              <Sidebar />
+              <Sidebar darkMode={darkMode} />
             </div>
 
             <div className="flex gap-10">
@@ -65,14 +65,13 @@ const Navbar = ({ darkMode, setDarkMode }) => {
               >
                 Contact
               </button>
-              <button className="mr-10">
+              <button className="hidden md:block">
                 <img
                   src={darkMode ? lightIcon : darkIcon}
                   alt="theme"
                   onClick={() => {
                     setDarkMode(!darkMode);
                   }}
-                  onTouchEnd={() => setDarkMode(!darkMode)}
                 />
               </button>
             </div>

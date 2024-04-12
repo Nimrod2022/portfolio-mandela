@@ -2,7 +2,7 @@ import { Link } from "react-scroll";
 import React, { useState } from "react";
 import { slide as Menu } from "react-burger-menu";
 
-const Sidebar = () => {
+const Sidebar = ({darkMode}) => {
   const [isOpen, setIsOpen] = useState(false);
 
   const handleMenuToggle = () => {
@@ -39,7 +39,7 @@ const Sidebar = () => {
               style={{
                 height: "3px",
                 width: "24px",
-                background: "#55E5A4",
+                background: darkMode ? "#55E5A4": "#000000",
                 marginBottom: "4px",
               }}
             />
@@ -47,12 +47,12 @@ const Sidebar = () => {
               style={{
                 height: "3px",
                 width: "24px",
-                background: "#55E5A4",
+                background: darkMode ? "#55E5A4": "#000000",
                 marginBottom: "4px",
               }}
             />
             <div
-              style={{ height: "3px", width: "24px", background: "#55E5A4" }}
+              style={{ height: "3px", width: "24px", background: darkMode ? "#55E5A4": "#000000", }}
             />
           </>
         )}
@@ -98,7 +98,7 @@ const Sidebar = () => {
         </div>
         <Link
           to="/about"
-          className="nav__link font-semibold text-md text-[#55E5A4]"
+          className="font-semibold text-md text-[#55E5A4]"
           onClick={handleLinkClick}
           spy={true}
           smooth={true}
@@ -108,7 +108,7 @@ const Sidebar = () => {
         </Link>
         <Link
           to="/projects"
-          className="nav__link mt-5 font-semibold text-md text-[#55E5A4]"
+          className="mt-5 font-semibold text-md text-[#55E5A4]"
           onClick={handleLinkClick}
           spy={true}
           smooth={true}
@@ -118,7 +118,7 @@ const Sidebar = () => {
         </Link>
         <Link
           to="/contact"
-          className="nav__link font-semibold text-md mt-5"
+          className="font-semibold text-md mt-5"
           onClick={handleLinkClick}
           spy={true}
           smooth={true}
