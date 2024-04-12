@@ -13,14 +13,7 @@ const About = ({ darkMode }) => {
             alt="about-profile"
             className="h-80 hidden md:block "
           />
-          {/* <div className="relative">
-              <div className="bg-[#151C25] dark:bg-[#55E5A4] h-64 w-56 md:h-72 md:w-64 rounded-sm"></div>
-              <img
-                src="/assets/profile.png"
-                className="absolute md:top-4 md:left-4 top-4 left-4 md:h-72 rounded-sm"
-                alt="Your Image"
-              />
-            </div> */}
+        
 
           {/* Text */}
           <div className="">
@@ -34,7 +27,7 @@ const About = ({ darkMode }) => {
               </h3>
             </div>
 
-            <p className="md:w-[85%] text-lg pt-5 text-[#686565] dark:text-[#A9A9A9]">
+            <p className="md:w-[85%]  text-lg pt-5 text-[#686565] dark:text-[#A9A9A9] md:text-start text-center">
               I am currently a master’s student in Applied Geoinformatics at the
               University of Salzburg, Austria. I have a keen interest in
               front-end and GIS development. My goal is to use my expertise in
@@ -43,7 +36,7 @@ const About = ({ darkMode }) => {
               skills to engineer innovative, customizable, and sustainable
               software solutions.
             </p>
-            <h3 className="text-[#000000] font-bold dark:text-[#55E5A4] pt-8 text-md">
+            <h3 className="text-[#000000] font-bold dark:text-[#55E5A4] pt-8 text-md md:text-start text-center">
               Technologies
             </h3>
             <div className="flex pt-5 gap-4 md:gap-6">
