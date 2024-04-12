@@ -3,6 +3,8 @@ import { useState } from "react";
 import Home from "./components/Home/Home";
 import About from "./components/Home/About";
 import Navbar from "./components/Home/Navbar";
+import Form from "./components/Home/Form";
+
 
 function App() {
 
@@ -20,6 +22,7 @@ function App() {
       <Navbar  darkMode={darkMode} setDarkMode={toggleDarkMode} />
       <Home darkMode={darkMode} setDarkMode={toggleDarkMode} />
       <About darkMode={darkMode} setDarkMode={toggleDarkMode} />
+      <Form darkMode={darkMode} setDarkMode={setDarkMode} />
     </>
   );
 }
