@@ -65,13 +65,14 @@ const Navbar = ({ darkMode, setDarkMode }) => {
               >
                 Contact
               </button>
-              <button className="hidden md:block">
+              <button className="mr-10">
                 <img
                   src={darkMode ? lightIcon : darkIcon}
                   alt="theme"
                   onClick={() => {
                     setDarkMode(!darkMode);
                   }}
+                  onTouchEnd={() => setDarkMode(!darkMode)}
                 />
               </button>
             </div>
