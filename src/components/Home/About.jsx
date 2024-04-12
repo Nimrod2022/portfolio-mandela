@@ -34,7 +34,7 @@ const About = ({ darkMode }) => {
               </h3>
             </div>
 
-            <p className="md:w-[85%] pt-5 text-[#686565] dark:text-[#A9A9A9]">
+            <p className="md:w-[85%] text-lg pt-5 text-[#686565] dark:text-[#A9A9A9]">
               I am currently a master’s student in Applied Geoinformatics at the
               University of Salzburg, Austria. I have a keen interest in
               front-end and GIS development. My goal is to use my expertise in
@@ -113,9 +113,10 @@ const About = ({ darkMode }) => {
             <div className="pt-8 pb-20 flex justify-center md:justify-start">
               <button
                 type="button"
-                className="border-2 border-[#26313F] font-bold dark:border-[#55E5A4] text-md font-semibold w-48 rounded-md py-2 px-2 text-[#26313F] dark:text-[#55E5A4]"
+                className="border-2 border-[#26313F] font-bold dark:border-[#55E5A4] text-md  w-48 rounded-md py-2 px-2 text-[#26313F] dark:text-[#55E5A4]"
               >
-                Download Resume
+                <a href="/assets/resume.pdf" download="Nimrod Kibet CV">Download Resume</a>
+                
               </button>
             </div>
           </div>
