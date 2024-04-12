@@ -23,6 +23,12 @@
   
 }
 
+/* Scroll nav bg-color */
+
+.navbar-scroll {
+  background-color: blue; /* Example background color for scroll */
+}
+
 /* Blinking circle */
 
 
@@ -88,6 +94,8 @@
   animation-name: fadeInDown;
   animation-timing-function: ease-out;
 }
+
+
 
 
 .about-line{

@@ -1,4 +1,4 @@
-<hr className="section-border" />;
+import React, { useRef, useEffect } from "react";
 const About = ({ darkMode }) => {
   return (
     <>
