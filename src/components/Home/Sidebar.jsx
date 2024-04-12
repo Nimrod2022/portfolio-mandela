@@ -1,3 +1,4 @@
+import { Link } from "react-scroll";
 import React, { useState } from "react";
 import { slide as Menu } from "react-burger-menu";
 
@@ -95,31 +96,36 @@ const Sidebar = () => {
         <div className="bm-cross-button" onClick={handleMenuToggle}>
           <div className="bm-cross" />
         </div>
-        <a
-          id="about"
+        <Link
+          to="/about"
           className="nav__link font-semibold text-md text-[#55E5A4]"
-          href="/about"
           onClick={handleLinkClick}
+          spy={true}
+          smooth={true}
+          duration={1000}
         >
           About
-        </a>
-        <a
-          id="projects"
+        </Link>
+        <Link
+          to="/projects"
           className="nav__link mt-5 font-semibold text-md text-[#55E5A4]"
-          href="/projects"
           onClick={handleLinkClick}
+          spy={true}
+          smooth={true}
+          duration={1000}
         >
           Projects
-        </a>
-        <a
-          id="contact"
+        </Link>
+        <Link
+          to="/contact"
           className="nav__link font-semibold text-md mt-5"
-          href="/contact"
           onClick={handleLinkClick}
+          spy={true}
+          smooth={true}
+          duration={1000}
         >
           Contact
-        </a>
-       
+        </Link>
       </Menu>
     </>
   );
