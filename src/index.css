@@ -11,6 +11,10 @@
   margin: 0; /* Reset margin to ensure consistent alignment */
 }
 
+.home-padding{
+ padding-top: 160px;
+ padding-left: 208px;
+}
 /* Nav button */
 
 .contact-border {

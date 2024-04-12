@@ -5,7 +5,7 @@ import About from "./components/Home/About";
 import Navbar from "./components/Home/Navbar";
 
 function App() {
-  const [darkMode, setDarkMode] = useState(false);
+  const [darkMode, setDarkMode] = useState(true);
 
   const toggleDarkMode = () => {
     setDarkMode(!darkMode);
