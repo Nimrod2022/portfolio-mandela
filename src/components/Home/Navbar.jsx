@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { Link, animateScroll as scroll } from "react-scroll";
 import React, { useEffect } from "react";
 import Sidebar from "./Sidebar";
 import { useState, useRef } from "react";
@@ -53,15 +53,14 @@ const Navbar = ({ darkMode, setDarkMode }) => {
             </div>
 
             <div className="flex gap-10">
-              <button
-                onClick={() => {
-                  scrollToSection(sectionRefs);
-                }}
-                type="button"
-                className="bg-[#26313F] dark:bg-[#55E5A4] text-[#FFFFFF] dark:text-black text-md font-semibold hidden w-24 md:block rounded-md py-1 px-4 "
-              >
-                About
-              </button>
+              <Link to="/about" smooth={true} duration={1000}>
+                <button
+                  type="button"
+                  className="bg-[#26313F] dark:bg-[#55E5A4] text-[#FFFFFF] dark:text-black text-md font-semibold hidden w-24 md:block rounded-md py-1 px-4 "
+                >
+                  About
+                </button>
+              </Link>
 
               <button
                 type="button"

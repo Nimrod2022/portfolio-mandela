@@ -4,7 +4,7 @@ const About = ({ darkMode }) => {
     <>
       <div className={darkMode ? "dark" : ""}>
         <div
-          id="about"
+          id="/about"
           className="dark:bg-[#151C25] bg-[#F0F0F4] md:h-screen md:gap-20 px-8 md:px-60 satoshi md:flex md:pt-20 pt-10  justify-center "
         >
           {/* Image */}
