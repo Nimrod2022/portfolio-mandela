@@ -24,8 +24,16 @@
 /* Nav button */
 .contact-form-image{
   Width: 430px;
-  Height:500px;
+  
 }
+
+.form-height{
+  height: 500px;
+}
+
+
+
+
 
 .contact-border {
   
