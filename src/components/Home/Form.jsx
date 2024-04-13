@@ -14,10 +14,10 @@ const Form = ({ darkMode }) => {
           <h1 className=" text-[#26313F] dark:text-white text-2xl font-extrabold">
             Get in Touch
           </h1>
-          <div className=" w-full md:flex md:w-auto py-16 md:justify-center items-center md:px-auto px-2 ">
-            <div className="bg-[url('/assets/contact-image.png')] hidden md:block size-72"></div>
-            <div className="grid grid-cols-1 gap-x-16 it gap-y-8 lg:grid-cols-5">
-              <div className="rounded-lg bg-white p-8 shadow-lg lg:col-span-3 lg:p-12">
+          <div className=" rounded:xl md:flex md:w-auto py-16 md:justify-center items-center md:px-auto px-2  ">
+            <div className="bg-[url('/assets/contact-image.png')] hidden md:block contact-form-image"></div>
+            <div className=" it gap-y-8 lg:grid-cols-5">
+              <div className="h-auto rounded-lg md:rounded-none w-auto contact-form-image bg-white p-8 shadow-lg lg:col-span-3 lg:p-12">
                 <form action="#" className="space-y-3 ">
                   <div>
                     <p>I am interested in...</p>
