@@ -1,9 +1,97 @@
 const darkMessageIcon = "/assets/message-icon-dark.svg";
 const lightMessageIcon = "/assets/message-icon-light.svg";
+import { toast } from "react-toastify";
+import { useState } from "react";
 
 // bg-[#F0F0F4]
 
 const Form = ({ darkMode }) => {
+  const [name, setName] = useState("");
+
+  const [email, setEmail] = useState("");
+
+  const [phone, setPhone] = useState("");
+  const [message, setMessage] = useState("");
+
+  const sendEmail = async (e) => {
+    e.preventDefault();
+
+    if (!name || !email || !message || !phone) {
+      toast.error("Email not sent, Please fill in all fields", {
+        position: "top-center",
+        autoClose: 5000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+        theme: "colored",
+      });
+      return;
+    }
+
+    try {
+      const response = await fetch("https://formspree.io/f/mjvqjwgj", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          name,
+
+          email,
+
+          phone,
+          message,
+        }),
+      });
+
+      if (response.ok) {
+        toast.success("Email sent successfully", {
+          position: "top-center",
+          autoClose: 5000,
+          hideProgressBar: false,
+          closeOnClick: true,
+          pauseOnHover: true,
+          draggable: true,
+          progress: undefined,
+          theme: "colored",
+        });
+
+        // Clear form fields after successful submission
+        setName("");
+
+        setEmail("");
+
+        setPhone("");
+        setMessage("");
+      } else {
+        toast.error("Failed to send email", {
+          position: "top-center",
+          autoClose: 5000,
+          hideProgressBar: false,
+          closeOnClick: true,
+          pauseOnHover: true,
+          draggable: true,
+          progress: undefined,
+          theme: "colored",
+        });
+      }
+    } catch (error) {
+      console.error("Error sending email:", error.message);
+      toast.error("Failed to send email", {
+        position: "top-center",
+        autoClose: 5000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+        theme: "colored",
+      });
+    }
+  };
+
   return (
     <>
       <section className={`${darkMode ? "dark" : ""}`}>
@@ -14,7 +102,7 @@ const Form = ({ darkMode }) => {
           <h1 className=" text-[#26313F] dark:text-white text-2xl md:text-3xl font-extrabold">
             Get in Touch
           </h1>
-          <div className="w-full rounded:xl md:flex  md:w-auto py-10 md:justify-c md:px-auto px-2  ">
+          <div className="w-full  md:flex  md:w-auto py-10  md:px-auto px-3 ">
             <div className="bg-[url('/assets/contact-image.png')] hidden md:block form-height contact-form-image">
               <h1 className="text-white  justify-center items-center text-4xl px-20 pt-52">
                 Let’s discuss
@@ -22,11 +110,13 @@ const Form = ({ darkMode }) => {
               <h1 className="text-white pt-3  justify-center items-center text-4xl px-20">
                 something <span className="text-[#55E5A4]">cool </span>
               </h1>
-              <h1 className="text-white pt-3 justify-center items-center text-4xl px-20">together</h1>
+              <h1 className="text-white pt-3 justify-center items-center text-4xl px-20">
+                together
+              </h1>
             </div>
             <div className=" gap-y-8 lg:grid-cols-5">
               <div className=" rounded-lg md:rounded-none form-height  bg-white p-8 shadow-lg lg:col-span-3 lg:p-12">
-                <form action="#" className="space-y-2  ">
+                <form action="#" className="space-y-2 " onSubmit={sendEmail}>
                   <p className="text-lg">I am interested in...</p>
                   <div className="flex justify-between gap-4 md:gap-10 pt-5">
                     <div className="flex-1">
@@ -90,9 +180,12 @@ const Form = ({ darkMode }) => {
                     </label>
                     <input
                       className="w-full rounded-lg border-b border-gray-200 p-3 text-sm "
-                      placeholder="Name"
                       type="text"
                       id="name"
+                      required
+                      value={name}
+                      onChange={(e) => setName(e.target.value)}
+                      placeholder="John Doe"
                     />
                   </div>
 
@@ -103,9 +196,12 @@ const Form = ({ darkMode }) => {
                       </label>
                       <input
                         className="w-full rounded-lg border-b border-gray-200 p-3 text-sm"
-                        placeholder="Email address"
                         type="email"
                         id="email"
+                        required
+                        value={email}
+                        onChange={(e) => setEmail(e.target.value)}
+                        placeholder="johndoe@gmail.com"
                       />
                     </div>
 
@@ -115,9 +211,11 @@ const Form = ({ darkMode }) => {
                       </label>
                       <input
                         className="w-full rounded-lg border-b border-gray-200 p-3 text-sm"
-                        placeholder="Phone Number"
-                        type="tel"
+                        placeholder="+43 600 000 000"
+                        type="text"
                         id="phone"
+                        value={phone}
+                        onChange={(e) => setPhone(e.target.value)}
                       />
                     </div>
                   </div>
@@ -132,6 +230,9 @@ const Form = ({ darkMode }) => {
                       placeholder="Message"
                       rows="4"
                       id="message"
+                      required
+                      value={message}
+                      onChange={(e) => setMessage(e.target.value)}
                     ></textarea>
                   </div>
 
