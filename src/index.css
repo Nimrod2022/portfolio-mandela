@@ -15,6 +15,12 @@
  padding-top: 160px;
  padding-left: 208px;
 }
+
+.dark-mode-button {
+  position: relative; /* Ensure position is set */
+  z-index: 9999; /* Set a high z-index value */
+}
+
 /* Nav button */
 
 .contact-border {

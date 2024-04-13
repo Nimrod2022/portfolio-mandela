@@ -65,7 +65,7 @@ const Navbar = ({ darkMode, setDarkMode }) => {
               >
                 Contact
               </button>
-              <button className="hidden md:block">
+              <button className="mr-12 dark-mode-button size-6 md:size-auto pt-5 md:pt-0">
                 <img
                   src={darkMode ? lightIcon : darkIcon}
                   alt="theme"

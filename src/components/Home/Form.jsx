@@ -5,11 +5,11 @@ const Form = ({ darkMode }) => {
   return (
     <>
       <section className={darkMode ? "dark" : ""}>
-        <div className="satoshi  bg-[#F0F0F4] dark:bg-[#151C25] flex flex-col justify-center items-center">
+        <div className="satoshi  bg-[#F0F0F4] dark:bg-[#151C25] flex flex-col justify-center items-center relative z-10">
             <h1 className=" text-[#26313F] dark:text-white text-2xl font-extrabold pt-20">Get in Touch</h1>
         <div className=" py-16 flex gap-x-10 ">
             
-            <div className="bg-[url('/assets/contact-image.png')] size-72"></div>
+            <div className="bg-[url('/assets/contact-image.png')] hidden md:block size-72"></div>
             <div className="grid grid-cols-1 gap-x-16 it gap-y-8 lg:grid-cols-5">
               <div className="rounded-lg bg-white p-8 shadow-lg lg:col-span-3 lg:p-12">
                 <form action="#" className="space-y-3">
@@ -30,8 +30,8 @@ const Form = ({ darkMode }) => {
                             name="option"
                           />
                           <p className="text-md font-extrabold text-center">
-                            {" "}
-                            Frontend{" "}
+                         
+                            Frontend
                           </p>
                         </label>
                       </div>

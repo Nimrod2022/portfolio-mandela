@@ -36,7 +36,7 @@ const About = ({ darkMode }) => {
               skills to engineer innovative, customizable, and sustainable
               software solutions.
             </p>
-            <h3 className="text-[#000000] font-bold dark:text-[#55E5A4] pt-8 text-md md:text-start text-center">
+            <h3 className="text-[#000000] font-extrabold dark:text-[#55E5A4] pt-8 text-xl md:text-start text-center">
               Technologies
             </h3>
             <div className="flex pt-5 gap-4 md:gap-6">

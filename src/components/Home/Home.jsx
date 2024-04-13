@@ -6,9 +6,9 @@ const Home = ({ darkMode }) => {
   return (
     <>
       <div id="/#" className={darkMode ? "dark" : ""}>
-        <div className="dark:bg-[#151C25] bg-[#F0F0F4] md:h-screen satoshi pb-10">
+        <div className="dark:bg-[#151C25] bg-[#F0F0F4] sm:h-auto md:h-screen satoshi pb-10">
           {/* <Navbar /> */}
-          <div className="px-8 md:px-48 pt-10 md:pt-40 text-white md:flex md:gap-5 md:justify-center ">
+          <div className="px-8 pt-10 md:pt-40 text-white md:flex md:gap-5 md:justify-center ">
             <div className="items-center md:w-[45%]">
               <p className="text-xl text-[#26313F] dark:text-white md:text-start text-center ">
                 Nimrod Kibet
