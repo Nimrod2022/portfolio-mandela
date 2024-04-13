@@ -7,16 +7,15 @@ import { useState } from "react";
 
 const Form = ({ darkMode }) => {
   const [name, setName] = useState("");
-
-  const [email, setEmail] = useState("");
-
+const [email, setEmail] = useState("");
   const [phone, setPhone] = useState("");
   const [message, setMessage] = useState("");
+  const [interest, setInterest] = useState("");
 
   const sendEmail = async (e) => {
     e.preventDefault();
 
-    if (!name || !email || !message || !phone) {
+    if (!name || !email || !message || !phone || !interest) {
       toast.error("Email not sent, Please fill in all fields", {
         position: "top-center",
         autoClose: 5000,
@@ -38,11 +37,10 @@ const Form = ({ darkMode }) => {
         },
         body: JSON.stringify({
           name,
-
           email,
-
           phone,
           message,
+          interest,
         }),
       });
 
@@ -60,11 +58,10 @@ const Form = ({ darkMode }) => {
 
         // Clear form fields after successful submission
         setName("");
-
         setEmail("");
-
         setPhone("");
         setMessage("");
+        setInterest("")
       } else {
         toast.error("Failed to send email", {
           position: "top-center",
@@ -131,6 +128,8 @@ const Form = ({ darkMode }) => {
                           type="radio"
                           tabIndex="-1"
                           name="option"
+                          value="Frontend"
+                          onChange={(e) => setInterest(e.target.value)}
                         />
                         <p className="text-md font-extrabold text-center">
                           Frontend
@@ -149,6 +148,8 @@ const Form = ({ darkMode }) => {
                           type="radio"
                           tabIndex="-1"
                           name="option"
+                          value="Geoinformatics"
+                          onChange={(e) => setInterest(e.target.value)}
                         />
                         <p className="text-md text-center "> Geoinformatics </p>
                       </label>
