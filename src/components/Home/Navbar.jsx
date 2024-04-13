@@ -26,7 +26,7 @@ const Navbar = ({ darkMode, setDarkMode }) => {
 
   return (
     <div className={darkMode ? "dark" : ""}>
-      <header className={scrolled ? "stickynav fixed top-0 w-full z-50" : ""}>
+      <header className={scrolled ? "stickynav fixed top-0 w-full " : ""}>
         <div className="md:pt-5 relative dark:bg-[#151C25] bg-[#F0F0F4] satoshi">
           <nav className="flex justify-between md:items-center text-lg text-white px-8 md:px-36 py-4 md:py-4">
             <Link to="/#" smooth={true} duration={700}>
