@@ -5,7 +5,7 @@ const About = ({ darkMode }) => {
   return (
     <>
       <div id="/about" className={darkMode ? "dark" : ""}>
-        <div className="dark:bg-[#151C25] bg-[#F0F0F4] md:h-screen md:gap-16 px-8 md:px-60 satoshi md:flex md:pt-40 pt-10  justify-center ">
+        <div className="dark:bg-[#151C25] bg-[#F0F0F4]  md:gap-16 px-8 md:px-60 satoshi md:flex md:pt-40 pt-10  justify-center ">
           {/* Image */}
 
           <img
@@ -13,7 +13,6 @@ const About = ({ darkMode }) => {
             alt="about-profile"
             className="h-80 hidden md:block "
           />
-        
 
           {/* Text */}
           <div className="">
@@ -39,7 +38,7 @@ const About = ({ darkMode }) => {
             <h3 className="text-[#000000] font-extrabold dark:text-[#55E5A4] pt-8 text-xl md:text-start text-center">
               Technologies
             </h3>
-            <div className="flex pt-5 gap-4 md:gap-6">
+            <div className="flex pt-5 gap-4  md:gap-6">
               <div>
                 <img
                   src="/assets/react.svg"
@@ -108,8 +107,9 @@ const About = ({ darkMode }) => {
                 type="button"
                 className="border-2 border-[#26313F] font-bold dark:border-[#55E5A4] text-md  w-48 rounded-md py-2 px-2 text-[#26313F] dark:text-[#55E5A4]"
               >
-                <a href="/assets/resume.pdf" download="Nimrod Kibet CV">Download Resume</a>
-                
+                <a href="/assets/resume.pdf" download="Nimrod Kibet CV">
+                  Download Resume
+                </a>
               </button>
             </div>
           </div>

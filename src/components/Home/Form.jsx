@@ -1,21 +1,27 @@
 const darkMessageIcon = "/assets/message-icon-dark.svg";
 const lightMessageIcon = "/assets/message-icon-light.svg";
 
+// bg-[#F0F0F4]
+
 const Form = ({ darkMode }) => {
   return (
     <>
-      <section className={darkMode ? "dark" : ""}>
-        <div className="satoshi  bg-[#F0F0F4] dark:bg-[#151C25] flex flex-col justify-center items-center relative z-10">
-            <h1 className=" text-[#26313F] dark:text-white text-2xl font-extrabold pt-20">Get in Touch</h1>
-        <div className=" py-16 flex gap-x-10 ">
-            
+      <section className={`${darkMode ? "dark" : ""}`}>
+        <div
+          id="/contact"
+          className="satoshi bg-[#F0F0F4] dark:bg-[#151C25] flex flex-col justify-center items-center relative z-10 pt-10 md:pt-20"
+        >
+          <h1 className=" text-[#26313F] dark:text-white text-2xl font-extrabold">
+            Get in Touch
+          </h1>
+          <div className=" w-full md:flex md:w-auto py-16 md:justify-center items-center md:px-auto px-2 ">
             <div className="bg-[url('/assets/contact-image.png')] hidden md:block size-72"></div>
             <div className="grid grid-cols-1 gap-x-16 it gap-y-8 lg:grid-cols-5">
               <div className="rounded-lg bg-white p-8 shadow-lg lg:col-span-3 lg:p-12">
-                <form action="#" className="space-y-3">
+                <form action="#" className="space-y-3 ">
                   <div>
                     <p>I am interested in...</p>
-                    <div className="flex justify-between gap-10 pt-5">
+                    <div className="flex justify-between gap-4 md:gap-10 pt-5">
                       <div className="flex-1">
                         <label
                           htmlFor="Frontend"
@@ -30,12 +36,11 @@ const Form = ({ darkMode }) => {
                             name="option"
                           />
                           <p className="text-md font-extrabold text-center">
-                         
                             Frontend
                           </p>
                         </label>
                       </div>
-  
+
                       <div className="flex-1">
                         <label
                           htmlFor="geoinformatics"
@@ -48,11 +53,14 @@ const Form = ({ darkMode }) => {
                             tabIndex="-1"
                             name="option"
                           />
-                          <p className="text-md text-center "> Geoinformatics </p>
+                          <p className="text-md text-center ">
+                            {" "}
+                            Geoinformatics{" "}
+                          </p>
                         </label>
                       </div>
                     </div>
-  
+
                     <div className="flex-1 pt-5">
                       <label
                         htmlFor="other"
@@ -70,9 +78,9 @@ const Form = ({ darkMode }) => {
                       </label>
                     </div>
                   </div>
-  
+
                   <div />
-  
+
                   <div>
                     <label className="sr-only" htmlFor="name">
                       Name
@@ -84,7 +92,7 @@ const Form = ({ darkMode }) => {
                       id="name"
                     />
                   </div>
-  
+
                   <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
                     <div>
                       <label className="sr-only" htmlFor="email">
@@ -97,7 +105,7 @@ const Form = ({ darkMode }) => {
                         id="email"
                       />
                     </div>
-  
+
                     <div>
                       <label className="sr-only" htmlFor="phone">
                         Phone
@@ -110,12 +118,12 @@ const Form = ({ darkMode }) => {
                       />
                     </div>
                   </div>
-  
+
                   <div>
                     <label className="sr-only" htmlFor="message">
                       Message
                     </label>
-  
+
                     <textarea
                       className="w-full rounded-lg border-b border-gray-200 p-3 text-sm"
                       placeholder="Message"
@@ -123,7 +131,7 @@ const Form = ({ darkMode }) => {
                       id="message"
                     ></textarea>
                   </div>
-  
+
                   <div className="mt-4 flex flex-col items-center justify-center ">
                     <button
                       type="submit"

@@ -59,12 +59,16 @@ const Navbar = ({ darkMode, setDarkMode }) => {
                 Projects
               </button>
 
-              <button
+             <Link to="/contact" smooth={true} duration={700}>
+
+             <button
                 type="button"
                 className="border border-[#26313F] dark:border-[white] text-[#26313F] dark:text-white text-md font-semibold w-24 hidden md:block rounded-md py-1 px-4 "
               >
                 Contact
               </button>
+             
+             </Link>
               <button className="mr-12 dark-mode-button size-6 md:size-auto pt-5 md:pt-0">
                 <img
                   src={darkMode ? lightIcon : darkIcon}
