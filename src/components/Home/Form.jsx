@@ -102,8 +102,8 @@ const Form = ({ darkMode }) => {
           <h1 className=" text-[#26313F] dark:text-white text-2xl md:text-3xl font-extrabold">
             Get in Touch
           </h1>
-          <div className="w-full  md:flex  md:w-auto py-10  md:px-auto px-3 ">
-            <div className="bg-[url('/assets/contact-image.png')] hidden md:block form-height contact-form-image">
+          <div className="w-full md:flex  md:w-auto my-10  md:px-auto px-3 ">
+            <div className="bg-[url('/assets/contact-image.png')] hidden md:block form-height  contact-form-image">
               <h1 className="text-white  justify-center items-center text-4xl px-20 pt-52">
                 Let’s discuss
               </h1>

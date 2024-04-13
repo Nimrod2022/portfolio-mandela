@@ -5,21 +5,16 @@ import About from "./components/Home/About";
 import Navbar from "./components/Home/Navbar";
 import Form from "./components/Home/Form";
 
-
 function App() {
-
   const [darkMode, setDarkMode] = useState(true);
 
   const toggleDarkMode = () => {
     setDarkMode(!darkMode);
   };
 
-  
-
-
   return (
     <>
-      <Navbar  darkMode={darkMode} setDarkMode={toggleDarkMode} />
+      <Navbar darkMode={darkMode} setDarkMode={toggleDarkMode} />
       <Home darkMode={darkMode} setDarkMode={toggleDarkMode} />
       <About darkMode={darkMode} setDarkMode={toggleDarkMode} />
       <Form darkMode={darkMode} setDarkMode={setDarkMode} />
