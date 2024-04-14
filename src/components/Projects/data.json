@@ -1,0 +1,36 @@
+ [
+    {
+      "title": "Onori-B",
+      "category": "frontend",
+      "image": "/assets/onori.png",
+      "description": "Working closely with the ONORI-B team, I collaborated to ensure that the website not only met but exceeded their expectations. ",
+      "technologies": ["/assets/tailwind.svg","/assets/python.svg"]
+    },
+    {
+      "title": "Pyraus",
+      "category": "frontend",
+      "image": "/assets/pyraus.png",
+      "description": "Working closely with the ONORI-B team, I collaborated to ensure that the website not only met but exceeded their expectations. ",
+      "technologies": ["/assets/tailwind.svg","/assets/python.svg"]
+    },
+
+    {
+        "title": "Pyraus",
+        "category": "geoinformatics",
+        "image": "/assets/pyraus.png",
+        "description": "Working closely with the ONORI-B team, I collaborated to ensure that the website not only met but exceeded their expectations. ",
+        "technologies": ["/assets/tailwind.svg", "/assets/python.svg"]
+      },
+
+      {
+        "title": "Onori-B",
+        "category": "frontend",
+        "image": "/assets/onori.png",
+        "description": "Working closely with the ONORI-B team, I collaborated to ensure that the website not only met but exceeded their expectations. ",
+        "technologies": ["/assets/tailwind.svg","/assets/python.svg"]
+      }
+
+
+   
+  ]
+  

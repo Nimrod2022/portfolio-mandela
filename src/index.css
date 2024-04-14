@@ -31,6 +31,91 @@
   height: 500px;
 }
 
+/* Projects styling */
+
+.image{
+  Width:563px;
+  Height:255px;
+  border-radius:15px, 15px, 0px, 0px;
+}
+
+.project-text-container{
+  width: Hug (485px)px;
+height: Hug (349px)px;
+gap: 25px;
+opacity: 0px;
+
+}
+
+.project-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 56.7px;
+  width: 315px;
+  height: 57px;
+  gap: 0px; /* Not sure what you're trying to achieve with gap here */
+  opacity: 1; /* Adjust opacity value as needed */
+}
+
+.project-description{
+  
+font-size: 22px;
+font-weight: 500;
+line-height: 29.7px;
+text-align: left;
+width: 485px;
+height: 110px;
+
+opacity: 0px;
+
+
+
+}
+
+.project-tech{
+
+font-size: 22px;
+font-weight: 700;
+line-height: 29.7px;
+text-align: left;
+
+}
+
+.project-icons{
+width: Hug (138px)px;
+height: Hug (24px)px;
+gap: 25px;
+opacity: 0px;
+
+}
+
+.live-demo-dark{
+
+opacity: 0px;
+background-color: #55E5A4;
+
+
+}
+
+.visit-site{
+
+border: 1px 0px 0px 0px;
+opacity: 0px;
+
+}
+
+.live-demo-light{
+
+opacity: 0px;
+background-color:#FFFFFF;
+
+}
+
+
+
+
+
+
 
 
 
