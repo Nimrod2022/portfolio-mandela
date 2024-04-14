@@ -58,12 +58,14 @@ const Navbar = ({ darkMode, setDarkMode }) => {
                 </button>
               </Link>
 
-              <button
-                type="button"
-                className="bg-[#26313F] dark:bg-[#55E5A4] text-[#FFFFFF] dark:text-black  text-md font-semibold w-24 hidden md:block rounded-md py-1 px-4 "
-              >
-                Projects
-              </button>
+              <Link to="/projects" smooth={true} duration={700}>
+                <button
+                  type="button"
+                  className="bg-[#26313F] dark:bg-[#55E5A4] text-[#FFFFFF] dark:text-black  text-md font-semibold w-24 hidden md:block rounded-md py-1 px-4 "
+                >
+                  Projects
+                </button>
+              </Link>
 
               <Link to="/contact" smooth={true} duration={700}>
                 <button

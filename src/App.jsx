@@ -19,40 +19,13 @@ function App() {
       <Navbar darkMode={darkMode} setDarkMode={toggleDarkMode} />
       <Home darkMode={darkMode} setDarkMode={toggleDarkMode} />
       <About darkMode={darkMode} setDarkMode={toggleDarkMode} />
-      <Contact darkMode={darkMode} setDarkMode={setDarkMode} />
-      <Projects darkMode={darkMode} setDarkMode={setDarkMode} />
-      <Footer darkMode={darkMode} setDarkMode={setDarkMode} />
 
+      <Projects darkMode={darkMode} setDarkMode={setDarkMode} />
+      <Contact darkMode={darkMode} setDarkMode={setDarkMode} />
+      <Footer darkMode={darkMode} setDarkMode={setDarkMode} />
     </>
   );
 }
 
 export default App;
 
-{
-  /* <Router>
-      <Navbar darkMode={darkMode} setDarkMode={toggleDarkMode} />
-      <Routes>
-        <Route
-          exact
-          path="/"
-          element={<Home darkMode={darkMode} setDarkMode={toggleDarkMode} />}
-        />
-        <Route
-          exact
-          path="/resume"
-          element={<Resume darkMode={darkMode} setDarkMode={toggleDarkMode} />}
-        />
-        <Route
-          exact
-          path="/projects"
-          element={<Projects darkMode={darkMode} setDarkMode={toggleDarkMode} />}
-        />
-        <Route
-          exact
-          path="/contact"
-          element={<Contact darkMode={darkMode} setDarkMode={toggleDarkMode} />}
-        />
-      </Routes>
-    </Router> */
-}

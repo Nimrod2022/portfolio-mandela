@@ -17,9 +17,9 @@ const Projects = ({ darkMode }) => {
   };
 
   return (
-    <section className={darkMode ? "dark" : ""}>
+    <section  className={darkMode ? "dark" : ""}>
       <div className="satoshi dark:bg-[#151C25] bg-[#F0F0F4]">
-        <h1 className="text-center text-[#151C25] dark:text-white text-4xl">Projects</h1>
+        <h1 id="/projects" className="text-center text-[#151C25] dark:text-white text-4xl">Projects</h1>
         <div className="flex md:text-xl gap-x-5 justify-center mt-16 mb-8">
           {/* Filter buttons */}
           <button
@@ -42,7 +42,7 @@ const Projects = ({ darkMode }) => {
           </button>
         </div>
         <div
-          id="/projects"
+          
           className="satoshi flex gap-10 flex-wrap md:py-20 justify-center dark:bg-[#151C25] bg-[#F0F0F4] pt-20"
         >
           {/* Render filtered projects */}
