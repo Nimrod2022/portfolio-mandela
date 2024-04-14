@@ -26,7 +26,7 @@ const About = ({ darkMode }) => {
               </h3>
             </div>
 
-            <p className="md:w-[85%]  text-lg pt-5 text-[#686565] dark:text-[#A9A9A9] md:text-start text-center">
+            <p className="md:w-[95%]  text-lg pt-5 text-[#686565] dark:text-[#A9A9A9] md:text-start text-center">
               I am currently a master’s student in Applied Geoinformatics at the
               University of Salzburg, Austria. I have a keen interest in
               front-end and GIS development. My goal is to use my expertise in
