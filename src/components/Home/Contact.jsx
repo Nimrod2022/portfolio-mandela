@@ -3,8 +3,6 @@ const lightMessageIcon = "/assets/message-icon-light.svg";
 import { toast } from "react-toastify";
 import { useState } from "react";
 
-
-
 // bg-[#F0F0F4]
 
 const Contact = ({ darkMode }) => {
@@ -96,7 +94,7 @@ const Contact = ({ darkMode }) => {
       <section className={`${darkMode ? "dark" : ""}`}>
         <div
           id="/contact"
-          className="satoshi bg-[#F0F0F4] dark:bg-[#151C25] h-screen flex flex-col justify-center items-center relative z-10 pt-10 md:pt-10"
+          className="satoshi bg-[#F0F0F4] dark:bg-[#151C25]  h-screen flex flex-col justify-center items-center relative pt-10 md:pt-10"
         >
           <h1 className=" text-[#26313F] dark:text-white text-2xl md:text-3xl font-extrabold">
             Get in Touch
@@ -107,19 +105,13 @@ const Contact = ({ darkMode }) => {
                 Let’s discuss
               </h1>
               <h1 className="text-white pt-3  justify-center items-center text-4xl px-20">
-                something <span className="text-[#55E5A4]">cool </span>
+                something <span className={darkMode ? "text-[#55E5A4]": "text-[#5598EE]" }>cool </span> 
+
               </h1>
               <h1 className="text-white pt-3 justify-center items-center text-4xl px-20">
                 together
               </h1>
-
-              
-
-
             </div>
-
-
-
 
             <div className="gap-y-8 lg:grid-cols-5">
               <div className=" rounded-lg md:rounded-none form-height  bg-white p-8 shadow-lg lg:col-span-3 lg:p-12">
