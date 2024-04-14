@@ -2,8 +2,8 @@ import React from "react";
 
 const ProjectsDiv = ({ darkMode, title, description, image, technologies }) => {
   return (
-    <div className="h-[630px] w-[565px] rounded-3xl md:my-5 overflow-hidden">
-      <img src={image} alt={title} className=" image" />
+    <div className=" h-[630px] w-[565px] rounded-3xl md:my-5 overflow-hidden">
+      <img src={image} alt={title} className="image" />
       <div className="bg-[#26313F] text-center items-center h-full  ">
         <div className="flex flex-col justify-center items-center">
           <h1 className="project-title text-white ">{title}</h1>

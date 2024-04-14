@@ -32,12 +32,45 @@
 }
 
 /* Projects styling */
+/* Projects styling */
+/* Projects styling */
+.filter-btn {
+  border: 1px solid #55e5a4;
+  background-color: transparent;
+  color: white;
+  padding: 8px 16px;
+}
+
+.filter-btn-light {
+  border: 1px solid #26313f;
+  background-color: transparent;
+  color: black;
+  padding: 8px 16px;
+}
+
+.filter-btn.active,
+.dark .filter-btn-light.active {
+  border: none;
+  background-color: #55e5a4;
+  color: black;
+}
+
+.filter-btn-light.active,
+.dark .filter-btn.active {
+  border: none;
+  background-color: #26313f;
+  color: white;
+}
+
+
 
 .image{
-  Width:563px;
+  Width:565px;
   Height:255px;
   border-radius:15px, 15px, 0px, 0px;
 }
+
+
 
 .project-text-container{
   width: Hug (485px)px;
