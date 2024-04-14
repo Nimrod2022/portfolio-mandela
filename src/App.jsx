@@ -4,6 +4,7 @@ import Home from "./components/Home/Home";
 import About from "./components/Home/About";
 import Navbar from "./components/Home/Navbar";
 import Contact from "./components/Home/Contact";
+import Footer from "./components/Home/Footer";
 
 function App() {
   const [darkMode, setDarkMode] = useState(true);
@@ -18,6 +19,7 @@ function App() {
       <Home darkMode={darkMode} setDarkMode={toggleDarkMode} />
       <About darkMode={darkMode} setDarkMode={toggleDarkMode} />
       <Contact darkMode={darkMode} setDarkMode={setDarkMode} />
+      <Footer darkMode={darkMode} setDarkMode={setDarkMode} />
 
     </>
   );
