@@ -2,14 +2,11 @@ const darkHomeProfile = "/assets/home-profile-dark.png";
 
 const lightHomeProfile = "/assets/home-profile-light.png";
 
-
-
 const Home = ({ darkMode }) => {
   return (
     <>
       <div id="/#" className={darkMode ? "dark" : ""}>
-        <div className="dark:bg-[#151C25] bg-[#F0F0F4]  h-screen satoshi pb-10 flex flex-col justify-center">
-        
+        <div className="dark:bg-[#151C25] bg-[#F0F0F4]  h-screen satoshi pt-32 md:pt-0 pb-10 flex flex-col justify-center">
           <div className="px-8   text-white md:flex md:gap-5 md:justify-center ">
             <div className="items-center   md:w-[40%] ">
               <p className="text-2xl text-[#26313F] dark:text-white md:text-start text-center ">
