@@ -21,7 +21,8 @@ const Navbar = ({ darkMode, setDarkMode }) => {
 
     const handleScroll = () => {
       setScrolled(window.scrollY > 10);
-      if (window.scrollY > 10) setBgColor(darkMode ? "red" : "blue");
+      if (window.scrollY > 10) setBgColor(darkMode ? "#26313F" : "#d6d7dc");
+      else setBgColor(darkMode ? "#151C25" : "#F0F0F4")
     };
     window.addEventListener("scroll", handleScroll);
 
@@ -31,17 +32,6 @@ const Navbar = ({ darkMode, setDarkMode }) => {
   }, [darkMode]);
 
 
-  // useEffect(() => {
-  //   const handleScroll = () => {
-      
-  //     setScrolled(window.scrollY > 10);
-  //   };
-  //   window.addEventListener("scroll", handleScroll);
-
-  //   return () => {
-  //     window.removeEventListener("scroll", handleScroll);
-  //   };
-  // }, []);
 
 
   
@@ -49,7 +39,7 @@ const Navbar = ({ darkMode, setDarkMode }) => {
   return (
     <div className={darkMode ? "dark" : ""}>
       <header className={`${scrolled ? "stickynav" : ""}`}>
-      <div className="md:py-5 relative" style={{ backgroundColor: bgColor }}>
+      <div className="md:py-3 relative" style={{ backgroundColor: bgColor }}>
           <nav className="flex justify-between md:items-center satoshi text-lg text-white px-8 md:px-36 py-4 md:py-4">
             <Link to="/#" smooth={true} duration={700}>
               <img
