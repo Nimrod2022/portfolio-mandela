@@ -116,6 +116,8 @@ height: 480px;
 .stickynav {
   position: fixed;
   top: 0;
+  width: full;
+  z-index: 50;
   width: 100%;
   animation-duration: 0.7s;
   animation-name: fadeInDown;
