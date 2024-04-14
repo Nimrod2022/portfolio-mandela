@@ -2,21 +2,23 @@ const darkHomeProfile = "/assets/home-profile-dark.png";
 
 const lightHomeProfile = "/assets/home-profile-light.png";
 
+
+
 const Home = ({ darkMode }) => {
   return (
     <>
       <div id="/#" className={darkMode ? "dark" : ""}>
-        <div className="dark:bg-[#151C25] bg-[#F0F0F4] sm:h-auto md:h-screen satoshi pb-10">
-          {/* <Navbar /> */}
-          <div className="px-8 pt-10 md:pt-40 text-white md:flex md:gap-5 md:justify-center ">
-            <div className="items-center md:w-[45%]">
-              <p className="text-xl text-[#26313F] dark:text-white md:text-start text-center ">
+        <div className="dark:bg-[#151C25] bg-[#F0F0F4]  h-screen satoshi pb-10 flex flex-col justify-center">
+        
+          <div className="px-8   text-white md:flex md:gap-5 md:justify-center ">
+            <div className="items-center   md:w-[40%] ">
+              <p className="text-2xl text-[#26313F] dark:text-white md:text-start text-center ">
                 Nimrod Kibet
               </p>
-              <h1 className="  text-[#55E5A4] pt-2 font-extrabold text-2xl md:text-2xl md:text-start text-center">
+              <h1 className="  text-[#55E5A4] pt-2 font-extrabold text-2xl md:text-3xl md:text-start text-center">
                 Frontend & GIS Developer
               </h1>
-              <p className="md:w-[100%] text-lg  text-[#686565] dark:text-[#A9A9A9] pt-3 md:text-start text-center ">
+              <p className="  text-lg text-[#686565] dark:text-[#A9A9A9] pt-3 md:text-start text-center ">
                 I specialize in crafting immersive user experiences using the
                 latest frontend technologies and frameworks to bring your vision
                 to life. Additionally, my expertise extends to geoinformatics,
@@ -44,7 +46,7 @@ const Home = ({ darkMode }) => {
               <img
                 src={darkMode ? darkHomeProfile : lightHomeProfile}
                 alt="home-profile"
-                className="h-64"
+                className="h-64 md:h-72"
               />
             </div>
           </div>
