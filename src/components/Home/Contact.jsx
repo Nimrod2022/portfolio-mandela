@@ -115,7 +115,7 @@ const Contact = ({ darkMode }) => {
 
             <div className="gap-y-8 lg:grid-cols-5">
               <div className=" rounded-lg md:rounded-none form-height  bg-white p-8 shadow-lg lg:col-span-3 lg:p-12">
-                <form action="#" className="space-y-2 " onSubmit={sendEmail}>
+                <form action="#" className="space-y-2 z-50 " onSubmit={sendEmail}>
                   <p className="text-lg">I am interested in...</p>
                   <div className="flex justify-between gap-4 md:gap-10 pt-5">
                     <div className="flex-1">

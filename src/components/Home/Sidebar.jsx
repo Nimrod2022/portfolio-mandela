@@ -84,7 +84,7 @@ const Sidebar = ({darkMode}) => {
           },
           bmMenu: {
             background: "rgba(0, 0, 0, 0.7)",
-            padding: "2.5em 1.5em 0",
+            // padding: "2.5em 1.5em 0",
             fontSize: "1.15em",
             textAlign: "center",
             width: "100vw",

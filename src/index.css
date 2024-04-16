@@ -31,9 +31,12 @@
   height: 500px;
 }
 
+.project-border{
+  border-width: 1.5px;
+}
 /* Projects styling */
 
-.filter-btn {
+/* .filter-btn {
   border: 1px solid #55e5a4;
   background-color: transparent;
   color: white;
@@ -59,7 +62,7 @@
   border: none;
   background-color: #26313f;
   color: white;
-}
+} */
 
 
 

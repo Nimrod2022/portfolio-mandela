@@ -44,7 +44,7 @@ const Navbar = ({ darkMode, setDarkMode }) => {
             </Link>
 
             {/* Sidebar to cover entire screen */}
-            <div className="block md:hidden fixed inset-0 z-50 items-center">
+            <div className="block md:hidden w-full z-50 items-center">
               <Sidebar darkMode={darkMode} />
             </div>
 
