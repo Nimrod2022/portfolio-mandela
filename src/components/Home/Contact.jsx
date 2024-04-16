@@ -1,7 +1,7 @@
 const darkMessageIcon = "/assets/message-icon-dark.svg";
 const lightMessageIcon = "/assets/message-icon-light.svg";
 import { toast } from "react-toastify";
-import { useState } from "react";
+import { useState, useRef, useEffect } from "react";
 
 // bg-[#F0F0F4]
 
@@ -11,6 +11,20 @@ const Contact = ({ darkMode }) => {
   const [phone, setPhone] = useState("");
   const [message, setMessage] = useState("");
   const [interest, setInterest] = useState("");
+
+  const frontendRadioButtonRef = useRef(null);
+
+  useEffect(() => {
+    setInterest("Frontend");
+
+    // trigger the change event for the "Frontend" radio button
+    if (frontendRadioButtonRef.current) {
+      frontendRadioButtonRef.current.checked = true;
+      frontendRadioButtonRef.current.dispatchEvent(
+        new Event("change", { bubbles: true })
+      );
+    }
+  }, []);
 
   const sendEmail = async (e) => {
     e.preventDefault();
@@ -105,8 +119,12 @@ const Contact = ({ darkMode }) => {
                 Let’s discuss
               </h1>
               <h1 className="text-white pt-3  justify-center items-center text-4xl px-20">
-                something <span className={darkMode ? "text-[#55E5A4]": "text-[#5598EE]" }>cool </span> 
-
+                something{" "}
+                <span
+                  className={darkMode ? "text-[#55E5A4]" : "text-[#5598EE]"}
+                >
+                  cool{" "}
+                </span>
               </h1>
               <h1 className="text-white pt-3 justify-center items-center text-4xl px-20">
                 together
@@ -115,8 +133,12 @@ const Contact = ({ darkMode }) => {
 
             <div className="gap-y-8 lg:grid-cols-5">
               <div className=" rounded-lg md:rounded-none form-height  bg-white p-8 shadow-lg lg:col-span-3 lg:p-12">
-                <form action="#" className="space-y-2 z-50 " onSubmit={sendEmail}>
-                  <p className="text-lg">I am interested in...</p>
+                <p className="text-lg">I am interested in...</p>
+                <form
+                  action="#"
+                  className="space-y-4 z-50 "
+                  onSubmit={sendEmail}
+                >
                   <div className="flex justify-between gap-4 md:gap-10 pt-5">
                     <div className="flex-1">
                       <label
@@ -131,6 +153,7 @@ const Contact = ({ darkMode }) => {
                           tabIndex="-1"
                           name="option"
                           value="Frontend"
+                          ref={frontendRadioButtonRef}
                           onChange={(e) => setInterest(e.target.value)}
                         />
                         <p className="text-md font-extrabold text-center">
@@ -158,7 +181,7 @@ const Contact = ({ darkMode }) => {
                     </div>
                   </div>
 
-                  <div className="hidden  flex-1 pt-5">
+                  {/* <div className="hidden  flex-1 pt-5">
                     <label
                       htmlFor="other"
                       className="block cursor-pointer rounded-lg border border-gray-200 p-2 w-16 text-[#B4A7BC] hover:border-gray-400 has-[:checked]:border-none has-[:checked]:bg-[#26313F]  dark:has-[:checked]:bg-[#55E5A4] has-[:checked]:text-white dark:has-[:checked]:text-[#000000]"
@@ -173,7 +196,7 @@ const Contact = ({ darkMode }) => {
                       />
                       <p className="text-md "> Other </p>
                     </label>
-                  </div>
+                  </div> */}
 
                   <div />
 
@@ -182,7 +205,7 @@ const Contact = ({ darkMode }) => {
                       Name
                     </label>
                     <input
-                      className="w-full rounded-lg border-b border-gray-200 p-3 text-sm "
+                      className="w-full rounded-lg border border-gray-200 p-3 text-sm focus:outline-none dark:focus:border-[#55E5A4] focus:border-[#26313F]"
                       type="text"
                       id="name"
                       required
@@ -198,7 +221,7 @@ const Contact = ({ darkMode }) => {
                         Email
                       </label>
                       <input
-                        className="w-full rounded-lg border-b border-gray-200 p-3 text-sm"
+                        className="w-full rounded-lg border border-gray-200 p-3 text-sm focus:outline-none dark:focus:border-[#55E5A4] focus:border-[#26313F]"
                         type="email"
                         id="email"
                         required
@@ -213,7 +236,7 @@ const Contact = ({ darkMode }) => {
                         Phone
                       </label>
                       <input
-                        className="w-full rounded-lg border-b border-gray-200 p-3 text-sm"
+                        className="w-full rounded-lg border border-gray-200 p-3 text-sm focus:outline-none dark:focus:border-[#55E5A4] focus:border-[#26313F]"
                         placeholder="+43 600 000 000"
                         type="text"
                         id="phone"
@@ -224,12 +247,12 @@ const Contact = ({ darkMode }) => {
                   </div>
 
                   <div>
-                    <label className="sr-only" htmlFor="message">
+                    <label className="sr-only " htmlFor="message">
                       Message
                     </label>
 
                     <textarea
-                      className="w-full rounded-lg border-b border-gray-200 p-3 text-sm"
+                      className="w-full rounded-lg border border-gray-200 p-3 text-sm focus:outline-none dark:focus:border-[#55E5A4] focus:border-[#26313F] "
                       placeholder="Message"
                       rows="4"
                       id="message"
@@ -239,7 +262,7 @@ const Contact = ({ darkMode }) => {
                     ></textarea>
                   </div>
 
-                  <div className="pt-3 md:pt-8 flex flex-col items-center justify-center ">
+                  <div className="pt-3 md:pt-5 flex flex-col items-center justify-center ">
                     <button
                       type="submit"
                       className={`inline-block w-auto text-md rounded-lg bg-[#26313F] dark:bg-[#55E5A4] px-5 py-3 font-bold text-white dark:text-[#151C25] sm:w-auto `}

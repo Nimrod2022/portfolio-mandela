@@ -16,13 +16,7 @@ const Projects = ({ darkMode }) => {
     }
   };
 
-  // Add a flag to the first two projects
-  const projectsWithNewFlag = filteredProjects.map((project, index) => {
-    if (index < 2) {
-      return { ...project, isNew: true };
-    }
-    return project;
-  });
+
 
   return (
     <section className={darkMode ? "dark" : ""}>
@@ -68,16 +62,16 @@ const Projects = ({ darkMode }) => {
         </div>
         <div className="satoshi flex gap-10 flex-wrap md:py-20 justify-center dark:bg-[#151C25] bg-[#F0F0F4] pt-20">
           {/* Render filtered projects */}
-          {filteredProjects.map((project) => (
+          {filteredProjects.map((project, index) => (
             <ProjectsDiv
-              key={project.id}
+              key={index}
               title={project.title}
               category={project.category}
               image={project.image}
               description={project.description}
               technologies={project.technologies}
               darkMode={darkMode}
-              isNew={project.isNew}
+              isNew={index < 2 && project.isNew}
             />
           ))}
         </div>
