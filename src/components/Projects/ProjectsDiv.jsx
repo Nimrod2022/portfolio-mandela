@@ -2,13 +2,13 @@ import React from "react";
 
 const ProjectsDiv = ({ darkMode, title, description, image, technologies, isNew }) => {
   return (
-    <div className="relative h-[630px] w-[565px] rounded-3xl md:my-5 overflow-hidden">
+    <div className="relative h-[630px] w-[565px] rounded-3xl md:my-5 overflow-hidden hover:scale-105 transition-transform duration-300 ease-in-out">
       {isNew && (
         <div className="absolute top-3 text-xl left-5 font-semibold bg-red-500 text-white px-5 py-3 rounded-lg ">
           New
         </div>
       )}
-      <img src={image} alt={title} className="image" />
+      <img src={image} alt={title} className="image   "  />
       <div className="bg-[#26313F] text-center items-center h-full">
         <div className="flex flex-col justify-center items-center">
           <h1 className="text-3xl text-white mt-2">{title}</h1>
