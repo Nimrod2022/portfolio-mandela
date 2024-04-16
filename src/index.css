@@ -36,39 +36,12 @@
 }
 /* Projects styling */
 
-/* .filter-btn {
-  border: 1px solid #55e5a4;
-  background-color: transparent;
-  color: white;
-  padding: 8px 16px;
-}
-
-.filter-btn-light {
-  border: 1px solid #26313f;
-  background-color: transparent;
-  color: black;
-  padding: 8px 16px;
-}
-
-.filter-btn.active,
-.dark .filter-btn-light.active {
-  border: none;
-  background-color: #55e5a4;
-  color: black;
-}
-
-.filter-btn-light.active,
-.dark .filter-btn.active {
-  border: none;
-  background-color: #26313f;
-  color: white;
-} */
 
 
 
 .image{
   Width:565px;
-  Height:255px;
+  Height:320px;
   border-radius:15px, 15px, 0px, 0px;
 }
 
@@ -82,17 +55,16 @@ opacity: 0px;
 
 }
 
-.project-title {
+/* .project-title {
   font-weight: 700;
   font-size: 36px;
   line-height: 56.7px;
   width: 315px;
   height: 57px;
-  gap: 0px; /* Not sure what you're trying to achieve with gap here */
-  opacity: 1; /* Adjust opacity value as needed */
-}
+  gap: 0px; 
+} */
 
-.project-description{
+/* .project-description{
   
 font-size: 22px;
 font-weight: 500;
@@ -105,24 +77,24 @@ opacity: 0px;
 
 
 
-}
+} */
 
-.project-tech{
+/* .project-tech{
 
 font-size: 22px;
 font-weight: 700;
 line-height: 29.7px;
 text-align: left;
 
-}
-
+} */
+/* 
 .project-icons{
 width: Hug (138px)px;
 height: Hug (24px)px;
 gap: 25px;
 opacity: 0px;
 
-}
+} */
 
 .live-demo-dark{
 
