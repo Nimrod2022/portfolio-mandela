@@ -55,46 +55,6 @@ opacity: 0px;
 
 }
 
-/* .project-title {
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 56.7px;
-  width: 315px;
-  height: 57px;
-  gap: 0px; 
-} */
-
-/* .project-description{
-  
-font-size: 22px;
-font-weight: 500;
-line-height: 29.7px;
-text-align: left;
-width: 485px;
-height: 110px;
-
-opacity: 0px;
-
-
-
-} */
-
-/* .project-tech{
-
-font-size: 22px;
-font-weight: 700;
-line-height: 29.7px;
-text-align: left;
-
-} */
-/* 
-.project-icons{
-width: Hug (138px)px;
-height: Hug (24px)px;
-gap: 25px;
-opacity: 0px;
-
-} */
 
 .live-demo-dark{
 
@@ -236,3 +196,28 @@ height: 480px;
 }
 
 
+.socials{
+  width: 100px;
+height: 50px;
+padding: 15px 0px 0px 0px;
+gap: 0px;
+border-radius: 12px 0px 0px 0px;
+opacity: 0px;
+background: linear-gradient(180deg, #343236 0%, #38343F 100%);
+box-shadow: 0px 15px 25px 0px #00000080;
+
+box-shadow: 0px 2px 2px 0px #55E5A4 inset;
+
+
+}
+
+.socials-icon{
+width: 50px;
+height: 50px;
+top: 15px;
+left: 15px;
+padding: 1.67px 1.67px 2.07px 1.67px;
+gap: 0px;
+opacity: 0px;
+
+}

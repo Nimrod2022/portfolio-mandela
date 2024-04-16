@@ -33,7 +33,7 @@ const Navbar = ({ darkMode, setDarkMode }) => {
   return (
     <div className={darkMode ? "dark" : ""}>
       <header className={`${scrolled ? "stickynav" : ""}`}>
-        <div className="md:py-3 relative" style={{ backgroundColor: bgColor }}>
+        <div className="md:py-2 relative" style={{ backgroundColor: bgColor }}>
           <nav className="flex justify-between md:items-center satoshi text-lg text-white px-8 md:px-36 py-4 md:py-4">
             <Link to="/#" smooth={true} duration={700}>
               <img
