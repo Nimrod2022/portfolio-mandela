@@ -25,7 +25,7 @@ const Home = ({ darkMode }) => {
               <div className="items-center flex pt-8 md:pt-5 ">
                 <button
                   type="button"
-                  className="bg-[#26313F] dark:bg-[#55E5A4] text-#FAFAFA dark:text-black font-semibold text-md rounded-lg px-2 py-2 mr-8"
+                  className="bg-[#26313F] dark:bg-[#55E5A4] text-#FAFAFA dark:text-black hover:bg-[#00142D] dark:hover:bg-[#00A359] font-semibold text-md rounded-lg px-2 py-2 mr-8"
                 >
                   Get in Touch
                 </button>

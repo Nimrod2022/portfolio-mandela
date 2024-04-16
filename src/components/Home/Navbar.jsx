@@ -52,7 +52,7 @@ const Navbar = ({ darkMode, setDarkMode }) => {
               <Link to="/about" smooth={true} duration={1000}>
                 <button
                   type="button"
-                  className="bg-[#26313F] dark:bg-[#55E5A4] text-[#FFFFFF] dark:text-black text-md font-semibold hidden w-24 md:block rounded-md py-1 px-4 "
+                  className="bg-[#26313F] dark:bg-[#55E5A4] text-[#FFFFFF] dark:text-black hover:bg-[#00142D] dark:hover:bg-[#00A359] text-md font-semibold hidden w-24 md:block rounded-md py-1 px-4 "
                 >
                   About
                 </button>
@@ -61,7 +61,7 @@ const Navbar = ({ darkMode, setDarkMode }) => {
               <Link to="/projects" smooth={true} duration={700}>
                 <button
                   type="button"
-                  className="bg-[#26313F] dark:bg-[#55E5A4] text-[#FFFFFF] dark:text-black  text-md font-semibold w-24 hidden md:block rounded-md py-1 px-4 "
+                  className="bg-[#26313F] dark:bg-[#55E5A4] text-[#FFFFFF] dark:text-black hover:bg-[#00142D] dark:hover:bg-[#00A359]  text-md font-semibold w-24 hidden md:block rounded-md py-1 px-4 "
                 >
                   Projects
                 </button>
@@ -70,7 +70,7 @@ const Navbar = ({ darkMode, setDarkMode }) => {
               <Link to="/contact" smooth={true} duration={700}>
                 <button
                   type="button"
-                  className="border border-[#26313F] dark:border-[white] text-[#26313F] dark:text-white text-md font-semibold w-24 hidden md:block rounded-md py-1 px-4 "
+                  className="border border-[#26313F] dark:border-[white] text-[#26313F] dark:text-white hover:bg-[#00142D] hover:text-white dark:hover:bg-[#55E5A4] dark:hover:text-[#26313F] dark:hover:border-[#26313F] text-md font-semibold w-24 hidden md:block rounded-md py-1 px-4 "
                 >
                   Contact
                 </button>

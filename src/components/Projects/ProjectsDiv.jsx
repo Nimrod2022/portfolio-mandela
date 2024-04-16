@@ -32,13 +32,13 @@ const ProjectsDiv = ({ darkMode, title, description, image, technologies, isNew 
         </div>
         <div className="mt-8 text-md">
           <button
-            className={`${darkMode ? "live-demo-dark" : "live-demo-light"} text-lg mr-10 px-3 py-3`}
+            className={`${darkMode ? "live-demo-dark" : "live-demo-light"} text-lg mr-10 px-3 py-3 hover:bg-[#00142D] hover:text-white dark:hover:bg-[#00A359]`}
             type="button"
           >
             View Live Demo
           </button>
           <button
-            className="visit-site border text-lg px-6 py-3 text-white"
+            className="visit-site border text-lg px-6 py-3 text-white "
             type="button"
           >
             Visit Site

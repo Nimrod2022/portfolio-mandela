@@ -47,7 +47,9 @@ const Footer = ({ darkMode }) => {
           </div>
 
           <div className="flex gap-3 px-2 mt-5 md:mt-10 ">
-            
+            {/* <div className="socials socials-icon">
+              <img src="/assets/bg-github.svg" alt="github" />
+            </div> */}
             <a
               href="https://github.com/Nimrod2022"
               target="_blank"
