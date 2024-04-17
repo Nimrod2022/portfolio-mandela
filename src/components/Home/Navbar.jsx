@@ -34,14 +34,16 @@ const Navbar = ({ darkMode, setDarkMode }) => {
     <div className={darkMode ? "dark" : ""}>
       <header className={`${scrolled ? "stickynav" : ""}`}>
         <div className="md:py-2 relative" style={{ backgroundColor: bgColor }}>
-          <nav className="flex justify-between md:items-center satoshi text-lg text-white px-8 md:px-36 py-4 md:py-4">
+          <nav className="flex justify-between items-center md:items-center satoshi text-lg text-white px-8 md:px-36 py- md:py-4">
+            <div>
             <Link to="/#" smooth={true} duration={700}>
               <img
                 src={darkMode ? logoDarkMode : logoLightMode}
                 alt="logo"
-                className="hover:cursor-pointer pt-4 md:pt-0 size-12"
+                className="hover:cursor-pointer pt-5 md:pt-0 h-20 md:size-12"
               />
             </Link>
+            </div>
 
             {/* Sidebar to cover entire screen */}
             <div className="block md:hidden w-full z-50 items-center">
@@ -75,7 +77,7 @@ const Navbar = ({ darkMode, setDarkMode }) => {
                   Contact
                 </button>
               </Link>
-              <button className="mr-12 dark-mode-button size-6 md:size-auto pt-5 md:pt-0">
+              <button className="mr-12 dark-mode-button size-6 md:size-auto pt-2 md:pt-0">
                 <img
                   src={darkMode ? lightIcon : darkIcon}
                   alt="theme"

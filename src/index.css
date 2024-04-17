@@ -40,9 +40,16 @@
 
 
 .image{
-  Width:565px;
-  Height:320px;
+  /* Width:565px;
+  Height:320px; */
   border-radius:15px, 15px, 0px, 0px;
+}
+
+.image-mobile{
+  Width:565px;
+  Height:220px;
+  border-radius:15px, 15px, 0px, 0px;
+
 }
 
 

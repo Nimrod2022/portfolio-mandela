@@ -136,7 +136,7 @@ const Contact = ({ darkMode }) => {
                 <p className="text-lg">I am interested in...</p>
                 <form
                   action="#"
-                  className="space-y-4 z-50 "
+                  className="md:space-y-4 space-y-3 z-50 "
                   onSubmit={sendEmail}
                 >
                   <div className="flex justify-between gap-4 md:gap-10 pt-5">
@@ -262,10 +262,10 @@ const Contact = ({ darkMode }) => {
                     ></textarea>
                   </div>
 
-                  <div className="pt-3 md:pt-5 flex flex-col items-center justify-center ">
+                  <div className=" md:pt-5 flex flex-col items-center justify-center ">
                     <button
                       type="submit"
-                      className={`inline-block w-auto text-md rounded-lg bg-[#26313F] dark:bg-[#55E5A4] px-5 py-3 font-bold text-white dark:text-[#151C25] sm:w-auto `}
+                      className={`inline-block w-auto text-md rounded-lg bg-[#26313F] dark:bg-[#55E5A4] px-3 py-2 md:px-5 md:py-3 font-bold text-white dark:text-[#151C25] sm:w-auto `}
                     >
                       <span className="flex items-center gap-4">
                         <img

@@ -30,7 +30,7 @@ const Projects = ({ darkMode }) => {
         <div className="flex md:text-xl gap-x-5 justify-center mt-10 ">
           {/* Filter buttons */}
           <button
-            className={`mr-4 project-border     px-6 py-2 dark:border-[#55e5a4] border-[#26313F]  ${
+            className={`mr-4 project-border hidden md:block   px-6 py-2 dark:border-[#55e5a4] border-[#26313F]  ${
               activeCategory === "all"
                 ? "active dark:bg-[#55e5a4] bg-[#151C25] dark:text-[#000000] text-[#FFFFFF]"
                 : "dark:text-white"
@@ -40,7 +40,7 @@ const Projects = ({ darkMode }) => {
             All Projects
           </button>
           <button
-            className={`mr-4 project-border     px-6 py-2 dark:border-[#55e5a4] border-[#26313F]  ${
+            className={`md:mr-4 project-border px-5     md:px-6 py-2 dark:border-[#55e5a4] border-[#26313F]  ${
               activeCategory === "frontend"
                 ? "active dark:bg-[#55e5a4] bg-[#151C25] dark:text-[#000000] text-[#FFFFFF]"
                 : "dark:text-white"
@@ -76,8 +76,8 @@ const Projects = ({ darkMode }) => {
           ))}
         </div>
 
-        <div className=" justify-center items-center flex flex-col">
-          <button className="mr-4 project-border  text-xl px-6 py-2 dark:border-[#55e5a4] border-[#26313F]  hover:border-none hover:bg-[#00142D] dark:hover:bg-[#00A359]  dark:bg-[#55e5a4] bg-[#151C25] dark:text-[#000000] text-[#FFFFFF]">
+        <div className=" justify-center md:pt-0 pt-8 items-center flex flex-col">
+          <button className="mr-4 project-border  md:text-xl px-3 md:px-6 py-2 dark:border-[#55e5a4] border-[#26313F]  hover:border-none hover:bg-[#00142D] dark:hover:bg-[#00A359]  dark:bg-[#55e5a4] bg-[#151C25] dark:text-[#000000] text-[#FFFFFF]">
             View all Projects
           </button>
         </div>
