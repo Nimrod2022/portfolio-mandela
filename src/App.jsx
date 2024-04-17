@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useRef } from "react";
 
 import Home from "./components/Home/Home";
 import About from "./components/Home/About";
@@ -9,15 +9,27 @@ import Projects from "./components/Projects/Projects";
 
 function App() {
   const [darkMode, setDarkMode] = useState(true);
+  const contactRef = useRef(null);
 
   const toggleDarkMode = () => {
     setDarkMode(!darkMode);
   };
 
+  const scrollToContact = () => {
+    const contactSection = document.getElementById("/contact");
+    if (contactSection) {
+      contactSection.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
   return (
     <>
       <Navbar darkMode={darkMode} setDarkMode={toggleDarkMode} />
-      <Home darkMode={darkMode} setDarkMode={toggleDarkMode} />
+      <Home
+        darkMode={darkMode}
+        scrollToContact={scrollToContact}
+        setDarkMode={toggleDarkMode}
+      />
       <About darkMode={darkMode} setDarkMode={toggleDarkMode} />
 
       <Projects darkMode={darkMode} setDarkMode={setDarkMode} />
@@ -28,4 +40,3 @@ function App() {
 }
 
 export default App;
-

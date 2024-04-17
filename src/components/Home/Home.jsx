@@ -2,7 +2,7 @@ const darkHomeProfile = "/assets/home-profile-dark.png";
 
 const lightHomeProfile = "/assets/home-profile-light.png";
 
-const Home = ({ darkMode }) => {
+const Home = ({ darkMode, scrollToContact }) => {
   return (
     <>
       <div id="/#" className={darkMode ? "dark" : ""}>
@@ -24,6 +24,7 @@ const Home = ({ darkMode }) => {
               </p>
               <div className="items-center flex pt-8 md:pt-5 ">
                 <button
+                  onClick={scrollToContact}
                   type="button"
                   className="bg-[#26313F] dark:bg-[#55E5A4] text-#FAFAFA dark:text-black hover:bg-[#00142D] dark:hover:bg-[#00A359] font-semibold text-md rounded-lg px-2 py-2 mr-8"
                 >

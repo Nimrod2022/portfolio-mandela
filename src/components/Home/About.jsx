@@ -105,7 +105,7 @@ const About = ({ darkMode }) => {
             <div className="pt-8 pb-20 flex justify-center md:justify-start">
               <button
                 type="button"
-                className="border-2 border-[#26313F] font-bold dark:border-[#55E5A4] text-md  w-48 rounded-md py-2 px-2 text-[#26313F] dark:text-[#55E5A4]"
+                className="border-2 border-[#26313F] font-bold dark:hover:bg-[#02D375] dark:hover:text-black hover:text-white hover:bg-[#00142D] dark:border-[#55E5A4] text-md  w-48 rounded-md py-2 px-2 text-[#26313F] dark:text-[#55E5A4]"
               >
                 <a href="/assets/resume.pdf" download="Nimrod Kibet CV">
                   Download Resume

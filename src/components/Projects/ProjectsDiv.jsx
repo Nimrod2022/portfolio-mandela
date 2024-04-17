@@ -38,7 +38,7 @@ const ProjectsDiv = ({ darkMode, title, description, image, technologies, isNew 
             View Live Demo
           </button>
           <button
-            className="visit-site border text-lg px-6 py-3 text-white "
+            className="visit-site border text-lg px-6 py-3 text-white hover:border-none hover:bg-[#00142D] "
             type="button"
           >
             Visit Site

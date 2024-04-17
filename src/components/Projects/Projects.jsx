@@ -77,7 +77,7 @@ const Projects = ({ darkMode }) => {
         </div>
 
         <div className=" justify-center items-center flex flex-col">
-          <button className="mr-4 project-border  text-xl px-6 py-2 dark:border-[#55e5a4] border-[#26313F] dark:bg-[#55e5a4] bg-[#151C25] dark:text-[#000000] text-[#FFFFFF]">
+          <button className="mr-4 project-border  text-xl px-6 py-2 dark:border-[#55e5a4] border-[#26313F]  hover:border-none hover:bg-[#00142D] dark:hover:bg-[#00A359]  dark:bg-[#55e5a4] bg-[#151C25] dark:text-[#000000] text-[#FFFFFF]">
             View all Projects
           </button>
         </div>
