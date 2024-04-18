@@ -16,7 +16,7 @@ const Sidebar = ({darkMode}) => {
   return (
     <>
       <div
-        className="sotashi font-medium hamburger-menu"
+        className="sotashi font-medium  hamburger-menu"
         onClick={handleMenuToggle}
         style={{
           position: "fixed",
@@ -32,7 +32,7 @@ const Sidebar = ({darkMode}) => {
         }}
       >
         {isOpen ? (
-          <div style={{ transform: "rotate(45deg)" }} />
+          <div style={{ transform:  "rotate(45deg)"}} />
         ) : (
           <>
             <div
