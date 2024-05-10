@@ -20,7 +20,7 @@ const Projects = ({ darkMode }) => {
 
   return (
     <section className={darkMode ? "dark" : ""}>
-      <div className="satoshi dark:bg-[#151C25] bg-[#F0F0F4] md:pt-0 pt-20 ">
+      <div className="satoshi dark:bg-[#151C25] bg-[#F0F0F4] md:pt-32 pt-20 ">
         <h1
           id="/projects"
           className="text-center text-[#151C25] dark:text-white text-4xl"

@@ -112,8 +112,8 @@ const Navbar = ({ darkMode, setDarkMode }) => {
             <div
               className={
                 isOpen
-                  ? "sm:hidden absolute top-0 right-0 left-0 bottom-0 flex justify-center items-center text-center  w-full h-screen bg-[#000]/80 text-[#55E5A4] duration-300 ease-in-out"
-                  : "sm:hidden absolute top-0 right-0 left-[-100%] bottom-0 flex justify-center items-center text-center w-full h-screen  bg-[#000]/80 text-white duration-300 ease-in-out"
+                  ? "sm:hidden absolute top-0 right-0 left-0 bottom-0 flex justify-center items-center text-center  w-full h-screen bg-[#000]/85 text-[#55E5A4] duration-300 ease-in-out"
+                  : "sm:hidden absolute top-0 right-0 left-[-100%] bottom-0 flex justify-center items-center text-center w-full h-screen  bg-[#000]/85 text-white duration-300 ease-in-out"
               }
             >
               <ul onClick={toggleNav}>
