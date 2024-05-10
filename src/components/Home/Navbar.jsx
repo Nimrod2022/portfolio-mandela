@@ -1,6 +1,6 @@
 import { Link } from "react-scroll";
 import React, { useEffect } from "react";
-import Sidebar from "./Sidebar";
+
 import { useState } from "react";
 import { AiOutlineClose } from "react-icons/ai";
 import { BiMenuAltRight } from "react-icons/bi";
@@ -55,10 +55,6 @@ const Navbar = ({ darkMode, setDarkMode }) => {
               </Link>
             </div>
 
-            {/* <div className="block md:hidden w-full items-center">
-              <Sidebar darkMode={darkMode} />
-            </div> */}
-
             <div className="flex gap-10">
               <Link to="/about" smooth={true} duration={1000}>
                 <button
@@ -109,7 +105,6 @@ const Navbar = ({ darkMode, setDarkMode }) => {
                 <BiMenuAltRight
                   className="text-4xl dark:text-[#55E5A4] text-[#26313F]"
                   onClick={toggleNav}
-                
                 />
               )}
             </div>
@@ -122,18 +117,42 @@ const Navbar = ({ darkMode, setDarkMode }) => {
               }
             >
               <ul onClick={toggleNav}>
-                <Link to="/#" spy={true} smooth={true} duration={1000} onClick={toggleNav}>
+                <Link
+                  to="/#"
+                  spy={true}
+                  smooth={true}
+                  duration={1000}
+                  onClick={toggleNav}
+                >
                   <li className="p-4">Home</li>
                 </Link>
-                <Link to="/about" spy={true} smooth={true} duration={1000} onClick={toggleNav}>
+                <Link
+                  to="/about"
+                  spy={true}
+                  smooth={true}
+                  duration={1000}
+                  onClick={toggleNav}
+                >
                   <li className="p-4">About</li>
                 </Link>
 
-                <Link to="/projects" spy={true} smooth={true} duration={1000} onClick={toggleNav}>
+                <Link
+                  to="/projects"
+                  spy={true}
+                  smooth={true}
+                  duration={1000}
+                  onClick={toggleNav}
+                >
                   <li className="p-4">Projects</li>
                 </Link>
 
-                <Link to="/contact" spy={true} smooth={true} duration={1000} onClick={toggleNav}>
+                <Link
+                  to="/contact"
+                  spy={true}
+                  smooth={true}
+                  duration={1000}
+                  onClick={toggleNav}
+                >
                   <li className="p-4 text-white">Contact</li>
                 </Link>
               </ul>
