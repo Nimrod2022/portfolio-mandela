@@ -1,8 +1,7 @@
 import { useState } from "react";
 import data from "./data.json";
 import ProjectsDiv from "./ProjectsDiv";
-import AllProjects from "../AllProjects";
-import { Link } from "react-scroll";
+
 
 const Projects = ({ darkMode }) => {
   const [activeCategory, setActiveCategory] = useState("all");
