@@ -1,10 +1,10 @@
 [
   {
-    "title": "Onori-B",
+    "title": "Kibet Portfolio",
     "category": "frontend",
-    "image": "/assets/onori.png",
-    "description": "Working closely with the ONORI-B team, I collaborated to ensure that the website not only met but exceeded their expectations.",
-    "technologies": ["/assets/tailwind.svg","/assets/react.svg", "/assets/js.svg"],
+    "image": "/assets/kibet-portfolio.png",
+    "description": "Built a portfolio website to showcase my projects and learning journey in web development and geoinformatics.",
+    "technologies": ["/assets/react.svg", "/assets/js.svg", "/assets/tailwind.svg", "/assets/css.svg"],
     "isNew": true
   },
   {

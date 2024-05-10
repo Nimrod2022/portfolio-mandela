@@ -9,7 +9,6 @@ import Projects from "./components/Projects/Projects";
 
 function App() {
   const [darkMode, setDarkMode] = useState(true);
-  const contactRef = useRef(null);
 
   const toggleDarkMode = () => {
     setDarkMode(!darkMode);
@@ -33,6 +32,7 @@ function App() {
       <About darkMode={darkMode} setDarkMode={toggleDarkMode} />
 
       <Projects darkMode={darkMode} setDarkMode={setDarkMode} />
+
       <Contact darkMode={darkMode} setDarkMode={setDarkMode} />
       <Footer darkMode={darkMode} setDarkMode={setDarkMode} />
     </>
