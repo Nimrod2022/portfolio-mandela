@@ -8,6 +8,8 @@ const Projects = ({ darkMode }) => {
   const [activeCategory, setActiveCategory] = useState("all");
   const [filteredProjects, setFilteredProjects] = useState(data);
 
+  
+
   const filterProjects = (category) => {
     setActiveCategory(category);
     if (category === "all") {
@@ -70,7 +72,10 @@ const Projects = ({ darkMode }) => {
               image={project.image}
               description={project.description}
               technologies={project.technologies}
+              siteurl= {project.siteurl}
+              videourl = {project.videourl}
               darkMode={darkMode}
+              
               isNew={index < 2 && project.isNew}
             />
           ))}
