@@ -9,7 +9,7 @@ const xing = "/assets/xing.svg";
 const linkedinDark = "/assets/linkedin-dark.svg";
 const linkedin = "/assets/linkedin.svg";
 
-const twitterDark = "/assets/xing-dark.svg";
+const twitterDark = "/assets/twitter-dark.svg";
 const twitter = "/assets/twitter.svg";
 
 const Footer = ({ darkMode }) => {
