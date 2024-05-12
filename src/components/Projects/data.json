@@ -11,21 +11,21 @@
     "isNew": true
   },
   {
-    "title": "Pyraus",
-    "category": "frontend",
-    "image": "/assets/pyraus.png",
-    "description": "Working closely with the ONORI-B team, I collaborated to ensure that the website not only met but exceeded their expectations.",
-    "technologies": ["/assets/tailwind.svg","/assets/react.svg", "/assets/js.svg"],
-    "siteurl": "https://bbc.com",
-    "videourl": "yJko1GhPNgs",
+    "title": "Austria Live flight Tracker",
+    "category": "geoinformatics",
+    "image": "/assets/flight-tracker.png",
+    "description": "Collaborative project to track flights within the Austrian airspace in real-time. Flight data provided by OpenSky Network.",
+    "technologies": ["/assets/html.svg", "/assets/tailwind.svg", "/assets/css.svg", "/assets/js.svg", "/assets/open-layers.png"],
+    "siteurl": "https://github.com/AdianDawuda/FlightMap",
+    "videourl": "pPmXrpDscB4",
     "isNew": true
     
   },
   {
     "title": "Pyraus",
-    "category": "geoinformatics",
+    "category": "frontend",
     "image": "/assets/pyraus.png",
-    "description": "Working closely with the ONORI-B team, I collaborated to ensure that the website not only met but exceeded their expectations.",
+    "description": "Working closely with the Pyraus Group team, I collaborated to ensure that the website not only met but exceeded their expectations.",
     "technologies": ["/assets/tailwind.svg","/assets/react.svg", "/assets/js.svg"],
     "siteurl": "https://www.namecheap.com/shoppingcart/",
     "videourl": "bxuYDT-BWaI",
