@@ -10,12 +10,9 @@ const ProjectsDiv = ({
   videourl,
   isNew,
   handleModal,
+  handleVisitSite,
 }) => {
   
-
-  const handleVisitSite = () => {
-    window.open(siteurl, "_blank");
-  };
 
   return (
     <div className="relative md:h-[630px] md:w-[565px] h-[450px] w-[520px] md:px-0 px-4 rounded-3xl md:my-5 overflow-hidden hover:scale-105 transition-transform duration-300 ease-in-out">
@@ -51,7 +48,9 @@ const ProjectsDiv = ({
         </div>
         <div className="md:mt-8 mt-5 text-md">
           <button
-            className={`${darkMode ? "live-demo-dark" : "live-demo-light"} text-md md:text-lg md:mr-10 mr-8 px-3 py-2 md:py-3 hover:bg-[#00142D] hover:text-white dark:hover:bg-[#00A359]`}
+            className={`${
+              darkMode ? "live-demo-dark" : "live-demo-light"
+            } text-md md:text-lg md:mr-10 mr-8 px-3 py-2 md:py-3 hover:bg-[#00142D] hover:text-white dark:hover:bg-[#00A359]`}
             type="button"
             onClick={handleModal}
           >
@@ -60,7 +59,7 @@ const ProjectsDiv = ({
           <button
             className="visit-site border text-md md:text-lg px-3 md:px-6 py-2 md:py-3 text-white hover:border-none hover:bg-[#00142D] "
             type="button"
-            onClick={handleVisitSite}
+            onClick={() => handleVisitSite(siteurl)}
           >
             Visit Site
           </button>

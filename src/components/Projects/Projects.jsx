@@ -30,6 +30,11 @@ const Projects = ({ darkMode }) => {
     setModalOpen(false);
   };
 
+  const handleVisitSite = (siteurl) => {
+    window.open(siteurl, "_blank");
+  };
+
+
   return (
     <section className={darkMode ? "dark" : ""}>
       <div className="satoshi dark:bg-[#151C25] bg-[#F0F0F4] md:pt-32 pt-20 ">
@@ -86,7 +91,8 @@ const Projects = ({ darkMode }) => {
               siteurl={project.siteurl}
               videourl={project.videourl}
               darkMode={darkMode}
-              handleModal={() => handleModal(project.videourl)} // Pass a function reference
+              handleModal={() => handleModal(project.videourl)} 
+              handleVisitSite={handleVisitSite}
               isNew={index < 2 && project.isNew}
             />
           ))}

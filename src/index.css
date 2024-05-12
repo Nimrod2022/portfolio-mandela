@@ -229,10 +229,7 @@ opacity: 0px;
 
 }
 
-.App {
-  font-family: sans-serif;
-  text-align: center;
-}
+
 
 .modal__bg {
   position: fixed;
@@ -275,7 +272,7 @@ opacity: 0px;
 }
 
 .modal__close {
-  background-color: white;
+  background-color: #00FF00;
   border-radius: 50%;
   cursor: pointer;
   position: relative;
