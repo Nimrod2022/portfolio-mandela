@@ -1,13 +1,15 @@
-import { useState } from "react";
+// Projects.jsx
+
+import React, { useState } from "react";
 import data from "./data.json";
 import ProjectsDiv from "./ProjectsDiv";
-
+import VideoModal from "./VideoModal";
 
 const Projects = ({ darkMode }) => {
   const [activeCategory, setActiveCategory] = useState("all");
   const [filteredProjects, setFilteredProjects] = useState(data);
-
-  
+  const [modalOpen, setModalOpen] = useState(false);
+  const [selectedVideoUrl, setSelectedVideoUrl] = useState("");
 
   const filterProjects = (category) => {
     setActiveCategory(category);
@@ -17,6 +19,15 @@ const Projects = ({ darkMode }) => {
       const filtered = data.filter((project) => project.category === category);
       setFilteredProjects(filtered);
     }
+  };
+
+  const handleModal = (videourl) => {
+    setSelectedVideoUrl(videourl);
+    setModalOpen(true);
+  };
+
+  const closeModal = () => {
+    setModalOpen(false);
   };
 
   return (
@@ -29,6 +40,7 @@ const Projects = ({ darkMode }) => {
           Projects
         </h1>
         <div className="flex md:text-xl gap-x-5 justify-center mt-10 ">
+          {/* Filter buttons */}
           {/* Filter buttons */}
           <button
             className={`mr-4 project-border hidden md:block   px-6 py-2 dark:border-[#55e5a4] border-[#26313F]  ${
@@ -71,10 +83,10 @@ const Projects = ({ darkMode }) => {
               image={project.image}
               description={project.description}
               technologies={project.technologies}
-              siteurl= {project.siteurl}
-              videourl = {project.videourl}
+              siteurl={project.siteurl}
+              videourl={project.videourl}
               darkMode={darkMode}
-              
+              handleModal={() => handleModal(project.videourl)} // Pass a function reference
               isNew={index < 2 && project.isNew}
             />
           ))}
@@ -86,6 +98,7 @@ const Projects = ({ darkMode }) => {
           </button>
         </div>
       </div>
+      <VideoModal isOpen={modalOpen} videourl={selectedVideoUrl} close={closeModal} />
     </section>
   );
 };

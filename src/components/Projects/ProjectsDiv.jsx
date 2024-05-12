@@ -11,9 +11,7 @@ const ProjectsDiv = ({
   isNew,
   handleModal,
 }) => {
-  const handleLiveDemoClick = () => {
-    openModal(videourl);
-  };
+  
 
   const handleVisitSite = () => {
     window.open(siteurl, "_blank");

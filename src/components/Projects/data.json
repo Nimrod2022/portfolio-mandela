@@ -6,7 +6,7 @@
     "description": "Built a portfolio website to showcase my projects and learning journey in web development and geoinformatics.",
     "technologies": ["/assets/react.svg", "/assets/js.svg", "/assets/tailwind.svg", "/assets/css.svg"],
     "siteurl": "https://portfolio-mandela.vercel.app/",
-    "videourl": "uWoFF9MkRbg",
+    "videourl": "4UZrsTqkcW4",
 
     "isNew": true
   },
@@ -16,7 +16,10 @@
     "image": "/assets/pyraus.png",
     "description": "Working closely with the ONORI-B team, I collaborated to ensure that the website not only met but exceeded their expectations.",
     "technologies": ["/assets/tailwind.svg","/assets/react.svg", "/assets/js.svg"],
+    "siteurl": "https://bbc.com",
+    "videourl": "yJko1GhPNgs",
     "isNew": true
+    
   },
   {
     "title": "Pyraus",
@@ -24,6 +27,9 @@
     "image": "/assets/pyraus.png",
     "description": "Working closely with the ONORI-B team, I collaborated to ensure that the website not only met but exceeded their expectations.",
     "technologies": ["/assets/tailwind.svg","/assets/react.svg", "/assets/js.svg"],
+    "siteurl": "https://portfolio-mandela.vercel.app/",
+    "videourl": "bxuYDT-BWaI",
+
     "isNew": false
   },
   {
