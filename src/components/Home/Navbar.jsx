@@ -9,7 +9,7 @@ const logoDarkMode = "assets/logo-dark-mode.svg";
 const logoLightMode = "assets/logo-light-mode.svg";
 
 const darkIcon = "/assets/dark-theme-icon.svg";
-const lightIcon = "/assets/light-theme-icon.png";
+const lightIcon = "/assets/light-theme-icon.svg";
 
 const Navbar = ({ darkMode, setDarkMode }) => {
   //  Sticky nav handling

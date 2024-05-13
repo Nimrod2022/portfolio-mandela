@@ -11,7 +11,7 @@
     "isNew": true
   },
   {
-    "title": "Austria Live flight Tracker",
+    "title": "Live flight Tracker",
     "category": "geoinformatics",
     "image": "/assets/flight-tracker.png",
     "description": "Collaborative project to track flights within the Austrian airspace in real-time. Flight data provided by OpenSky Network.",
