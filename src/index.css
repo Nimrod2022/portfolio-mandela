@@ -45,6 +45,22 @@
   background: radial-gradient(46.04% 48.81% at 52% 47.22%, rgba(38, 49, 63, 0.2) 0%, rgba(211, 211, 211, 0.2) 100%);
 
 }
+
+
+
+.projectsdark{
+  background: linear-gradient(359.54deg, rgba(84, 84, 84, 0.15) -6.41%, rgba(21, 28, 37, 0) 97.55%);
+}
+
+.projectslight{
+  background: linear-gradient(359.98deg, rgba(38, 49, 63, 0) -25.29%, rgba(240, 244, 248, 0.25) 86.91%);
+
+}
+
+
+
+
+
 .image{
   /* Width:565px;
   Height:320px; */
