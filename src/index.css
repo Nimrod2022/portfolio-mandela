@@ -58,13 +58,83 @@
 }
 
 
+.aboutBox{
+width: Hug(1,194px);
+height: Hug(555px);
+Top:1049px;
+Left:159px;
+Gap:87px;
 
 
+}
+
+.aboutText{
+  width: 599px;
+height: 240px;
+top: 95px;
+gap: 0px;
+opacity: 0px;
+
+
+
+
+}
+
+.technologies{
+  position: relative;
+
+top: 80px;
+
+gap: 33px;
+
+
+}
+
+.technologiesmobile{
+  position: relative;
+
+top: 30px;
+
+gap: 18px;
+
+
+}
+
+
+
+.resume{
+  position: relative;
+
+top: 220px;
+
+
+}
+
+.resumemobile{
+  position: relative;
+
+top: 50px;
+
+
+}
 
 .image{
-  /* Width:565px;
-  Height:320px; */
-  border-radius:15px, 15px, 0px, 0px;
+  width: 599px;
+  height: 480px;
+  gap: 0px;
+  opacity: 0px;
+  position:relative;
+  
+}
+
+.aboutTitle{
+width: Hug (190px)px;
+height: Hug (73px)px;
+left: 10px;
+top:95px;
+gap: 40px;
+opacity: 0px;
+
 }
 
 .image-mobile{
