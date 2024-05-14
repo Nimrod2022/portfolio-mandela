@@ -262,7 +262,7 @@ const Contact = ({ darkMode }) => {
                     ></textarea>
                   </div>
 
-                  <div className=" md:pt-5 flex flex-col items-center justify-center ">
+                  <div className=" md:pt-0 flex flex-col items-center justify-center ">
                     <button
                       type="submit"
                       className={`inline-block w-auto text-md rounded-lg bg-[#26313F] dark:bg-[#55E5A4] px-3 py-2 md:px-5 md:py-3 font-bold text-white dark:text-[#151C25] sm:w-auto `}
