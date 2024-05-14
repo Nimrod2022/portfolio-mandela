@@ -46,7 +46,15 @@
 
 }
 
+.aboutlayout{
+  width: Hug (1,194px)px;
+height: Hug (555px)px;
+top: 1049px;
+left: 159px;
+gap: 87px;
+opacity: 0px;
 
+}
 
 .projectsdark{
   background: linear-gradient(359.54deg, rgba(84, 84, 84, 0.15) -6.41%, rgba(21, 28, 37, 0) 97.55%);
@@ -68,6 +76,14 @@ Gap:87px;
 
 }
 
+.aboutdiv{
+width: 599px;
+height: 555px;
+gap: 0px;
+opacity: 0px;
+
+}
+
 .aboutText{
   width: 599px;
 height: 240px;
@@ -81,11 +97,12 @@ opacity: 0px;
 }
 
 .technologies{
-  position: relative;
-
-top: 80px;
-
-gap: 33px;
+  width: Hug (545px)px;
+  height: Hug (62px)px;
+  top: 378px;
+  gap: 33px;
+  opacity: 0px;
+  
 
 
 }
