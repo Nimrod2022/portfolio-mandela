@@ -12,7 +12,7 @@ const Dummy = ({ darkMode }) => {
                 <img
                   src={darkMode ? darkModeProfileAbout : lightModeProfileAbout}
                   alt="about-profile"
-                  className="w-full  hidden md:block  "
+                  className="w-full    "
                 />
               </div>
 

@@ -6,7 +6,7 @@ const Home = ({ darkMode, scrollToContact }) => {
   return (
     <>
       <div id="/#" className={darkMode ? "dark" : ""}>
-        <div className="dark:bg-[#151C25] bg-[#F0F0F4]  min-h-screen satoshi pt-28 md:pt-0 pb-10 flex flex-col justify-center">
+        <div className="dark:bg-[#151C25] bg-[#F0F0F4]  min-h-screen satoshi flex flex-col justify-center">
           <div className="px-8   text-white md:flex md:gap-5 md:justify-center ">
             <div className="items-center   md:w-[40%] ">
               {/* <img src="/assets/animation.png" alt="" className="rounded-full h-36"/> */}
@@ -41,13 +41,13 @@ const Home = ({ darkMode, scrollToContact }) => {
               </div>
             </div>
 
-            <div className="md:pt-0 md:hidden block pt-20">
+            {/* <div className="md:pt-0 md:hidden block pt-20">
               <img
                 src={darkMode ? darkHomeProfile : lightHomeProfile}
                 alt="home-profile"
                 className="h-64 md:h-72"
               />
-            </div>
+            </div> */}
           </div>
 
           {/* <div className="items-center flex flex-col pb-10 pt-8 justify-center md:hidden">
