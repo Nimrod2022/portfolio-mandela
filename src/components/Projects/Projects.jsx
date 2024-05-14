@@ -78,7 +78,7 @@ const Projects = ({ darkMode }) => {
             Geoinformatics
           </button>
         </div>
-        <div className="satoshi flex gap-10 w-[100%] flex-wrap md:py-20 justify-center dark:bg-[#151C25] bg-[#F0F0F4] pt-20">
+        <div className="satoshi flex gap-10 w-[100%] flex-wrap md:py-20 justify-center dark:bg-[#151C25] bg-[#F0F0F4] pt-10 md:pt-20">
           {/* Render filtered projects */}
           {filteredProjects.map((project, index) => (
             <ProjectsDiv
