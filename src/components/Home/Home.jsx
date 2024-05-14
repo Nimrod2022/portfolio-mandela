@@ -6,7 +6,7 @@ const Home = ({ darkMode, scrollToContact }) => {
   return (
     <>
       <div id="/#" className={darkMode ? "dark" : ""}>
-        <div className="dark:bg-[#151C25] bg-[#F0F0F4]  min-h-screen satoshi flex flex-col justify-center">
+        <div className="dark:bg-[#151C25] bg-[#F0F0F4]  min-h-screen satoshi pt-20 md:pt-0 flex flex-col md:justify-center">
           <div className="px-8   text-white md:flex md:gap-5 md:justify-center ">
             <div className="items-center   md:w-[40%] ">
               {/* <img src="/assets/animation.png" alt="" className="rounded-full h-36"/> */}
