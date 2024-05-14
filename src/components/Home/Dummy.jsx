@@ -5,7 +5,7 @@ const Dummy = ({ darkMode }) => {
   return (
     <>
       <div id="/about" className={darkMode ? "dark" : ""}>
-        <div className="dark:bg-[#151C25] bg-[#F0F0F4] aboutlayout flex  satoshi ">
+        <div className="dark:bg-[#151C25] bg-[#F0F0F4] aboutlayout flex mx-auto satoshi ">
           <div>
             <img
               src={darkMode ? darkModeProfileAbout : lightModeProfileAbout}

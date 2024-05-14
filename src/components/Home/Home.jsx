@@ -9,20 +9,21 @@ const Home = ({ darkMode, scrollToContact }) => {
         <div className="dark:bg-[#151C25] bg-[#F0F0F4]  h-screen satoshi pt-32 md:pt-0 pb-10 flex flex-col justify-center">
           <div className="px-8   text-white md:flex md:gap-5 md:justify-center ">
             <div className="items-center   md:w-[40%] ">
-              <p className="text-2xl text-[#26313F] dark:text-white md:text-start text-center ">
+              {/* <img src="/assets/animation.png" alt="" className="rounded-full h-36"/> */}
+              <p className="text-3xl text-[#26313F] dark:text-white text-center ">
                 Nimrod Kibet
               </p>
-              <h1 className="  text-[#55E5A4] pt-2 font-extrabold text-2xl md:text-3xl md:text-start text-center">
+              <h1 className="  text-[#55E5A4] pt-2 font-extrabold text-2xl md:text-3xl text-center">
                 Frontend & GIS Developer
               </h1>
-              <p className="  text-lg text-[#686565] dark:text-[#A9A9A9] pt-3 md:text-start text-center ">
+              <p className="  text-xl text-[#686565] dark:text-[#A9A9A9] pt-3  text-center ">
                 I specialize in crafting immersive user experiences using the
                 latest frontend technologies and frameworks to bring your vision
                 to life. Additionally, my expertise extends to geoinformatics,
                 where I excel in harnessing the power of spatial data to uncover
                 actionable insights.
               </p>
-              <div className="items-center flex pt-8 md:pt-5 ">
+              <div className="items-center flex justify-center pt-8 md:pt-5 ">
                 <button
                   onClick={scrollToContact}
                   type="button"
@@ -40,7 +41,7 @@ const Home = ({ darkMode, scrollToContact }) => {
               </div>
             </div>
 
-            <div className="md:pt-0 pt-10">
+            <div className="md:pt-0 md:hidden block pt-10">
               <img
                 src={darkMode ? darkHomeProfile : lightHomeProfile}
                 alt="home-profile"
