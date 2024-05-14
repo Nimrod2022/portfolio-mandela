@@ -115,7 +115,7 @@ const Contact = ({ darkMode }) => {
           </h1>
           <div className="w-full md:flex rounded-xl overflow-hidden   md:w-auto my-10  md:px-0 px-3 ">
             <div className="bg-[url('/assets/contact-image.png')] hidden md:block form-height contact-form-image">
-              <h1 className="text-white  justify-center items-center text-4xl px-20 pt-52">
+              <h1 className="text-white  justify-center items-center text-4xl px-20 pt-44">
                 Let’s discuss
               </h1>
               <h1 className="text-white pt-3  justify-center items-center text-4xl px-20">
