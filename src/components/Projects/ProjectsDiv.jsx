@@ -15,7 +15,7 @@ const ProjectsDiv = ({
   
 
   return (
-    <div className="relative md:h-[630px] md:w-[565px] h-[450px] w-[520px] md:px-0 px-4 rounded-3xl md:my-5 overflow-hidden hover:scale-105 transition-transform duration-300 ease-in-out">
+    <div className="relative md:h-[630px] md:w-[565px]  md:px-0 px-4 rounded-none md:rounded-3xl md:my-5   overflow-hidden hover:scale-105 transition-transform duration-300 ease-in-out">
       {isNew && (
         <div className="absolute top-4 left-6 md:top-3 text-xl md:left-5 font-semibold bg-red-500 text-white px-3 py-2 md:px-5 md:py-3 rounded-lg ">
           New
@@ -24,9 +24,9 @@ const ProjectsDiv = ({
       <img
         src={image}
         alt={title}
-        className="md:h-[320px] md:w-[565px] h-[220px] w-[565px] image"
+        className="md:h-[320px] md:w-[565px] "
       />
-      <div className="bg-[#26313F] text-center items-center h-full">
+      <div className="bg-[#26313F] text-center items-center h-[240px] md:h-full">
         <div className="flex flex-col justify-center items-center">
           <h1 className="md:text-3xl text-xl text-white mt-2">{title}</h1>
           <p className="md:text-xl text-sm text-start mt-2 px-10 text-[#A9A9A9]">
