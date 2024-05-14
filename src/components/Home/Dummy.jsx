@@ -5,7 +5,7 @@ const Dummy = ({ darkMode }) => {
   return (
     <>
       <div id="/about" className={darkMode ? "dark" : ""}>
-        <div className="dark:bg-[#151C25] aboutLight overflow-auto md:overflow-hidden bg-[#F0F0F4]">
+        <div className="dark:bg-[#151C25] bg-[#F0F0F4]">
           <div className="container px-8 pt-10 md:pt-20 md:mx-auto md:w-[80%]">
             <div className="flex justify-center flex-col md:flex-row   items-center gap-10 md:gap-20 ">
               <div className="w-full  md:h-[555px] md:w-[100%]">
@@ -16,7 +16,7 @@ const Dummy = ({ darkMode }) => {
                 />
               </div>
 
-              <div className="h-[555px]">
+              <div className="md:h-[555px] h-[650px]">
                 <div className="container mx-auto flex justify-center md:justify-start">
                   <div className="max-w-fit ">
                     <h1 className="text-3xl text-center md:text-start font-extrabold text-[#000000] dark:text-white">
@@ -113,7 +113,7 @@ const Dummy = ({ darkMode }) => {
                 <div className=" items-center justify-center md:justify-start flex ">
                   <button
                     type="button"
-                    className="border-2 border-[#26313F] font-bold dark:hover:bg-[#02D375] hover:border-none dark:hover:text-black hover:text-white hover:bg-[#00142D] dark:border-[#55E5A4] text-md  w-48 rounded-md py-2 px-2 text-[#26313F] dark:text-[#55E5A4]"
+                    className="border-2 border-[#26313F]  font-bold dark:hover:bg-[#02D375] hover:border-none dark:hover:text-black hover:text-white hover:bg-[#00142D] dark:border-[#55E5A4] text-md  w-48 rounded-md py-2 px-2 text-[#26313F] dark:text-[#55E5A4]"
                   >
                     <a href="/assets/resume.pdf" download="Nimrod Kibet CV">
                       Download Resume
