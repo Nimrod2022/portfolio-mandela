@@ -39,13 +39,15 @@
 
 
 .aboutDark{
-  background: radial-gradient(46.04% 48.81% at 52% 47.22%, rgba(85, 229, 164, 0.05) 0%, rgba(84, 84, 84, 0.10) 100%);
+  background: linear-gradient(180deg, rgba(85, 229, 164, 0.05) 0%, rgba(84, 84, 84, 0.10) 100%);
 }
 
 .aboutLight{
-  background: radial-gradient(46.04% 48.81% at 52% 47.22%, rgba(38, 49, 63, 0.2) 0%, rgba(211, 211, 211, 0.2) 100%);
+  background: linear-gradient(180deg, rgba(38, 49, 63, 0.2) 0%, rgba(211, 211, 211, 0.2) 100%);
 
 }
+
+
 
 .aboutlayout{
   width: Hug (1,194px)px;
