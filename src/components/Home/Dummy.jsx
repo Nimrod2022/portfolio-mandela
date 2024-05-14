@@ -5,21 +5,21 @@ const Dummy = ({ darkMode }) => {
   return (
     <>
       <div id="/about" className={darkMode ? "dark" : ""}>
-        <div className="dark:bg-[#151C25] bg-[#F0F0F4] ">
+        <div className="dark:bg-[#151C25] bg-[#F0F0F4]">
           <div className="container px-8 md:mx-auto md:w-[80%]">
             <div className="flex justify-center flex-col md:flex-row   items-center gap-10 md:gap-20 ">
-              <div className="w-full md:pt-0 pt-10 md:h-[555px] md:w-[100%]">
+              <div className="w-full  md:h-[555px] md:w-[100%]">
                 <img
                   src={darkMode ? darkModeProfileAbout : lightModeProfileAbout}
                   alt="about-profile"
-                  className="w-full  hidden md:block"
+                  className="w-full  hidden md:block  "
                 />
               </div>
 
               <div className="h-[555px]">
                 <div className="container mx-auto flex justify-center md:justify-start">
                   <div className="max-w-fit ">
-                    <h1 className="text-3xl pt-20 md:pt-0 text-center md:text-start font-extrabold text-[#000000] dark:text-white">
+                    <h1 className="text-3xl text-center md:text-start font-extrabold text-[#000000] dark:text-white">
                       About Me
                     </h1>
                     <div className="flex gap-2 pt-2 items-center">
