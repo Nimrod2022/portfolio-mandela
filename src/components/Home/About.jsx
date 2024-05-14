@@ -5,7 +5,7 @@ const About = ({ darkMode }) => {
   return (
     <>
       <div id="/about" className={darkMode ? "dark" : ""}>
-        <div className="md:px-48 dark:bg-[#151C25] bg-[#F0F0F4] aboutBox md:gap-16 px-8  satoshi md:flex md:pt-40 pt-10  ">
+        <div className=" dark:bg-[#151C25] bg-[#F0F0F4] aboutBox md:gap-16 px-8 md:px-48  satoshi md:flex md:pt-40 pt-10  justify-center ">
           {/* Image */}
 
           <img
@@ -102,7 +102,7 @@ const About = ({ darkMode }) => {
                 </h3>
               </div>
             </div>
-            <div className="resumemobile items-center justify-center md:justify-start flex md:resume md:pt-10 ">
+            <div className="resumemobile items-center justify-center md:justify-start flex md:resume md:pt-20 ">
               <button
                 type="button"
                 className="border-2 border-[#26313F] font-bold dark:hover:bg-[#02D375] hover:border-none dark:hover:text-black hover:text-white hover:bg-[#00142D] dark:border-[#55E5A4] text-md  w-48 rounded-md py-2 px-2 text-[#26313F] dark:text-[#55E5A4]"

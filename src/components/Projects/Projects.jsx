@@ -37,7 +37,7 @@ const Projects = ({ darkMode }) => {
 
   return (
     <section className={darkMode ? "dark" : ""}>
-      <div className="satoshi dark:bg-[#151C25] bg-[#F0F0F4] md:pt-32 pt-20 mx-auto">
+      <div className="satoshi dark:bg-[#151C25] bg-[#F0F0F4] md:pt-32 pt-20 ">
         <h1
           id="/projects"
           className="text-center text-[#151C25] dark:text-white text-4xl"
@@ -78,7 +78,7 @@ const Projects = ({ darkMode }) => {
             Geoinformatics
           </button>
         </div>
-        <div className="satoshi flex gap-10 flex-wrap md:py-20 justify-center dark:bg-[#151C25] bg-[#F0F0F4] pt-20">
+        <div className="satoshi flex gap-10 w-[100%] flex-wrap md:py-20 justify-center dark:bg-[#151C25] bg-[#F0F0F4] pt-20">
           {/* Render filtered projects */}
           {filteredProjects.map((project, index) => (
             <ProjectsDiv
