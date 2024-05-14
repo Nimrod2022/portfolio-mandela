@@ -7,7 +7,7 @@ const Dummy = ({ darkMode }) => {
       <div id="/about" className={darkMode ? "dark" : ""}>
         <div className="dark:bg-[#151C25] bg-[#F0F0F4] ">
           <div className="container px-8 md:mx-auto md:w-[80%]">
-            <div className="flex justify-center flex-col md:flex-row  items-center gap-10 md:gap-20 ">
+            <div className="flex justify-center flex-col md:flex-row   items-center gap-10 md:gap-20 ">
               <div className="w-full md:pt-0 pt-10 md:h-[555px] md:w-[100%]">
                 <img
                   src={darkMode ? darkModeProfileAbout : lightModeProfileAbout}
@@ -19,7 +19,7 @@ const Dummy = ({ darkMode }) => {
               <div className="h-[555px]">
                 <div className="container mx-auto flex justify-center md:justify-start">
                   <div className="max-w-fit ">
-                    <h1 className="text-3xl pt-10 md:pt-0 text-center md:text-start font-extrabold text-[#000000] dark:text-white">
+                    <h1 className="text-3xl pt-20 md:pt-0 text-center md:text-start font-extrabold text-[#000000] dark:text-white">
                       About Me
                     </h1>
                     <div className="flex gap-2 pt-2 items-center">
@@ -31,7 +31,7 @@ const Dummy = ({ darkMode }) => {
                   </div>
                 </div>
 
-                <p className=" text-lg pt-5 text-[#686565] dark:text-[#A9A9A9] text-center md:text-start">
+                <p className=" text-lg pt-5 text-[#686565] dark:text-[#A9A9A9]  text-center md:text-start">
                   I am currently a master’s student in Applied Geoinformatics at
                   the University of Salzburg, Austria. I have a keen interest in
                   front-end and GIS development. My goal is to use my expertise
