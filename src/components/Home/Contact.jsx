@@ -113,7 +113,7 @@ const Contact = ({ darkMode }) => {
           <h1 className=" text-[#26313F] dark:text-white text-2xl md:text-3xl font-extrabold">
             Get in Touch
           </h1>
-          <div className="w-full md:flex rounded-xl overflow-hidden   md:w-auto my-10  md:px-0 px-3 ">
+          <div className="w-full md:flex rounded-xl    md:w-auto my-10  md:px-0 px-3 ">
             <div className="bg-[url('/assets/contact-image.png')] hidden md:block form-height contact-form-image">
               <h1 className="text-white  justify-center items-center text-4xl px-20 pt-44">
                 Let’s discuss
@@ -131,7 +131,7 @@ const Contact = ({ darkMode }) => {
               </h1>
             </div>
 
-            <div className="gap-y-8 lg:grid-cols-5">
+            
               <div className=" rounded-lg md:rounded-none form-height  bg-white p-8 shadow-lg lg:col-span-3 lg:p-12">
                 <p className="text-lg">I am interested in...</p>
                 <form
@@ -279,7 +279,7 @@ const Contact = ({ darkMode }) => {
                   </div>
                 </form>
               </div>
-            </div>
+            
           </div>
         </div>
       </section>
