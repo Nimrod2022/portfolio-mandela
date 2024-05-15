@@ -23,6 +23,17 @@
     
   },
   {
+    "title": "UATE SDI",
+    "category": "geoinformatics",
+    "image": "/assets/uate.png",
+    "description": "The dashboard provides an overview of trends of Ukrainian asylum seekers in Europe over the past decade. The data is derived from UNHCR Refugee API. ",
+    "technologies": ["/assets/python.svg", "/assets/django.png",  "/assets/js.svg", "/assets/geoserver.png", "/assets/tailwind.svg"],
+    "siteurl": "https://github.com/AdianDawuda/FlightMap",
+    "videourl": "pPmXrpDscB4",
+    "isNew": false
+    
+  },
+  {
     "title": "Kibet Portfolio",
     "category": "frontend",
     "image": "/assets/kibet-portfolio.png",
