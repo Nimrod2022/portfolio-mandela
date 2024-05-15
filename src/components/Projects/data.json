@@ -28,7 +28,7 @@
     "image": "/assets/uate.png",
     "description": "The dashboard provides an overview of trends of Ukrainian asylum seekers in Europe over the past decade. The data is derived from UNHCR Refugee API. ",
     "technologies": ["/assets/python.svg", "/assets/django.png",  "/assets/js.svg", "/assets/geoserver.png", "/assets/tailwind.svg"],
-    "siteurl": "https://github.com/AdianDawuda/FlightMap",
+    "siteurl": "https://github.com/Nimrod2022/final-UATE",
     "videourl": "pPmXrpDscB4",
     "isNew": false
     
@@ -62,9 +62,9 @@
     "category": "frontend",
     "image": "/assets/pyraus.png",
     "description": "Working closely with the Pyraus Group team, I collaborated to ensure that the website not only met but exceeded their expectations.",
-    "technologies": ["/assets/tailwind.svg","/assets/react.svg", "/assets/js.svg"],
-    "siteurl": "https://www.namecheap.com/shoppingcart/",
-    "videourl": "bxuYDT-BWaI",
+    "technologies": ["/assets/react.svg", "/assets/js.svg", "/assets/tailwind.svg", "/assets/css.svg"],
+    "siteurl": "https://https://www.pyrausgroup.com/",
+    "videourl": "pPmXrpDscB4",
 
     "isNew": false
   }
