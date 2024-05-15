@@ -1,4 +1,5 @@
 [
+  
   {
     "title": "Georgy Portfolio",
     "category": "frontend",
@@ -18,7 +19,7 @@
     "technologies": ["/assets/html.svg", "/assets/tailwind.svg", "/assets/css.svg", "/assets/js.svg", "/assets/open-layers.png"],
     "siteurl": "https://github.com/AdianDawuda/FlightMap",
     "videourl": "pPmXrpDscB4",
-    "isNew": true
+    "isNew": false
     
   },
   {
@@ -31,6 +32,18 @@
     "videourl": "4UZrsTqkcW4",
 
     "isNew": false
+  },
+
+  {
+    "title": "Penton Energy",
+    "category": "frontend",
+    "image": "/assets/penton.png",
+    "description": "Penton Energy consulting services website. I helped the client audition the company's services and projects.",
+    "technologies": ["/assets/react.svg", "/assets/js.svg", "/assets/tailwind.svg", "/assets/css.svg"],
+    "siteurl": "https://github.com/AdianDawuda/FlightMap",
+    "videourl": "pPmXrpDscB4",
+    "isNew": false
+    
   },
   
   {

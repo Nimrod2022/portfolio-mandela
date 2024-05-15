@@ -1,12 +1,12 @@
 import { useState, useRef } from "react";
 
 import Home from "./components/Home/Home";
-// import About from "./components/Home/About";
+import About from "./components/Home/About";
 import Navbar from "./components/Home/Navbar";
 import Contact from "./components/Home/Contact";
 import Footer from "./components/Home/Footer";
 import Projects from "./components/Projects/Projects";
-import Dummy from "./components/Home/Dummy";
+// import Dummy from "./components/Home/About";
 
 function App() {
   const [darkMode, setDarkMode] = useState(true);
@@ -31,7 +31,7 @@ function App() {
         setDarkMode={toggleDarkMode}
       />
       {/* <About darkMode={darkMode} setDarkMode={toggleDarkMode} /> */}
-      <Dummy darkMode={darkMode} setDarkMode={toggleDarkMode} />
+      <About darkMode={darkMode} setDarkMode={toggleDarkMode} />
 
       <Projects darkMode={darkMode} setDarkMode={setDarkMode} />
 
