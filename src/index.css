@@ -37,13 +37,36 @@
 }
 /* Projects styling */
 
+.home-animation{
+
+  width: 258px;
+height: 259px;
+
+gap: 0px;
+opacity: 0px;
+
+
+  background: radial-gradient(50% 50% at 50% 50%, #55E5A4 17.71%, rgba(67, 67, 67, 0) 100%);
+
+
+}
+
+.animation{
+  width: 165px;
+height: 223px;
+top: 200.72px;
+left: 657px;
+gap: 0px;
+opacity: 0px;
+
+}
 
 .aboutDark{
-  background: linear-gradient(180deg, rgba(85, 229, 164, 0.05) 0%, rgba(84, 84, 84, 0.10) 100%);
+  background: radial-gradient(46.04% 48.81% at 52% 47.22%, rgba(85, 229, 164, 0.05) 0%, rgba(84, 84, 84, 0.1) 100%);
 }
 
 .aboutLight{
-  background: linear-gradient(180deg, rgba(38, 49, 63, 0.2) 0%, rgba(211, 211, 211, 0.2) 100%);
+  background: radial-gradient(46.04% 48.81% at 52% 47.22%, rgba(38, 49, 63, 0.2) 0%, rgba(211, 211, 211, 0.2) 100%);
 
 }
 

@@ -9,8 +9,16 @@ const Home = ({ darkMode, scrollToContact }) => {
         <div className="dark:bg-[#151C25]  bg-[#F0F0F4]  min-h-screen satoshi pt-20 md:pt-0 flex flex-col md:justify-center">
           <div className="px-8   text-white md:flex md:gap-5 md:justify-center ">
             <div className="items-center   md:w-[40%] ">
-              {/* <img src="/assets/animation.png" alt="" className="rounded-full h-36"/> */}
-              <p className="text-3xl text-[#26313F] dark:text-white text-center ">
+              <div className="flex items-center justify-center">
+              <div className="home-animation  flex items-center justify-center ">
+                  <img
+                    src="/assets/imagekibe.png"
+                    alt="animation"
+                    className=" "
+                  />
+                </div>
+              </div>
+              <p className="text-3xl pt-3 text-[#26313F] dark:text-white text-center ">
                 Nimrod Kibet
               </p>
               <h1 className="  text-[#55E5A4] pt-2 font-extrabold text-2xl md:text-3xl text-center">

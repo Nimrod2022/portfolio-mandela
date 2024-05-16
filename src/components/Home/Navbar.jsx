@@ -5,8 +5,8 @@ import { useState } from "react";
 import { AiOutlineClose } from "react-icons/ai";
 import { BiMenuAltRight } from "react-icons/bi";
 
-const logoDarkMode = "assets/logo-dark-mode.svg";
-const logoLightMode = "assets/logo-light-mode.svg";
+const logoDarkMode = "/assets/logo-dark-mode.svg";
+const logoLightMode = "/assets/logo-light-mode.svg";
 
 const darkIcon = "/assets/dark-theme-icon.svg";
 const lightIcon = "/assets/light-theme-icon.svg";
