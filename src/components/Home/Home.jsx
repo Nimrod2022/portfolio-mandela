@@ -31,7 +31,7 @@ const Home = ({ darkMode, scrollToContact }) => {
                 where I excel in harnessing the power of spatial data to uncover
                 actionable insights.
               </p>
-              <div className="items-center flex justify-center pt-8 md:pt-5 ">
+              <div className="items-center flex justify-center md:pb-0 pb-8 pt-8 md:pt-5 ">
                 <button
                   onClick={scrollToContact}
                   type="button"
