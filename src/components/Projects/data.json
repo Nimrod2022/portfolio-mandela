@@ -4,7 +4,7 @@
     "title": "Georgy Portfolio",
     "category": "frontend",
     "image": "/assets/georgy-portfolio.png",
-    "description": "Collaborative project to track flights within the Austrian airspace in real-time. Flight data provided by OpenSky Network.",
+    "description": "Worked closely with George to help him build a portfolio website to showcase his projects and learning journey in data science and AI",
     "technologies": ["/assets/react.svg", "/assets/js.svg", "/assets/tailwind.svg", "/assets/css.svg"],
     "siteurl": "https://github.com/AdianDawuda/FlightMap",
     "videourl": "pPmXrpDscB4",
@@ -15,7 +15,8 @@
     "title": "Live flight Tracker",
     "category": "geoinformatics",
     "image": "/assets/flight-tracker.png",
-    "description": "Worked closely with George to help him build a portfolio website to showcase his projects and learning journey in data science and AI",
+    "description": "Collaborative project to track flights within the Austrian airspace in real-time. Flight data provided by OpenSky Network.",
+
     "technologies": ["/assets/html.svg", "/assets/tailwind.svg", "/assets/css.svg", "/assets/js.svg", "/assets/open-layers.png"],
     "siteurl": "https://github.com/AdianDawuda/FlightMap",
     "videourl": "pPmXrpDscB4",
