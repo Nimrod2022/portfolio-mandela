@@ -6,7 +6,7 @@ const About = ({ darkMode }) => {
     <>
       <div id="/about" className={darkMode ? "dark" : ""}>
         <div className="dark:bg-[#222a33]  bg-[#e8e8ec]">
-          <div className="container px-8 pt-10 md:pt-20 md:mx-auto md:w-[80%]">
+          <div className="container px-8 pt-14 md:pt-20 md:mx-auto md:w-[80%]">
             <div className="flex justify-center flex-col md:flex-row   items-center gap-10 md:gap-20 ">
               <div className="w-full  md:h-[555px] md:w-[100%]">
                 <img
