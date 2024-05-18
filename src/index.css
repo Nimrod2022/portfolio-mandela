@@ -487,3 +487,38 @@ opacity: 0px;
     height: auto;
   }
 }
+
+
+.scroll-to-about-button {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  display: flex;
+  background-color: #55e5a4!important;
+  color: #55e5a4 !important;
+  border: none;
+  border-radius: 10%;
+  width: 35px;
+  height: 40px;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+  transition: transform 0.5s;
+  animation: bounce 2s infinite;
+  transform: rotate(180deg);
+}
+
+.scroll-to-about-button svg {
+  width: 16px;
+  height: 20px;
+
+  transform: rotate(180deg);
+}
+
+.scroll-to-about-button.hidden {
+  display: none;
+}
+
+
+

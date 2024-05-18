@@ -9,7 +9,7 @@ import ScrollToTop from "./components/custom/ScrollToTop";
 
 function App() {
   const [darkMode, setDarkMode] = useState(true);
-  const projectsRef = useRef(null);
+  const AboutRef = useRef(null);
 
   const toggleDarkMode = () => {
     setDarkMode(!darkMode);
@@ -25,14 +25,20 @@ function App() {
   return (
     <>
       <Navbar darkMode={darkMode} setDarkMode={toggleDarkMode} />
-      <Home darkMode={darkMode} scrollToContact={scrollToContact} setDarkMode={toggleDarkMode} />
-      <About darkMode={darkMode} setDarkMode={toggleDarkMode} />
-      <div ref={projectsRef} darkMode={darkMode} >
-        <Projects darkMode={darkMode} setDarkMode={setDarkMode} />
+      <Home
+        darkMode={darkMode}
+        scrollToContact={scrollToContact}
+        setDarkMode={toggleDarkMode}
+      />
+      <div ref={AboutRef} >
+        <About darkMode={darkMode} setDarkMode={toggleDarkMode} />
       </div>
+
+      <Projects darkMode={darkMode} setDarkMode={setDarkMode} />
+
       <Contact darkMode={darkMode} setDarkMode={setDarkMode} />
       <Footer darkMode={darkMode} setDarkMode={setDarkMode} />
-      <ScrollToTop targetRef={projectsRef} />
+      <ScrollToTop targetRef={AboutRef} />
     </>
   );
 }

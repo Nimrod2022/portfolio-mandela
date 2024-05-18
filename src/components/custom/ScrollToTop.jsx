@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from 'react';
 
-const backTopDark = "/assets/back-top-dark.svg";
-const backTopLight = "/assets/back-top-light.svg";
+
 
 function ScrollToTop({ targetRef, darkMode }) {
   const scrollOptions = {
@@ -46,7 +45,7 @@ function ScrollToTop({ targetRef, darkMode }) {
     right: '20px',
     backgroundColor: darkMode ? '#26313F' : '#55e5a4',
     color: '#55e5a4',
-    border: '2px solid',
+    // border: '2px solid',
     borderRadius: '10%',
     width: '35px',
     height: '40px',
