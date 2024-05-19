@@ -41,7 +41,7 @@
     "description": "Built a portfolio website to showcase my projects and learning journey in web development and geoinformatics.",
     "technologies": ["/assets/react.svg", "/assets/js.svg", "/assets/tailwind.svg", "/assets/css.svg"],
     "siteurl": "https://portfolio-mandela.vercel.app/",
-    "videourl": "4UZrsTqkcW4",
+    "videourl": "4UZiQ7xKSjbojg",
 
     "isNew": false
   },
@@ -50,7 +50,7 @@
     "title": "Penton Energy",
     "category": "frontend",
     "image": "/assets/penton.png",
-    "description": "Built Penton Energy consulting services website to help the client audition ther services and completed/ongoing projects.",
+    "description": "Built Penton Energy consulting services website to help the client audition their services and completed/ongoing projects.",
     "technologies": ["/assets/react.svg", "/assets/js.svg", "/assets/tailwind.svg", "/assets/css.svg"],
     "siteurl": "https://github.com/AdianDawuda/FlightMap",
     "videourl": "pPmXrpDscB4",
