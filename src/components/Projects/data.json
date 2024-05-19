@@ -40,7 +40,7 @@
     "image": "/assets/kibet-portfolio.png",
     "description": "Built a portfolio website to showcase my projects and learning journey in web development and geoinformatics.",
     "technologies": ["/assets/react.svg", "/assets/js.svg", "/assets/tailwind.svg", "/assets/css.svg"],
-    "siteurl": "https://portfolio-mandela.vercel.app/",
+    "siteurl": "https://kibetnimrod.com",
     "videourl": "iQ7xKSjbojg",
 
     "isNew": false
