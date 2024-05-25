@@ -5,7 +5,7 @@
     "image": "/assets/yam.png",
     "description": "The app makes cooking easier by giving users access to a wide range of recipes. The recipes data are from the Spoonacular Food API.",
     "technologies": ["/assets/react.svg", "/assets/js.svg", "/assets/tailwind.svg", "/assets/css.svg"],
-    "siteurl": "https://choma-restaurant.vercel.app/",
+    "siteurl": "https://github.com/Nimrod2022/yam-yarn-recipe-app",
     "videourl": "Iq2YYav6VNc",
     "isNew": false
     
