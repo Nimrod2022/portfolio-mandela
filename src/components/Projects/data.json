@@ -57,17 +57,7 @@
     "isNew": false
   },
 
-  {
-    "title": "Penton Energy",
-    "category": "frontend",
-    "image": "/assets/penton.png",
-    "description": "Built Penton Energy consulting services website to help the client audition their services and completed/ongoing projects.",
-    "technologies": ["/assets/react.svg", "/assets/js.svg", "/assets/tailwind.svg", "/assets/css.svg"],
-    "siteurl": "https://github.com/Nimrod2022/penton",
-    "videourl": "pPmXrpDscB4",
-    "isNew": false
-    
-  },
+  
   
   {
     "title": "Pyraus",
