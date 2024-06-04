@@ -66,6 +66,7 @@ const About = ({ darkMode }) => {
                       JS
                     </h3>
                   </div>
+                  
                   <div>
                     <img
                       src="/assets/tailwind.svg"
