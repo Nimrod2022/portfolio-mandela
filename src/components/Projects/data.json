@@ -4,11 +4,32 @@
     "category": "frontend",
     "image": "/assets/yam.png",
     "description": "The app makes cooking easier by giving users access to a wide range of recipes. The recipes data are from the Spoonacular Food API.",
-    "technologies": ["/assets/react.svg", "/assets/js.svg", "/assets/tailwind.svg", "/assets/css.svg"],
+    "technologies": [
+      "/assets/react.svg",
+      "/assets/js.svg",
+      "/assets/tailwind.svg",
+      "/assets/css.svg"
+    ],
     "siteurl": "https://github.com/Nimrod2022/yam-yarn-recipe-app",
     "videourl": "f6UsmLwqJfk",
     "isNew": true
-    
+  },
+
+  {
+    "title": "EVOGYM Fitness",
+    "category": "frontend",
+    "image": "/assets/evogym.png",
+    "description": "The site was developed when learning intergration of typescript in react. ",
+    "technologies": [
+      "/assets/react.svg",
+      "/assets/typescript.png",
+      "/assets/js.svg",
+      "/assets/tailwind.svg",
+      "/assets/css.svg"
+    ],
+    "siteurl": "https://gymist-one.vercel.app/",
+    "videourl": "EB4lEiqC-Vs",
+    "isNew": false
   },
 
   {
@@ -16,11 +37,15 @@
     "category": "frontend",
     "image": "/assets/georgy-portfolio.png",
     "description": "Worked closely with George to help him build a portfolio website to showcase his projects and learning journey in data science and AI.",
-    "technologies": ["/assets/react.svg", "/assets/js.svg", "/assets/tailwind.svg", "/assets/css.svg"],
+    "technologies": [
+      "/assets/react.svg",
+      "/assets/js.svg",
+      "/assets/tailwind.svg",
+      "/assets/css.svg"
+    ],
     "siteurl": "https://georgy-nine.vercel.app/",
     "videourl": "Iq2YYav6VNc",
     "isNew": false
-    
   },
   {
     "title": "Live flight Tracker",
@@ -28,47 +53,49 @@
     "image": "/assets/flight-tracker.png",
     "description": "Collaborative project to track flights within the Austrian airspace in real-time. Flight data provided by OpenSky Network.",
 
-    "technologies": ["/assets/html.svg", "/assets/tailwind.svg", "/assets/css.svg", "/assets/js.svg", "/assets/open-layers.png"],
+    "technologies": [
+      "/assets/html.svg",
+      "/assets/tailwind.svg",
+      "/assets/css.svg",
+      "/assets/js.svg",
+      "/assets/open-layers.png"
+    ],
     "siteurl": "https://github.com/AdianDawuda/FlightMap",
     "videourl": "pPmXrpDscB4",
     "isNew": false
-    
   },
   {
     "title": "UATE SDI",
     "category": "geoinformatics",
     "image": "/assets/uate.png",
     "description": "The dashboard provides an overview of trends of Ukrainian asylum seekers in Europe over the past decade. The data is derived from UNHCR Refugee API. ",
-    "technologies": ["/assets/python.svg", "/assets/django.png",  "/assets/js.svg", "/assets/geoserver.png", "/assets/tailwind.svg"],
+    "technologies": [
+      "/assets/python.svg",
+      "/assets/django.png",
+      "/assets/js.svg",
+      "/assets/geoserver.png",
+      "/assets/tailwind.svg"
+    ],
     "siteurl": "https://github.com/Nimrod2022/final-UATE",
     "videourl": "zU8ddPpc8t8",
     "isNew": false
-    
   },
   {
     "title": "Kibet Portfolio",
     "category": "frontend",
     "image": "/assets/kibet-portfolio.png",
     "description": "Built a portfolio website to showcase my projects and learning journey in web development and geoinformatics.",
-    "technologies": ["/assets/react.svg", "/assets/js.svg", "/assets/tailwind.svg", "/assets/css.svg"],
+    "technologies": [
+      "/assets/react.svg",
+      "/assets/js.svg",
+      "/assets/tailwind.svg",
+      "/assets/css.svg"
+    ],
     "siteurl": "https://kibetnimrod.com",
     "videourl": "iQ7xKSjbojg",
 
     "isNew": false
-  },
-
-  
-  
-  {
-    "title": "Pyraus",
-    "category": "frontend",
-    "image": "/assets/pyraus.png",
-    "description": "Collaborative effort to build the Pyraus Group website. Pyraus is Kenyan based a tech start-up that offers software solutions to its clients.",
-    "technologies": ["/assets/react.svg", "/assets/js.svg", "/assets/tailwind.svg", "/assets/css.svg"],
-    "siteurl": "https://www.pyrausgroup.com/",
-    "videourl": "pPmXrpDscB4",
-
-    "isNew": false
   }
- 
+
+
 ]
