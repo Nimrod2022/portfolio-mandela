@@ -1,5 +1,22 @@
 [
   {
+    "title": "Penton Consulting",
+    "category": "frontend",
+    "image": "/assets/penton-consulting.png",
+    "description": "Currently working on this client project. its currently 40% complete ",
+    "technologies": [
+      "/assets/react.svg",
+      "/assets/typescript.png",
+      "/assets/js.svg",
+      "/assets/tailwind.svg",
+      "/assets/css.svg",
+      "/assets/redux.svg"
+    ],
+    "siteurl": "https://penton-consulting.vercel.app/",
+    "videourl": "EB4lEiqC-Vs",
+    "isNew": true
+  },
+  {
     "title": "Yam Yarn Recipes",
     "category": "frontend",
     "image": "/assets/yam.png",
@@ -13,23 +30,6 @@
     "siteurl": "https://github.com/Nimrod2022/yam-yarn-recipe-app",
     "videourl": "f6UsmLwqJfk",
     "isNew": true
-  },
-
-  {
-    "title": "EVOGYM Fitness",
-    "category": "frontend",
-    "image": "/assets/evogym.png",
-    "description": "The site was developed when learning intergration of typescript in react. ",
-    "technologies": [
-      "/assets/react.svg",
-      "/assets/typescript.png",
-      "/assets/js.svg",
-      "/assets/tailwind.svg",
-      "/assets/css.svg"
-    ],
-    "siteurl": "https://gymist-one.vercel.app/",
-    "videourl": "EB4lEiqC-Vs",
-    "isNew": false
   },
 
   {
@@ -95,7 +95,22 @@
     "videourl": "iQ7xKSjbojg",
 
     "isNew": false
+  },
+
+  {
+    "title": "EVOGYM Fitness",
+    "category": "frontend",
+    "image": "/assets/evogym.png",
+    "description": "The site was developed when learning intergration of typescript in react. ",
+    "technologies": [
+      "/assets/react.svg",
+      "/assets/typescript.png",
+      "/assets/js.svg",
+      "/assets/tailwind.svg",
+      "/assets/css.svg"
+    ],
+    "siteurl": "https://gymist-one.vercel.app/",
+    "videourl": "EB4lEiqC-Vs",
+    "isNew": false
   }
-
-
 ]
