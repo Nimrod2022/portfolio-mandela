@@ -6,13 +6,13 @@ const About = ({ darkMode }) => {
     <>
       <div id="/about" className={darkMode ? "dark" : ""}>
         <div className="dark:bg-[#222a33]  bg-[#e8e8ec]">
-          <div className="container px-8 pt-14 md:pt-20 md:mx-auto md:w-[80%]">
+          <div className="container px-8 pt-14 md:pt-20 md:mx-auto md:w-[78%] xl:w-[87%]">
             <div className="flex justify-center flex-col md:flex-row   items-center gap-10 md:gap-20 ">
-              <div className="w-full  md:h-[555px] md:w-[100%]">
+              <div className="w-full  md:h-[555px]  md:w-[100%]">
                 <img
                   src={darkMode ? darkModeProfileAbout : lightModeProfileAbout}
                   alt="about-profile"
-                  className="w-full    "
+                  className="w-full xl:h-[80%]  "
                 />
               </div>
 
@@ -66,7 +66,7 @@ const About = ({ darkMode }) => {
                       JS
                     </h3>
                   </div>
-                  
+
                   <div>
                     <img
                       src="/assets/tailwind.svg"
@@ -116,7 +116,10 @@ const About = ({ darkMode }) => {
                     type="button"
                     className="border-2 border-[#26313F]  font-bold dark:hover:bg-[#02D375] hover:border-none dark:hover:text-black hover:text-white hover:bg-[#00142D] dark:border-[#55E5A4] text-md  w-48 rounded-md py-2 px-2 text-[#26313F] dark:text-[#55E5A4]"
                   >
-                    <a href="/assets/Nimrod Kibet CV.pdf" download="Nimrod Kibet CV">
+                    <a
+                      href="/assets/Nimrod Kibet CV.pdf"
+                      download="Nimrod Kibet CV"
+                    >
                       Download Resume
                     </a>
                   </button>
