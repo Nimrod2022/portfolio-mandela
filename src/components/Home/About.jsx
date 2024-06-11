@@ -5,8 +5,8 @@ const About = ({ darkMode }) => {
   return (
     <>
       <div id="/about" className={darkMode ? "dark" : ""}>
-        <div className="dark:bg-[#222a33]  bg-[#e8e8ec] md:w-full">
-          <div className="container px-8 md:px-0 pt-14 md:pt-20 w-[100%] xl:w-[90%]">
+        <div className="dark:bg-[#222a33]  bg-[#e8e8ec] md:w-full ">
+          <div className="container px-8  pt-14 md:pt-20 w-[100%] xl:w-[90%] md:px-28 xl:px-20 ">
             <div className="flex justify-center flex-col md:flex-row  gap-10 md:gap-20 ">
               <div className="w-full  md:h-[555px]  md:w-[100%]">
                 <img
@@ -18,7 +18,7 @@ const About = ({ darkMode }) => {
 
               <div className="md:h-[555px] h-[650px]">
                 <div className="container mx-auto flex justify-center md:justify-start">
-                  <div className="max-w-fit ">
+                  <div className="">
                     <h1 className="text-3xl text-center md:text-start font-extrabold text-[#000000] dark:text-white">
                       About Me
                     </h1>
