@@ -15,14 +15,14 @@ const ProjectsDiv = ({
   
 
   return (
-    <div className="relative sm:h-[630px] sm:w-[375px] md:h-[630px] md:w-[565px]  md:px-0 px-5 rounded-none md:rounded-3xl md:my-5   overflow-hidden hover:scale-105 transition-transform duration-300 ease-in-out">
+    <div className="relative   md:w-[45%]  md:px-0 px-5 rounded-none md:rounded-3xl md:my-5   overflow-hidden hover:scale-105 transition-transform duration-300 ease-in-out">
       {isNew && (
         <div className="absolute top-4 left-6 md:top-3 text-xl md:left-5 font-semibold bg-red-500 text-white px-3 py-2 md:px-3 md:py-2 rounded-lg ">
           New
         </div>
       )}
-      <img src={image} alt={title} className="md:h-[320px] md:w-[565px] " />
-      <div className="bg-[#26313F] text-center items-center h-[240px] md:h-full">
+      <img src={image} alt={title} className="md:h-[50%] w-full  " />
+      <div className="bg-[#26313F] text-center items-center h-full md:py-0 py-5">
         <div className="flex flex-col justify-center items-center">
           <h1 className="md:text-3xl text-xl text-white mt-2">{title}</h1>
           <p className="md:text-xl text-sm text-start mt-2 px-10 text-[#A9A9A9]">
