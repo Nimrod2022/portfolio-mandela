@@ -6,7 +6,7 @@ const About = ({ darkMode }) => {
     <>
       <div id="/about" className={darkMode ? "dark" : ""}>
         <div className="dark:bg-[#222a33]  bg-[#e8e8ec] md:w-full ">
-          <div className="container px-8  pt-14 md:pt-20 w-[100%] xl:w-[90%] md:px-28 xl:px-20 ">
+          <div className=" px-8  pt-14 md:pt-20  mx-auto md:w-5/6 xl:w-4/6 ">
             <div className="flex justify-center flex-col md:flex-row  gap-10 md:gap-20 ">
               <div className="w-full  md:h-[555px]  md:w-[100%]">
                 <img
@@ -16,7 +16,7 @@ const About = ({ darkMode }) => {
                 />
               </div>
 
-              <div className="md:h-[555px] h-[650px]">
+              <div className="">
                 <div className="container mx-auto flex justify-center md:justify-start">
                   <div className="">
                     <h1 className="text-3xl text-center md:text-start font-extrabold text-[#000000] dark:text-white">
@@ -31,7 +31,7 @@ const About = ({ darkMode }) => {
                   </div>
                 </div>
 
-                <p className=" text-lg pt-5 text-[#686565] dark:text-[#A9A9A9]  text-center md:text-start">
+                <p className=" text-lg pt-5 text-[#686565] dark:text-[#A9A9A9]  md:text-start">
                   I am currently a master’s student in Applied Geoinformatics at
                   the University of Salzburg, Austria. I have a keen interest in
                   front-end and GIS development. My goal is to use my expertise

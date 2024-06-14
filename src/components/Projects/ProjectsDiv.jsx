@@ -21,11 +21,7 @@ const ProjectsDiv = ({
           New
         </div>
       )}
-      <img
-        src={image}
-        alt={title}
-        className="md:h-[320px] md:w-[565px] "
-      />
+      <img src={image} alt={title} className="md:h-[320px] md:w-[565px] " />
       <div className="bg-[#26313F] text-center items-center h-[240px] md:h-full">
         <div className="flex flex-col justify-center items-center">
           <h1 className="md:text-3xl text-xl text-white mt-2">{title}</h1>

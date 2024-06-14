@@ -37,76 +37,81 @@ const Projects = ({ darkMode }) => {
 
   return (
     <section className={darkMode ? "dark" : ""}>
-      <div className="satoshi dark:bg-[#151C25] dark:projectsDark   bg-[#F0F0F4] md:pt-32 pt-14 ">
-        <h1
-          id="/projects"
-          className="text-center text-[#151C25] dark:text-white text-4xl"
-        >
-          Projects
-        </h1>
-        <div className="flex md:text-xl gap-x-5 justify-center mt-10 ">
-          {/* Filter buttons */}
-          {/* Filter buttons */}
-          <button
-            className={`mr-4 project-border hidden md:block   px-6 py-2 dark:border-[#55e5a4] border-[#26313F]  ${
-              activeCategory === "all"
-                ? "active dark:bg-[#55e5a4] bg-[#151C25] dark:text-[#000000] text-[#FFFFFF]"
-                : "dark:text-white"
-            }`}
-            onClick={() => filterProjects("all")}
+      <div className="satoshi w-full dark:bg-[#151C25] dark:projectsDark   bg-[#F0F0F4] md:pt-32 pt-14 ">
+        <div className="mx-auto md:w-5/6 xl:w-4/6">
+          <h1
+            id="/projects"
+            className="text-center text-[#151C25] dark:text-white text-4xl"
           >
-            All Projects
-          </button>
-          <button
-            className={`md:mr-4 project-border px-5     md:px-6 py-2 dark:border-[#55e5a4] border-[#26313F]  ${
-              activeCategory === "frontend"
-                ? "active dark:bg-[#55e5a4] bg-[#151C25] dark:text-[#000000] text-[#FFFFFF]"
-                : "dark:text-white"
-            }`}
-            onClick={() => filterProjects("frontend")}
-          >
-            Front-end
-          </button>
-          <button
-            className={`project-border     px-6 py-2 dark:border-[#55e5a4] border-[#26313F] ${
-              activeCategory === "geoinformatics"
-                ? " active dark:bg-[#55e5a4] bg-[#151C25] dark:text-[#000000] text-[#FFFFFF]"
-                : "dark:text-white"
-            }`}
-            onClick={() => filterProjects("geoinformatics")}
-          >
-            Geoinformatics
-          </button>
-        </div>
-        <div className="satoshi flex gap-10 w-[100%] flex-wrap md:py-20 justify-center dark:bg-[#151C25] bg-[#F0F0F4]  pt-10 md:pt-20">
-          {/* Render filtered projects */}
-          {filteredProjects.map((project, index) => (
-            <ProjectsDiv
-              key={index}
-              title={project.title}
-              category={project.category}
-              image={project.image}
-              description={project.description}
-              technologies={project.technologies}
-              siteurl={project.siteurl}
-              videourl={project.videourl}
-              darkMode={darkMode}
-              handleModal={() => handleModal(project.videourl)} 
-              handleVisitSite={handleVisitSite}
-              isNew={index < 2 && project.isNew}
-            />
-          ))}
-        </div>
+            Projects
+          </h1>
+          <div className="flex md:text-xl gap-x-5 justify-center mt-10 ">
+            {/* Filter buttons */}
+            {/* Filter buttons */}
+            <button
+              className={`mr-4 project-border hidden md:block   px-6 py-2 dark:border-[#55e5a4] border-[#26313F]  ${
+                activeCategory === "all"
+                  ? "active dark:bg-[#55e5a4] bg-[#151C25] dark:text-[#000000] text-[#FFFFFF]"
+                  : "dark:text-white"
+              }`}
+              onClick={() => filterProjects("all")}
+            >
+              All Projects
+            </button>
+            <button
+              className={`md:mr-4 project-border px-5     md:px-6 py-2 dark:border-[#55e5a4] border-[#26313F]  ${
+                activeCategory === "frontend"
+                  ? "active dark:bg-[#55e5a4] bg-[#151C25] dark:text-[#000000] text-[#FFFFFF]"
+                  : "dark:text-white"
+              }`}
+              onClick={() => filterProjects("frontend")}
+            >
+              Front-end
+            </button>
+            <button
+              className={`project-border     px-6 py-2 dark:border-[#55e5a4] border-[#26313F] ${
+                activeCategory === "geoinformatics"
+                  ? " active dark:bg-[#55e5a4] bg-[#151C25] dark:text-[#000000] text-[#FFFFFF]"
+                  : "dark:text-white"
+              }`}
+              onClick={() => filterProjects("geoinformatics")}
+            >
+              Geoinformatics
+            </button>
+          </div>
+          <div className="satoshi flex gap-10 w-[100%] flex-wrap md:py-20 justify-center dark:bg-[#151C25] bg-[#F0F0F4]  pt-10 md:pt-20">
+            {/* Render filtered projects */}
+            {filteredProjects.map((project, index) => (
+              <ProjectsDiv
+                key={index}
+                title={project.title}
+                category={project.category}
+                image={project.image}
+                description={project.description}
+                technologies={project.technologies}
+                siteurl={project.siteurl}
+                videourl={project.videourl}
+                darkMode={darkMode}
+                handleModal={() => handleModal(project.videourl)}
+                handleVisitSite={handleVisitSite}
+                isNew={index < 2 && project.isNew}
+              />
+            ))}
+          </div>
 
-       
-
-        {/* <div className=" justify-center md:pt-0 pt-8 pb-3 md:pb-0 items-center flex flex-col">
+          {/* <div className=" justify-center md:pt-0 pt-8 pb-3 md:pb-0 items-center flex flex-col">
           <button className="mr-4 project-border  md:text-xl px-3 md:px-6 py-2 dark:border-[#55e5a4] border-[#26313F]  hover:border-none hover:bg-[#00142D] dark:hover:bg-[#00A359]  dark:bg-[#55e5a4] bg-[#151C25] dark:text-[#000000] text-[#FFFFFF]">
             View all Projects
           </button>
         </div> */}
+
+          <VideoModal
+            isOpen={modalOpen}
+            videourl={selectedVideoUrl}
+            close={closeModal}
+          />
+        </div>
       </div>
-      <VideoModal isOpen={modalOpen} videourl={selectedVideoUrl} close={closeModal} />
     </section>
   );
 };
