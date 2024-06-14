@@ -7,7 +7,7 @@ export default {
       screens: {
         xs: "480px",
         sm: "768px",
-        md: "1060px",
+        md: "1065px",
         lg: "1280px", // Large screens like a 27-inch monitor
         xl: "1920px",
       },
