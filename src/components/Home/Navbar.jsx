@@ -44,8 +44,8 @@ const Navbar = ({ darkMode, setDarkMode }) => {
           className="md:py-2 py-3 relative "
           style={{ backgroundColor: bgColor }}
         >
-          <nav className="mx-auto  w-full   md:w-5/6 xl:w-4/6 satoshi text-lg text-white   md:py-4">
-            <div className="flex justify-between items-center    satoshi text-lg text-white px-5   md:py-4">
+          <nav className="mx-auto  w-full satoshi text-lg text-white   md:py-4">
+            <div className="flex justify-between items-center mx-auto md:w-5/6 xl:w-4/6  satoshi text-lg text-white px-5 md:px-0   md:py-4">
               <div>
                 <Link to="/#" smooth={true} duration={700}>
                   <img
