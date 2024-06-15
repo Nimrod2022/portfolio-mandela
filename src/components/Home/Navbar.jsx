@@ -96,7 +96,7 @@ const Navbar = ({ darkMode, setDarkMode }) => {
 
               {/* Sidebar to cover entire screen */}
 
-              <div className="sm:hidden block z-10">
+              <div className="md:hidden block z-10">
                 {isOpen ? (
                   <AiOutlineClose
                     className="text-3xl dark:text-[#55E5A4] text-[d6d7dc]"
