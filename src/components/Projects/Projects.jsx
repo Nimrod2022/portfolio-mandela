@@ -91,10 +91,12 @@ const Projects = ({ darkMode }) => {
                 technologies={project.technologies}
                 siteurl={project.siteurl}
                 videourl={project.videourl}
+                githubURL={project.githubURL}
                 darkMode={darkMode}
                 handleModal={() => handleModal(project.videourl)}
                 handleVisitSite={handleVisitSite}
                 isNew={index < 2 && project.isNew}
+
               />
             ))}
           </div>
