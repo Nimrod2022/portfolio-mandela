@@ -141,7 +141,7 @@ const Navbar = ({ darkMode, setDarkMode }) => {
                   </ScrollIntoView>
                   <ScrollIntoView
                     selector="#contact"
-                    options={{ behavior: "smooth", block: "start" }}
+                    options={{ behavior: "smooth", block: "center" }}
                   >
                     <li className="p-4 text-white">Contact</li>
                   </ScrollIntoView>
