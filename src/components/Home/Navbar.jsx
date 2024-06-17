@@ -1,18 +1,14 @@
-import { Link } from "react-scroll";
-import React, { useEffect } from "react";
-
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { AiOutlineClose } from "react-icons/ai";
 import { BiMenuAltRight } from "react-icons/bi";
+import ScrollIntoView from "react-scroll-into-view";
 
 const logoDarkMode = "/assets/logo-dark-mode.svg";
 const logoLightMode = "/assets/logo-light-mode.svg";
-
 const darkIcon = "/assets/dark-theme-icon.svg";
 const lightIcon = "/assets/light-theme-icon.svg";
 
 const Navbar = ({ darkMode, setDarkMode }) => {
-  //  Sticky nav handling
   const [scrolled, setScrolled] = useState(false);
   const [bgColor, setBgColor] = useState(darkMode ? "#151C25" : "#F0F0F4");
   const [isOpen, setIsOpen] = useState(false);
@@ -22,7 +18,6 @@ const Navbar = ({ darkMode, setDarkMode }) => {
   };
 
   useEffect(() => {
-    // Update the background color based on the current dark mode
     setBgColor(darkMode ? "#151C25" : "#F0F0F4");
 
     const handleScroll = () => {
@@ -30,8 +25,8 @@ const Navbar = ({ darkMode, setDarkMode }) => {
       if (window.scrollY > 10) setBgColor(darkMode ? "#26313F" : "#d6d7dc");
       else setBgColor(darkMode ? "#151C25" : "#F0F0F4");
     };
-    window.addEventListener("scroll", handleScroll);
 
+    window.addEventListener("scroll", handleScroll);
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
@@ -41,49 +36,59 @@ const Navbar = ({ darkMode, setDarkMode }) => {
     <div className={darkMode ? "dark" : ""}>
       <header className={`${scrolled ? "stickynav" : ""} w-full`}>
         <div
-          className="md:py-2 py-3 relative "
+          className="md:py-2 py-3 relative"
           style={{ backgroundColor: bgColor }}
         >
-          <nav className="mx-auto  w-full satoshi text-lg text-white   md:py-4">
-            <div className="flex justify-between items-center mx-auto md:w-5/6 xl:w-4/6  satoshi text-lg text-white px-5 md:px-0   md:py-4">
+          <nav className="mx-auto w-full satoshi text-lg text-white md:py-1">
+            <div className="flex justify-between items-center mx-auto md:w-5/6 xl:w-4/6 satoshi text-lg text-white px-5 md:px-0 md:py-4">
               <div>
-                <Link to="/#" smooth={true} duration={700}>
+                <ScrollIntoView
+                  selector="#home"
+                  options={{ behavior: "smooth", block: "start" }}
+                >
                   <img
                     src={darkMode ? logoDarkMode : logoLightMode}
                     alt="logo"
-                    className="hover:cursor-pointer size-10  md:size-12"
+                    className="hover:cursor-pointer size-10 md:size-12"
                   />
-                </Link>
+                </ScrollIntoView>
               </div>
 
               <div className="flex gap-10">
-                <Link to="/about" smooth={true} duration={1000}>
+                <ScrollIntoView
+                  selector="#about"
+                  options={{ behavior: "smooth", block: "starrt" }}
+                >
                   <button
                     type="button"
-                    className="bg-[#26313F] dark:bg-[#55E5A4] text-[#FFFFFF] dark:text-black hover:bg-[#00142D] dark:hover:bg-[#00A359] text-md font-semibold hidden w-24 md:block rounded-md py-1 px-4 "
+                    className="bg-[#26313F] dark:bg-[#55E5A4] text-[#FFFFFF] dark:text-black hover:bg-[#00142D] dark:hover:bg-[#00A359] text-md font-semibold hidden w-24 md:block rounded-md py-1 px-4"
                   >
                     About
                   </button>
-                </Link>
-
-                <Link to="/projects" smooth={true} duration={700}>
+                </ScrollIntoView>
+                <ScrollIntoView
+                  selector="#projects"
+                  options={{ behavior: "smooth", block: "start" }}
+                >
                   <button
                     type="button"
-                    className="bg-[#26313F] dark:bg-[#55E5A4] text-[#FFFFFF] dark:text-black hover:bg-[#00142D] dark:hover:bg-[#00A359]  text-md font-semibold w-24 hidden md:block rounded-md py-1 px-4 "
+                    className="bg-[#26313F] dark:bg-[#55E5A4] text-[#FFFFFF] dark:text-black hover:bg-[#00142D] dark:hover:bg-[#00A359] text-md font-semibold w-24 hidden md:block rounded-md py-1 px-4"
                   >
                     Projects
                   </button>
-                </Link>
-
-                <Link to="/contact" smooth={true} duration={700}>
+                </ScrollIntoView>
+                <ScrollIntoView
+                  selector="#contact"
+                  options={{ behavior: "smooth", block: "start" }}
+                >
                   <button
                     type="button"
-                    className="border border-[#26313F] dark:border-[white] text-[#26313F] dark:text-white hover:bg-[#00142D] hover:text-white dark:hover:bg-[#55E5A4] dark:hover:text-[#26313F] dark:hover:border-[#26313F] text-md font-semibold w-24 hidden md:block rounded-md py-1 px-4 "
+                    className="border border-[#26313F] dark:border-[white] text-[#26313F] dark:text-white hover:bg-[#00142D] hover:text-white dark:hover:bg-[#55E5A4] dark:hover:text-[#26313F] dark:hover:border-[#26313F] text-md font-semibold w-24 hidden md:block rounded-md py-1 px-4"
                   >
                     Contact
                   </button>
-                </Link>
-                <button className=" dark-mode-button size-6 md:size-auto ">
+                </ScrollIntoView>
+                <button className="dark-mode-button size-6 md:size-auto">
                   <img
                     src={darkMode ? lightIcon : darkIcon}
                     alt="theme"
@@ -93,8 +98,6 @@ const Navbar = ({ darkMode, setDarkMode }) => {
                   />
                 </button>
               </div>
-
-              {/* Sidebar to cover entire screen */}
 
               <div className="md:hidden block z-10">
                 {isOpen ? (
@@ -109,53 +112,39 @@ const Navbar = ({ darkMode, setDarkMode }) => {
                   />
                 )}
               </div>
-              {/*Mobile menu /> */}
+
               <div
                 className={
                   isOpen
-                    ? "sm:hidden absolute top-0 right-0 left-0 bottom-0 flex justify-center items-center text-center  w-full h-screen bg-[#000]/85 text-[#55E5A4] duration-300 ease-in-out"
-                    : "sm:hidden absolute top-0 right-0 left-[-100%] bottom-0 flex justify-center items-center text-center w-full h-screen  bg-[#000]/85 text-white duration-300 ease-in-out"
+                    ? "sm:hidden absolute top-0 right-0 left-0 bottom-0 flex justify-center items-center text-center w-full h-screen bg-[#000]/85 text-[#55E5A4] duration-300 ease-in-out"
+                    : "sm:hidden absolute top-0 right-0 left-[-100%] bottom-0 flex justify-center items-center text-center w-full h-screen bg-[#000]/85 text-white duration-300 ease-in-out"
                 }
               >
                 <ul onClick={toggleNav}>
-                  <Link
-                    to="/#"
-                    spy={true}
-                    smooth={true}
-                    duration={1000}
-                    onClick={toggleNav}
+                  <ScrollIntoView
+                    selector="#home"
+                    options={{ behavior: "smooth", block: "start" }}
                   >
                     <li className="p-4">Home</li>
-                  </Link>
-                  <Link
-                    to="/about"
-                    spy={true}
-                    smooth={true}
-                    duration={1000}
-                    onClick={toggleNav}
+                  </ScrollIntoView>
+                  <ScrollIntoView
+                    selector="#about"
+                    options={{ behavior: "smooth", block: "start" }}
                   >
                     <li className="p-4">About</li>
-                  </Link>
-
-                  <Link
-                    to="/projects"
-                    spy={true}
-                    smooth={true}
-                    duration={1000}
-                    onClick={toggleNav}
+                  </ScrollIntoView>
+                  <ScrollIntoView
+                    selector="#projects"
+                    options={{ behavior: "smooth", block: "start" }}
                   >
                     <li className="p-4">Projects</li>
-                  </Link>
-
-                  <Link
-                    to="/contact"
-                    spy={true}
-                    smooth={true}
-                    duration={1000}
-                    onClick={toggleNav}
+                  </ScrollIntoView>
+                  <ScrollIntoView
+                    selector="#contact"
+                    options={{ behavior: "smooth", block: "start" }}
                   >
                     <li className="p-4 text-white">Contact</li>
-                  </Link>
+                  </ScrollIntoView>
                 </ul>
               </div>
             </div>

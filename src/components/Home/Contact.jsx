@@ -108,11 +108,8 @@ const Contact = ({ darkMode }) => {
 
   return (
     <>
-      <section className={`${darkMode ? "dark" : ""}`}>
-        <div
-          id="/contact"
-          className="satoshi bg-[#F0F0F4] dark:bg-[#151C25] min-h-screen flex flex-col justify-center items-center relative pt-10 md:pt-10"
-        >
+      <section id="contact" className={`${darkMode ? "dark" : ""}`}>
+        <div className="satoshi bg-[#F0F0F4] dark:bg-[#151C25] min-h-screen flex flex-col justify-center items-center relative pt-10 md:pt-10">
           <h1 className="text-[#26313F] dark:text-white text-2xl md:text-3xl font-extrabold">
             Get in Touch
           </h1>
@@ -123,7 +120,9 @@ const Contact = ({ darkMode }) => {
               </h1>
               <h1 className="text-white pt-3 justify-center items-center text-4xl px-20">
                 something{" "}
-                <span className={darkMode ? "text-[#55E5A4]" : "text-[#5598EE]"}>
+                <span
+                  className={darkMode ? "text-[#55E5A4]" : "text-[#5598EE]"}
+                >
                   cool{" "}
                 </span>
               </h1>
@@ -258,7 +257,11 @@ const Contact = ({ darkMode }) => {
                         alt="message-icon"
                         className="size-5"
                       />
-                      <p>{isSubmitted ? "Message sent successfully" : "Send message"}</p>
+                      <p>
+                        {isSubmitted
+                          ? "Message sent successfully"
+                          : "Send message"}
+                      </p>
                     </span>
                   </button>
                 </div>

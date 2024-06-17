@@ -36,7 +36,7 @@ const Projects = ({ darkMode }) => {
 
 
   return (
-    <section id="/projects" className={darkMode ? "dark" : ""}>
+    <section className={darkMode ? "dark" : ""}>
       <div className="satoshi w-full dark:bg-[#151C25] dark:projectsDark   bg-[#F0F0F4] md:pt-32 pt-14 ">
         <div className="mx-auto md:w-5/6 xl:w-4/6">
           <h1 className="text-center text-[#151C25] dark:text-white text-4xl">
@@ -110,6 +110,7 @@ const Projects = ({ darkMode }) => {
           />
         </div>
       </div>
+     
     </section>
   );
 };
