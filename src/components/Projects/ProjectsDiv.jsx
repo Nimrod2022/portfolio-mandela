@@ -44,7 +44,7 @@ const ProjectsDiv = ({
           <button
             className={`${
               darkMode ? "live-demo-dark" : "live-demo-light"
-            } text-md md:text-lg md:mr-10 mr-8 px-5 py-2 md:py-3 hover:bg-[#00142D] hover:text-white dark:hover:bg-[#00A359]`}
+            } text-md md:text-lg md:mr-10 mr-8 px-5 py-2  hover:bg-[#00142D] hover:text-white dark:hover:bg-[#00A359]`}
             type="button"
             onClick={() => handleVisitSite(siteurl)}
           >
@@ -52,7 +52,7 @@ const ProjectsDiv = ({
           </button>
 
           <button
-            className="visit-site border text-md md:text-lg px-3 md:px-6 py-2 md:py-3 text-white hover:border-none hover:bg-[#00142D] "
+            className="visit-site border text-md md:text-lg px-3 md:px-6 py-2 text-white hover:border-none hover:bg-[#00142D] "
             type="button"
             onClick={() => handleVisitSite(githubURL)}
           >

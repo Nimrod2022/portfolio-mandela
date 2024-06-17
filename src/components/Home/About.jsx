@@ -4,8 +4,8 @@ const lightModeProfileAbout = "/assets/about-profile-light.svg";
 const About = ({ darkMode }) => {
   return (
     <>
-      <div id="/about" className={darkMode ? "dark" : ""}>
-        <div className="dark:bg-[#222a33]  bg-[#e8e8ec] md:w-full ">
+      <div className={darkMode ? "dark" : ""}>
+        <div id="/about" className="dark:bg-[#222a33]  bg-[#e8e8ec] md:w-full ">
           <div className=" px-5 md:px-0 pt-14 md:pt-20  mx-auto md:w-5/6 xl:w-4/6 ">
             <div className="flex justify-center flex-col md:flex-row  gap-10 md:gap-20 ">
               <div className="w-full  md:h-[555px]  md:w-[100%]">

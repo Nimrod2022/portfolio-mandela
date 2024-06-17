@@ -36,13 +36,10 @@ const Projects = ({ darkMode }) => {
 
 
   return (
-    <section className={darkMode ? "dark" : ""}>
+    <section id="/projects" className={darkMode ? "dark" : ""}>
       <div className="satoshi w-full dark:bg-[#151C25] dark:projectsDark   bg-[#F0F0F4] md:pt-32 pt-14 ">
         <div className="mx-auto md:w-5/6 xl:w-4/6">
-          <h1
-            id="/projects"
-            className="text-center text-[#151C25] dark:text-white text-4xl"
-          >
+          <h1 className="text-center text-[#151C25] dark:text-white text-4xl">
             Projects
           </h1>
           <div className="flex md:text-xl gap-x-5 justify-center mt-10 ">
@@ -96,7 +93,6 @@ const Projects = ({ darkMode }) => {
                 handleModal={() => handleModal(project.videourl)}
                 handleVisitSite={handleVisitSite}
                 isNew={index < 2 && project.isNew}
-
               />
             ))}
           </div>

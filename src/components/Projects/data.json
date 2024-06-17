@@ -89,7 +89,7 @@
     "title": "Kibet Portfolio",
     "category": "frontend",
     "image": "/assets/kibet-portfolio.png",
-    "description": "Built a portfolio website to showcase my projects and learning journey in web development and geoinformatics.",
+    "description": "Built a portfolio website to showcase my projects and learning journey in web development and geoinformatics. I constantly make updates to improve it.",
     "technologies": [
       "/assets/react.svg",
       "/assets/js.svg",
