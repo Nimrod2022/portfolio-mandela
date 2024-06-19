@@ -9,8 +9,8 @@
       "/assets/typescript.png",
       "/assets/js.svg",
       "/assets/tailwind.svg",
-      "/assets/css.svg",
-      "/assets/redux.svg"
+      "/assets/css.svg"
+    
     ],
     "siteurl": "https://www.pentonenergy.com/",
     "githubURL": "https://github.com/Nimrod2022/penton-consulting",
