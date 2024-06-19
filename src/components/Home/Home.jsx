@@ -62,13 +62,13 @@ const Home = ({ darkMode, scrollToContact }) => {
                 Nimrod Kibet
               </p>
               <h1 className="text-[#55E5A4] pt-2 font-extrabold text-2xl md:text-3xl text-center">
-                Front-end & GIS Developer
+                Front-end Developer
               </h1>
               <p className="text-xl text-[#686565] dark:text-[#A9A9A9] pt-3 text-center">
-                I specialize in crafting immersive user experiences using the
-                latest frontend technologies and frameworks to bring your vision
-                to life. Additionally, my expertise extends to geoinformatics,
-                where I excel in harnessing the power of spatial data to uncover
+                I am an innovative and detail-oriented Front End Developer with
+                a passion for creating responsive and user-friendly websites.
+                Additionally, my expertise extends to geoinformatics, where I
+                excel in harnessing the power of spatial data to uncover
                 actionable insights.
               </p>
               <div className="items-center flex justify-center md:pb-0 pb-8 pt-8 md:pt-5">
