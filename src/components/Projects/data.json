@@ -3,7 +3,7 @@
     "title": "Penton Consulting",
     "category": "frontend",
     "image": "/assets/penton-consulting.png",
-    "description": "Currently working on this client project. its currently 40% complete. ",
+    "description": "Currently working on this client project. its currently 60% complete. ",
     "technologies": [
       "/assets/react.svg",
       "/assets/typescript.png",
@@ -12,7 +12,7 @@
       "/assets/css.svg",
       "/assets/redux.svg"
     ],
-    "siteurl": "https://penton-consulting.vercel.app/",
+    "siteurl": "https://www.pentonenergy.com/",
     "githubURL": "https://github.com/Nimrod2022/penton-consulting",
     "videourl": "EB4lEiqC-Vs",
     "isNew": true
