@@ -45,7 +45,7 @@ const About = ({ darkMode }) => {
                   Technologies
                 </h3>
 
-                <div className="flex pb-7 gap-5  md:gap-8">
+                <div className="flex pb-7 gap-5 md:justify-start justify-center md:gap-8">
                   <div>
                     <img
                       src="/assets/react.svg"

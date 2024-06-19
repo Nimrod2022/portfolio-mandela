@@ -34,13 +34,13 @@ const Navbar = ({ darkMode, setDarkMode }) => {
 
   return (
     <div className={darkMode ? "dark" : ""}>
-      <header className={`${scrolled ? "stickynav" : ""} w-full`}>
+      <header className={`${scrolled ? "stickynav " : ""} w-full`}>
         <div
           className="md:py-2 py-3 relative"
           style={{ backgroundColor: bgColor }}
         >
           <nav className="mx-auto w-full satoshi text-lg text-white md:py-1">
-            <div className="flex justify-between items-center mx-auto md:w-5/6 xl:w-4/6 satoshi text-lg text-white px-5 md:px-0 md:py-4">
+            <div className="flex justify-between items-center mx-auto md:w-5/6 xl:w-4/6 satoshi text-lg text-white px-5 md:px-0 md:py-4 ">
               <div>
                 <ScrollIntoView
                   selector="#home"

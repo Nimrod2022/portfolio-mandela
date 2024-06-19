@@ -21,7 +21,7 @@
     "title": "Yam Yarn Recipes",
     "category": "frontend",
     "image": "/assets/yam.png",
-    "description": "The app makes cooking easier by giving users access to a wide range of recipes. The recipes data are from the Spoonacular Food API.",
+    "description": "The app makes cooking easier by giving users access to a wide range of recipes.",
     "technologies": [
       "/assets/react.svg",
       "/assets/js.svg",
@@ -38,7 +38,7 @@
     "title": "Georgy Portfolio",
     "category": "frontend",
     "image": "/assets/georgy-portfolio.png",
-    "description": "Worked closely with George to help him build a portfolio website to showcase his projects and learning journey in data science and AI.",
+    "description": "Build George a portfolio website to showcase his projects in machine learning and AI",
     "technologies": [
       "/assets/react.svg",
       "/assets/js.svg",
@@ -54,7 +54,7 @@
     "title": "Live flight Tracker",
     "category": "geoinformatics",
     "image": "/assets/flight-tracker.png",
-    "description": "Collaborative project to track flights within the Austrian airspace in real-time. Flight data provided by OpenSky Network.",
+    "description": "Collaborative project to track flights within the Austrian airspace in real-time.",
 
     "technologies": [
       "/assets/html.svg",
@@ -72,7 +72,7 @@
     "title": "UATE SDI",
     "category": "geoinformatics",
     "image": "/assets/uate.png",
-    "description": "The dashboard provides an overview of trends of Ukrainian asylum seekers in Europe over the past decade. The data is derived from UNHCR Refugee API. ",
+    "description": "Dashboard showing trends of Ukrainian asylum seekers in Europe over the past decade.  ",
     "technologies": [
       "/assets/python.svg",
       "/assets/django.png",
@@ -89,7 +89,7 @@
     "title": "Kibet Portfolio",
     "category": "frontend",
     "image": "/assets/kibet-portfolio.png",
-    "description": "Built a portfolio website to showcase my projects and learning journey in web development and geoinformatics. I constantly make updates to improve it.",
+    "description": "Portfolio to showcase my projects and learning journey in web development and geoinformatics.",
     "technologies": [
       "/assets/react.svg",
       "/assets/js.svg",
