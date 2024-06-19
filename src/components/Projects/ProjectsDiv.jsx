@@ -22,20 +22,20 @@ const ProjectsDiv = ({
       <img src={image} alt={title} className="md:h-[50%] w-full  " />
       <div className="bg-[#26313F] text-center items-center h-[50%] md:py-0 py-5">
         <div className="flex flex-col justify-center items-center">
-          <h1 className="md:text-3xl text-xl text-white mt-2">{title}</h1>
-          <p className="md:text-xl text-sm text-start mt-2 px-10 text-[#A9A9A9]">
+          <h1 className="md:text-2xl text-xl text-white mt-2">{title}</h1>
+          <p className="md:text-lg text-sm text-start mt-2 px-10 text-[#A9A9A9]">
             {description}
           </p>
         </div>
 
         <div className="justify-center flex flex-col items-center">
-          <div className="gap-5 mt-3 md:mt-5 flex ">
+          <div className="gap-5 mt-3 md:mt-3 flex ">
             {technologies.map((icon, index) => (
               <img
                 key={index}
                 src={icon}
                 alt={`Technology icon ${index}`}
-                className="md:size-10 size-7 "
+                className="md:size-8 size-7 "
               />
             ))}
           </div>
