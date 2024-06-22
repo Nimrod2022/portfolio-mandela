@@ -32,9 +32,9 @@ const About = ({ darkMode }) => {
                 </div>
 
                 <p className=" text-lg pt-5 text-[#686565] dark:text-[#A9A9A9]  md:text-start">
-                  I am currently a master’s student in Applied Geoinformatics at
-                  the University of Salzburg, Austria. I have a keen interest in
-                  front-end and GIS development. My goal is to use my expertise
+                  I am front-end web developer currently finalzing a master’s student in Applied Geoinformatics from
+                  the University of Salzburg, Austria. I have a keen interest
+                  Web developement and GIS development. My goal is to use my expertise
                   in building exciting and functional user interfaces.
                   Additionally, employ my geospatial analysis, modeling, and
                   process automation skills to engineer innovative,
