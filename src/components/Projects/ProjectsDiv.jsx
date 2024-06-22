@@ -20,7 +20,7 @@ const ProjectsDiv = ({
         </div>
       )}
       <img src={image} alt={title} className="md:h-[50%] w-full  " />
-      <div className="bg-[#26313F] text-center items-center h-[50%] md:py-0 py-5">
+      <div className="bg-[#26313F] text-center items-center md:h-[50%] md:py-0 py-5">
         <div className="flex flex-col justify-center items-center">
           <h1 className="md:text-2xl text-xl text-white mt-2">{title}</h1>
           <p className="md:text-lg text-sm text-start mt-2 px-10 text-[#A9A9A9]">
