@@ -198,7 +198,7 @@ const About = ({ darkMode }) => {
                     Technologies
                   </h3>
 
-                  <div className="flex md:justify-start justify-center  py-5 items-center gap-3 md:gap-x-4">
+                  <div className="flex md:justify-start justify-center  pt-5 items-center gap-3 md:gap-x-4">
                     {displayedIcons.map((item, index) => (
                       <div key={index} className="flex flex-col items-center">
                         <div>{item.icon}</div>
@@ -294,7 +294,7 @@ const About = ({ darkMode }) => {
 
                 <div
                   id="projects"
-                  className=" items-center justify-center md:justify-start flex  py-5"
+                  className=" items-center justify-center md:justify-start flex md:pb-0 pb-5  pt-5"
                 >
                   <button
                     type="button"
