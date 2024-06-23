@@ -194,11 +194,11 @@ const About = ({ darkMode }) => {
                     solutions.
                   </p>
 
-                  <h3 className="text-white md:text-xl md:pt-5">
+                  <h3 className="text-white md:text-xl md:text-start text-center pt-5">
                     Technologies
                   </h3>
 
-                  <div className="flex  py-5 items-center gap-3 md:gap-x-4">
+                  <div className="flex md:justify-start justify-center  py-5 items-center gap-3 md:gap-x-4">
                     {displayedIcons.map((item, index) => (
                       <div key={index} className="flex flex-col items-center">
                         <div>{item.icon}</div>
