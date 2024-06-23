@@ -1,11 +1,118 @@
+import { useState, useEffect } from "react";
 import { FaSquareXTwitter, FaLinkedin } from "react-icons/fa6";
 
 import { FaGithubSquare, FaXingSquare } from "react-icons/fa";
+import { TbBrandDjango } from "react-icons/tb";
+import {
+  FaReact,
+  FaJs,
+  FaHtml5,
+  FaCss3Alt,
+  FaPython,
+  FaDatabase,
+  FaPlus,
+  FaMinus,
+} from "react-icons/fa";
+import {
+  SiTailwindcss,
+  SiPostgresql,
+  SiOpenlayers,
+  SiLeaflet,
+  SiQgis,
+  SiTypescript,
+  SiArcgis,
+} from "react-icons/si";
 
 const darkModeProfileAbout = "/assets/about-profile-dark.svg";
 const lightModeProfileAbout = "/assets/about-profile-light.svg";
 
 const About = ({ darkMode }) => {
+
+    
+
+    const icons = [
+      {
+        icon: <FaReact className="size-6 text-[#686565] dark:text-[#A9A9A9]" />,
+        name: "React",
+      },
+      {
+        icon: <FaJs className="size-6 text-[#686565] dark:text-[#A9A9A9]" />,
+        name: "JavaScript",
+      },
+      {
+        icon: (
+          <SiTailwindcss className="size-6 text-[#686565] dark:text-[#A9A9A9]" />
+        ),
+        name: "Tailwind CSS",
+      },
+      {
+        icon: <FaHtml5 className="size-6 text-[#686565] dark:text-[#A9A9A9]" />,
+        name: "HTML",
+      },
+      {
+        icon: (
+          <FaCss3Alt className="size-6 text-[#686565] dark:text-[#A9A9A9]" />
+        ),
+        name: "CSS",
+      },
+      {
+        icon: (
+          <FaPython className="size-6 text-[#686565] dark:text-[#A9A9A9]" />
+        ),
+        name: "Python",
+      },
+      {
+        icon: (
+          <SiPostgresql className="size-6 text-[#686565] dark:text-[#A9A9A9]" />
+        ),
+        name: "PostgreSQL",
+      },
+      {
+        icon: (
+          <SiOpenlayers className="size-6 text-[#686565] dark:text-[#A9A9A9]" />
+        ),
+        name: "OpenLayers",
+      },
+      //  {
+      //    icon: <SiLeaflet className="size-6 text-[#686565] dark:text-[#A9A9A9]" />,
+      //    name: "Leaflet",
+      //  },
+      {
+        icon: <SiQgis className="size-6 text-[#686565] dark:text-[#A9A9A9]" />,
+        name: "QGIS",
+      },
+      //  {
+      //    icon: (
+      //      <SiTypescript className="size-6 text-[#686565] dark:text-[#A9A9A9]" />
+      //    ),
+      //    name: "TypeScript",
+      //  },
+      {
+        icon: (
+          <SiArcgis className="size-6 text-[#686565] dark:text-[#A9A9A9]" />
+        ),
+        name: "ArcGIS",
+      },
+      //  {
+      //    icon: (
+      //      <TbBrandDjango className="size-6 text-[#686565] dark:text-[#A9A9A9]" />
+      //    ),
+      //    name: "Django",
+      //  },
+    ];
+
+    const [isMobile, setIsMobile] = useState(window.innerWidth < 768);
+
+    useEffect(() => {
+      const handleResize = () => {
+        setIsMobile(window.innerWidth < 768);
+      };
+
+      window.addEventListener("resize", handleResize);
+      return () => window.removeEventListener("resize", handleResize);
+    }, []);
+
+    const displayedIcons = isMobile ? icons.slice(0, 5) : icons;
   return (
     <>
       <div id="about" className={darkMode ? "dark" : ""}>
@@ -80,15 +187,16 @@ const About = ({ darkMode }) => {
                   </p>
 
                   <p>
-                    Throughout my studies,I have developed hands-on skills in GIS
-                    methods and remote sensing, focusing on data acquisition,
-                    processing, analysis, and visualization using QGIS and
-                    ArcGIS Pro/Online. I also gained backend development
-                    expertise, particularly in designing and developing spatial
-                    data infrastructures using PostgreSQL/PostGIS and Python, along with
-                    frameworks and libraries like Django, GeoServer, and
-                    OpenLayers. My passion for showcasing projects on the web
-                    led me to delve deeper into frontend development.
+                    Throughout my studies,I have developed hands-on skills in
+                    GIS methods and remote sensing, focusing on data
+                    acquisition, processing, analysis, and visualization using
+                    QGIS and ArcGIS Pro/Online. I also gained backend
+                    development expertise, particularly in designing and
+                    developing spatial data infrastructures using
+                    PostgreSQL/PostGIS and Python, along with frameworks and
+                    libraries like Django, GeoServer, and OpenLayers. My passion
+                    for showcasing projects on the web led me to delve deeper
+                    into frontend development.
                   </p>
 
                   <p className="py-3">
@@ -100,6 +208,31 @@ const About = ({ darkMode }) => {
                     sustainable software solutions that reveal actionable
                     insights from data.
                   </p>
+
+                  <h3 className="text-white md:text-xl md:pt-5">Technologies</h3>
+
+                  <div className="flex  py-5 items-center gap-3 md:gap-x-4">
+                    {displayedIcons.map((item, index) => (
+                      <div key={index} className="flex flex-col items-center">
+                        <div>{item.icon}</div>
+                        <span className="text-xs text-center md:text-sm text-[#686565] dark:text-[#A9A9A9]">
+                          {item.name}
+                        </span>
+                      </div>
+                    ))}
+                    <div
+                      className="flex flex-col items-center cursor-pointer"
+                      onClick={() => setExpanded(!expanded)}
+                    >
+                      {/* <div className="">
+                        {expanded ? (
+                          <FaMinus className=" size-3 text-black dark:text-white" />
+                        ) : (
+                          <FaPlus className="size-3 text-black dark:text-white" />
+                        )}
+                      </div> */}
+                    </div>
+                  </div>
                 </div>
 
                 {/* <h3 className="text-[#26313F] text-center md:text-start my-5  font-semibold dark:text-[#55E5A4]">

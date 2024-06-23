@@ -1,58 +1,13 @@
 import { useState, useEffect } from "react";
 import ScrollToAbout from "../custom/ScrollToAbout";
-import {
-  FaReact,
-  FaJs,
-  FaHtml5,
-  FaCss3Alt,
-  FaPython,
-  FaDatabase,
-  FaPlus,
-  FaMinus,
-} from "react-icons/fa";
-import { SiTailwindcss, SiPostgresql } from "react-icons/si";
+
 
 const Home = ({ darkMode, scrollToContact }) => {
   const [showScrollToAboutButton, setShowScrollToAboutButton] = useState(false);
 
-  const [expanded, setExpanded] = useState(false);
 
-  const icons = [
-    {
-      icon: (
-        <FaReact className=" size-6 text-[#686565] dark:text-[#A9A9A9]" />
-      ),
-      name: "React",
-    },
-    {
-      icon: (
-        <FaJs className=" size-6 text-[#686565] dark:text-[#A9A9A9]" />
-      ),
-      name: "JavaScript",
-    },
-    {
-      icon: (
-        <SiTailwindcss className=" size-6 text-[#686565] dark:text-[#A9A9A9]" />
-      ),
-      name: "Tailwind CSS",
-    },
-    //  { icon: <FaHtml5 className="md:size-8 size-5" />, name: "HTML" },
-    //  { icon: <FaCss3Alt className="md:size-8 size-5" />, name: "CSS" },
-    {
-      icon: (
-        <FaPython className=" size-6 text-[#686565] dark:text-[#A9A9A9]" />
-      ),
-      name: "Python",
-    },
-    {
-      icon: (
-        <SiPostgresql className=" size-6 text-[#686565] dark:text-[#A9A9A9]" />
-      ),
-      name: "PostgreSQL",
-    },
-  ];
 
-  const displayedIcons = expanded ? icons : icons.slice(0, 3);
+  
 
   useEffect(() => {
     const handleScroll = () => {
@@ -115,7 +70,7 @@ const Home = ({ darkMode, scrollToContact }) => {
                 excel in harnessing the power of spatial data to uncover
                 actionable insights.
               </p>
-              <div className="items-center md:flex justify-center md:pb-0 pb-8 pt-8 md:pt-5">
+              <div className="items-center flex justify-center md:pb-0 pb-8 pt-8 md:pt-5">
                 <div className="flex flex-col items-center">
                   <scrollTo selector="contact">
                     <button
@@ -128,36 +83,15 @@ const Home = ({ darkMode, scrollToContact }) => {
                   </scrollTo>
                 </div>
 
-                {/* <div className="flex items-center">
+                <div className="flex items-center">
                   <div className="circle"></div>
                   <p className="text-center text-[#686565] dark:text-[#A9A9A9] ml-3">
                     Available for work
                   </p>
-                </div> */}
-
-                <div className="flex justify-center md:pt-0 pt-8 items-center gap-3 md:gap-x-4">
-                  {displayedIcons.map((item, index) => (
-                    <div key={index} className="flex flex-col items-center">
-                      <div>{item.icon}</div>
-                      <span className="text-xs text-center md:text-sm text-[#686565] dark:text-[#A9A9A9]">
-                        {item.name}
-                      </span>
-                    </div>
-                  ))}
-                  <div
-                    className="flex flex-col items-center cursor-pointer"
-                    onClick={() => setExpanded(!expanded)}
-                  >
-                    <div className="">
-                      {expanded ? (
-                        <FaMinus className=" size-3 text-black dark:text-white" />
-                      ) : (
-                        <FaPlus className="size-3 text-black dark:text-white" />
-                      )}
-                    </div>
-                  </div>
                 </div>
               </div>
+
+             
             </div>
           </div>
           <div id="about"></div>
