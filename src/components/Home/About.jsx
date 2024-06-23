@@ -11,8 +11,8 @@ const About = ({ darkMode }) => {
       <div id="about" className={darkMode ? "dark" : ""}>
         <div className="dark:bg-[#222a33]  bg-[#e8e8ec] md:w-full ">
           <div className=" px-5 md:px-0 pt-14 md:pt-20  mx-auto md:w-5/6 xl:w-4/6 ">
-            <div className="flex justify-center flex-col md:flex-row  gap-10 md:gap-20 ">
-              <div className="w-full  md:h-[555px]  md:w-[100%]">
+            <div className="flex flex-col md:flex-row  gap-10 md:gap-20 ">
+              <div className="w-full    md:w-[40%]">
                 <img
                   src={darkMode ? darkModeProfileAbout : lightModeProfileAbout}
                   alt="about-profile"
@@ -54,7 +54,7 @@ const About = ({ darkMode }) => {
                 </div>
               </div>
 
-              <div className="">
+              <div className="md:w-[70%]">
                 <div className="container mx-auto flex justify-center md:justify-start">
                   <div className="">
                     <h1 className="text-3xl text-center md:text-start font-extrabold text-[#000000] dark:text-white">
@@ -69,7 +69,7 @@ const About = ({ darkMode }) => {
                   </div>
                 </div>
 
-                <div className=" text-lg pt-5 text-[#686565] dark:text-[#A9A9A9] md:w-[]  md:text-start">
+                <div className=" text-lg pt-5 text-[#686565] dark:text-[#A9A9A9]  md:text-start">
                   <p className="py-3">
                     I am a frontend web developer currently finalizing a
                     master’s degree in Applied Geoinformatics from the
