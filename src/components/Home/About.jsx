@@ -69,49 +69,37 @@ const About = ({ darkMode }) => {
                   </div>
                 </div>
 
-                <div className=" text-lg pt-5 text-[#686565] dark:text-[#A9A9A9]  md:text-start">
+                <div className=" text-lg pt-2 text-[#686565] dark:text-[#A9A9A9]  md:text-start">
                   <p className="py-3">
                     I am a frontend web developer currently finalizing a
                     master’s degree in Applied Geoinformatics from the
-                    University of Salzburg, Austria. My keen interest lies in
-                    web development and Web GIS development, where I aim to
-                    create dynamic and engaging user experiences that make an
-                    impact.
+                    University of Salzburg, Austria, with a keen interest in web
+                    development and Web GIS development. My goal is to create
+                    dynamic and engaging user experiences that make a
+                    significant impact.
                   </p>
 
                   <p>
-                    During my studies at the Department of Geoinformatics, I
-                    gained hands-on skills in GIS methods and remote sensing,
+                    Throughout my studies at the Department of Geoinformatics, I
+                    developed hands-on skills in GIS methods and remote sensing,
                     focusing on data acquisition, processing, analysis, and
-                    visualization using software such as QGIS and ArcGIS
-                    Pro/Online. The program also equipped me with skills in
-                    backend development, especially in designing and developing
-                    spatial data infrastructures using PostgreSQL and Python,
-                    including working with frameworks and libraries such as
-                    Django, GeoServer, and OpenLayers. However, with this
-                    technical foundation, I also had a drive to showcase
-                    projects on the web, which ignited my passion for frontend
-                    development.
+                    visualization using QGIS and ArcGIS Pro/Online. I also
+                    gained backend development expertise, particularly in
+                    designing and developing spatial data infrastructures using
+                    PostgreSQL and Python, along with frameworks and libraries
+                    like Django, GeoServer, and OpenLayers. My passion for
+                    showcasing projects on the web led me to delve deeper into
+                    frontend development.
                   </p>
 
                   <p className="py-3">
-                    I started by learning HTML, CSS, and JavaScript, and
-                    advanced to ReactJS. Through a comprehensive mentorship
-                    program, I gained hands-on experience with ReactJS,
-                    JavaScript, HTML5, CSS3, Python, Django, and Tailwind CSS. I
-                    worked on various projects that enhanced my problem-solving
-                    skills and deepened my understanding of frontend
-                    technologies.
-                  </p>
-
-                  <p>
-                    Combining my frontend skills with my backend expertise in
-                    geospatial data management, my goal is to use my expertise
-                    to build exciting and functional user interfaces while also
-                    leveraging my geospatial analysis, modeling, and process
-                    automation skills to reveal new actionable insights from
-                    data. I aim to engineer innovative, customizable, and
-                    sustainable software solutions.
+                    I undertook a comprehensive mentorship program which allowed
+                    me to enhance my problem-solving skills and deepen my
+                    understanding of frontend technologies. My aim is to combine
+                    my frontend skills with my backend expertise in geospatial
+                    data management to build innovative, customizable, and
+                    sustainable software solutions that reveal actionable
+                    insights from data.
                   </p>
                 </div>
 
@@ -187,7 +175,7 @@ const About = ({ darkMode }) => {
 
                 <div
                   id="projects"
-                  className=" items-center justify-center md:justify-start flex md:py-10 py-5"
+                  className=" items-center justify-center md:justify-start flex  py-5"
                 >
                   <button
                     type="button"

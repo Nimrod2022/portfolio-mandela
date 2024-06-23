@@ -76,7 +76,7 @@ const Projects = ({ darkMode }) => {
               Geoinformatics
             </button>
           </div>
-          <div className="satoshi flex gap-10 w-[100%] flex-wrap md:py-20 justify-between dark:bg-[#151C25] bg-[#F0F0F4]  pt-10 md:pt-20">
+          <div className="satoshi flex gap-10 w-[100%] flex-wrap md:py-20 justify-between dark:bg-[#151C25] bg-[#F0F0F4] pb-16   pt-10 md:pt-20">
             {/* Render filtered projects */}
             {filteredProjects.map((project, index) => (
               <ProjectsDiv
@@ -102,7 +102,9 @@ const Projects = ({ darkMode }) => {
             View all Projects
           </button>
         </div> */}
-          <hr className="border border-[#A9A9A9]  w-full" />
+          <div className="px-5 md:px-0">
+            <hr className="border border-[#A9A9A9]  w-full md:w-full" />
+          </div>
           <VideoModal
             isOpen={modalOpen}
             videourl={selectedVideoUrl}

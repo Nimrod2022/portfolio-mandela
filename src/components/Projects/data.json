@@ -38,7 +38,7 @@
     "title": "Georgy Portfolio",
     "category": "frontend",
     "image": "/assets/georgy-portfolio.png",
-    "description": "Build George a portfolio website to showcase his projects in machine learning and AI",
+    "description": "Portfolio website to showcase George's projects in machine learning and AI",
     "technologies": [
       "/assets/react.svg",
       "/assets/js.svg",
@@ -72,7 +72,7 @@
     "title": "UATE SDI",
     "category": "geoinformatics",
     "image": "/assets/uate.png",
-    "description": "Dashboard showing trends of Ukrainian asylum seekers in Europe over the past decade.  ",
+    "description": "Dashboard for time series visualization of Ukrainian asylum seekers in Europe.  ",
     "technologies": [
       "/assets/python.svg",
       "/assets/django.png",
@@ -89,7 +89,7 @@
     "title": "Kibet Portfolio",
     "category": "frontend",
     "image": "/assets/kibet-portfolio.png",
-    "description": "Portfolio to showcase my projects and learning journey in web development and geoinformatics.",
+    "description": "Portfolio to showcase my projects and learning journey.",
     "technologies": [
       "/assets/react.svg",
       "/assets/js.svg",
