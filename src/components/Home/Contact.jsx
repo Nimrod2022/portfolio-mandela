@@ -109,7 +109,7 @@ const Contact = ({ darkMode }) => {
   return (
     <>
       <section id="contact" className={`${darkMode ? "dark" : ""}`}>
-        <div className="satoshi bg-[#F0F0F4] dark:bg-[#151C25]  flex flex-col justify-center items-center relative py-5 md:py-40">
+        <div className="satoshi bg-[#F0F0F4] dark:bg-[#151C25]  flex flex-col justify-center items-center relative py-5 md:py-32">
          
 
           <h1 className="text-[#26313F] dark:text-white text-2xl md:text-3xl font-extrabold">
