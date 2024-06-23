@@ -27,92 +27,83 @@ const darkModeProfileAbout = "/assets/about-profile-dark.svg";
 const lightModeProfileAbout = "/assets/about-profile-light.svg";
 
 const About = ({ darkMode }) => {
+  const icons = [
+    {
+      icon: <FaReact className="size-6 text-[#686565] dark:text-[#A9A9A9]" />,
+      name: "React",
+    },
+    {
+      icon: <FaJs className="size-6 text-[#686565] dark:text-[#A9A9A9]" />,
+      name: "JavaScript",
+    },
+    {
+      icon: (
+        <SiTailwindcss className="size-6 text-[#686565] dark:text-[#A9A9A9]" />
+      ),
+      name: "Tailwind CSS",
+    },
+    {
+      icon: <FaHtml5 className="size-6 text-[#686565] dark:text-[#A9A9A9]" />,
+      name: "HTML",
+    },
+    {
+      icon: <FaCss3Alt className="size-6 text-[#686565] dark:text-[#A9A9A9]" />,
+      name: "CSS",
+    },
+    {
+      icon: <FaPython className="size-6 text-[#686565] dark:text-[#A9A9A9]" />,
+      name: "Python",
+    },
+    {
+      icon: (
+        <SiPostgresql className="size-6 text-[#686565] dark:text-[#A9A9A9]" />
+      ),
+      name: "PostgreSQL",
+    },
+    {
+      icon: (
+        <SiOpenlayers className="size-6 text-[#686565] dark:text-[#A9A9A9]" />
+      ),
+      name: "OpenLayers",
+    },
+    //  {
+    //    icon: <SiLeaflet className="size-6 text-[#686565] dark:text-[#A9A9A9]" />,
+    //    name: "Leaflet",
+    //  },
+    {
+      icon: <SiQgis className="size-6 text-[#686565] dark:text-[#A9A9A9]" />,
+      name: "QGIS",
+    },
+    //  {
+    //    icon: (
+    //      <SiTypescript className="size-6 text-[#686565] dark:text-[#A9A9A9]" />
+    //    ),
+    //    name: "TypeScript",
+    //  },
+    {
+      icon: <SiArcgis className="size-6 text-[#686565] dark:text-[#A9A9A9]" />,
+      name: "ArcGIS",
+    },
+    //  {
+    //    icon: (
+    //      <TbBrandDjango className="size-6 text-[#686565] dark:text-[#A9A9A9]" />
+    //    ),
+    //    name: "Django",
+    //  },
+  ];
 
-    
+  const [isMobile, setIsMobile] = useState(window.innerWidth < 768);
 
-    const icons = [
-      {
-        icon: <FaReact className="size-6 text-[#686565] dark:text-[#A9A9A9]" />,
-        name: "React",
-      },
-      {
-        icon: <FaJs className="size-6 text-[#686565] dark:text-[#A9A9A9]" />,
-        name: "JavaScript",
-      },
-      {
-        icon: (
-          <SiTailwindcss className="size-6 text-[#686565] dark:text-[#A9A9A9]" />
-        ),
-        name: "Tailwind CSS",
-      },
-      {
-        icon: <FaHtml5 className="size-6 text-[#686565] dark:text-[#A9A9A9]" />,
-        name: "HTML",
-      },
-      {
-        icon: (
-          <FaCss3Alt className="size-6 text-[#686565] dark:text-[#A9A9A9]" />
-        ),
-        name: "CSS",
-      },
-      {
-        icon: (
-          <FaPython className="size-6 text-[#686565] dark:text-[#A9A9A9]" />
-        ),
-        name: "Python",
-      },
-      {
-        icon: (
-          <SiPostgresql className="size-6 text-[#686565] dark:text-[#A9A9A9]" />
-        ),
-        name: "PostgreSQL",
-      },
-      {
-        icon: (
-          <SiOpenlayers className="size-6 text-[#686565] dark:text-[#A9A9A9]" />
-        ),
-        name: "OpenLayers",
-      },
-      //  {
-      //    icon: <SiLeaflet className="size-6 text-[#686565] dark:text-[#A9A9A9]" />,
-      //    name: "Leaflet",
-      //  },
-      {
-        icon: <SiQgis className="size-6 text-[#686565] dark:text-[#A9A9A9]" />,
-        name: "QGIS",
-      },
-      //  {
-      //    icon: (
-      //      <SiTypescript className="size-6 text-[#686565] dark:text-[#A9A9A9]" />
-      //    ),
-      //    name: "TypeScript",
-      //  },
-      {
-        icon: (
-          <SiArcgis className="size-6 text-[#686565] dark:text-[#A9A9A9]" />
-        ),
-        name: "ArcGIS",
-      },
-      //  {
-      //    icon: (
-      //      <TbBrandDjango className="size-6 text-[#686565] dark:text-[#A9A9A9]" />
-      //    ),
-      //    name: "Django",
-      //  },
-    ];
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth < 768);
+    };
 
-    const [isMobile, setIsMobile] = useState(window.innerWidth < 768);
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
 
-    useEffect(() => {
-      const handleResize = () => {
-        setIsMobile(window.innerWidth < 768);
-      };
-
-      window.addEventListener("resize", handleResize);
-      return () => window.removeEventListener("resize", handleResize);
-    }, []);
-
-    const displayedIcons = isMobile ? icons.slice(0, 5) : icons;
+  const displayedIcons = isMobile ? icons.slice(0, 5) : icons;
   return (
     <>
       <div id="about" className={darkMode ? "dark" : ""}>
@@ -178,38 +169,34 @@ const About = ({ darkMode }) => {
 
                 <div className=" text-lg pt-2 text-[#686565] dark:text-[#A9A9A9]  md:text-start">
                   <p className="py-3">
-                    I am a frontend web developer currently finalizing a
-                    master’s degree in Applied Geoinformatics from the
-                    University of Salzburg, Austria, with a keen interest in web
-                    development and Web GIS development. My goal is to create
-                    dynamic and engaging user experiences that make a
-                    significant impact.
+                    I am a frontend web developer currently completing a
+                    master’s degree in applied geoinformatics from the
+                    University of Salzburg, Austria. I have a keen interest in
+                    web development including Web GIS. My studies have equipped
+                    me with hands-on skills in GIS methods and remote sensing,
+                    including data acquisition, processing, analysis, and
+                    visualization using QGIS and ArcGIS Pro/Online.
+                    Additionally, I have gained backend development skills
+                    especially in designing and developing spatial data
+                    infrastructures using PostgreSQL/PostGIS and Python, as well
+                    as frameworks like Django, GeoServer, and OpenLayers.
                   </p>
 
                   <p>
-                    Throughout my studies,I have developed hands-on skills in
-                    GIS methods and remote sensing, focusing on data
-                    acquisition, processing, analysis, and visualization using
-                    QGIS and ArcGIS Pro/Online. I also gained backend
-                    development expertise, particularly in designing and
-                    developing spatial data infrastructures using
-                    PostgreSQL/PostGIS and Python, along with frameworks and
-                    libraries like Django, GeoServer, and OpenLayers. My passion
-                    for showcasing projects on the web led me to delve deeper
-                    into frontend development.
+                    My passion for showcasing projects on the web drove me to
+                    delve deeper into frontend development. Therefore, I
+                    undertook a comprehensive web development mentorship program
+                    which enhanced my problem-solving skills and deepened my
+                    understanding of frontend technologies through working on
+                    diverse projects. I aim to combine my frontend skills with
+                    my backend expertise in geospatial data management to build
+                    innovative, customizable, and sustainable software
+                    solutions.
                   </p>
 
-                  <p className="py-3">
-                    I undertook a comprehensive mentorship program which allowed
-                    me to enhance my problem-solving skills and deepen my
-                    understanding of frontend technologies. My aim is to combine
-                    my frontend skills with my backend expertise in geospatial
-                    data management to build innovative, customizable, and
-                    sustainable software solutions that reveal actionable
-                    insights from data.
-                  </p>
-
-                  <h3 className="text-white md:text-xl md:pt-5">Technologies</h3>
+                  <h3 className="text-white md:text-xl md:pt-5">
+                    Technologies
+                  </h3>
 
                   <div className="flex  py-5 items-center gap-3 md:gap-x-4">
                     {displayedIcons.map((item, index) => (
