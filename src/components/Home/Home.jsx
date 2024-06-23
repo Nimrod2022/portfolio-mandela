@@ -20,19 +20,19 @@ const Home = ({ darkMode, scrollToContact }) => {
   const icons = [
     {
       icon: (
-        <FaReact className="md:size-8 size-6 text-[#686565] dark:text-[#A9A9A9]" />
+        <FaReact className=" size-6 text-[#686565] dark:text-[#A9A9A9]" />
       ),
       name: "React",
     },
     {
       icon: (
-        <FaJs className="md:size-8 size-6 text-[#686565] dark:text-[#A9A9A9]" />
+        <FaJs className=" size-6 text-[#686565] dark:text-[#A9A9A9]" />
       ),
       name: "JavaScript",
     },
     {
       icon: (
-        <SiTailwindcss className="md:size-8 size-6 text-[#686565] dark:text-[#A9A9A9]" />
+        <SiTailwindcss className=" size-6 text-[#686565] dark:text-[#A9A9A9]" />
       ),
       name: "Tailwind CSS",
     },
@@ -40,13 +40,13 @@ const Home = ({ darkMode, scrollToContact }) => {
     //  { icon: <FaCss3Alt className="md:size-8 size-5" />, name: "CSS" },
     {
       icon: (
-        <FaPython className="md:size-8 size-6 text-[#686565] dark:text-[#A9A9A9]" />
+        <FaPython className=" size-6 text-[#686565] dark:text-[#A9A9A9]" />
       ),
       name: "Python",
     },
     {
       icon: (
-        <SiPostgresql className="md:size-8 size-6 text-[#686565] dark:text-[#A9A9A9]" />
+        <SiPostgresql className=" size-6 text-[#686565] dark:text-[#A9A9A9]" />
       ),
       name: "PostgreSQL",
     },
@@ -121,7 +121,7 @@ const Home = ({ darkMode, scrollToContact }) => {
                     <button
                       onClick={handleGetInTouchClick}
                       type="button"
-                      className="bg-[#26313F] dark:bg-[#55E5A4] text-#FAFAFA dark:text-black hover:bg-[#00142D] dark:hover:bg-[#00A359] font-semibold text-md rounded-lg px-2 py-2 md:py-3 mr-8"
+                      className="bg-[#26313F] dark:bg-[#55E5A4] text-#FAFAFA dark:text-black hover:bg-[#00142D] dark:hover:bg-[#00A359] font-semibold text-md rounded-lg px-2 py-2  mr-8"
                     >
                       Get in Touch
                     </button>
