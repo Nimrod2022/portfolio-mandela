@@ -10,7 +10,7 @@ const About = ({ darkMode }) => {
     <>
       <div id="about" className={darkMode ? "dark" : ""}>
         <div className="dark:bg-[#222a33]  bg-[#e8e8ec] md:w-full ">
-          <div className=" px-5 md:px-0 pt-14 md:pt-20  mx-auto md:w-5/6 xl:w-4/6 ">
+          <div className=" px-5 md:px-0 pt-14  md:py-20  mx-auto md:w-5/6 xl:w-4/6 ">
             <div className="flex flex-col md:flex-row  gap-10 md:gap-20 ">
               <div className="w-full    md:w-[40%]">
                 <img
@@ -80,16 +80,15 @@ const About = ({ darkMode }) => {
                   </p>
 
                   <p>
-                    Throughout my studies at the Department of Geoinformatics, I
-                    developed hands-on skills in GIS methods and remote sensing,
-                    focusing on data acquisition, processing, analysis, and
-                    visualization using QGIS and ArcGIS Pro/Online. I also
-                    gained backend development expertise, particularly in
-                    designing and developing spatial data infrastructures using
-                    PostgreSQL and Python, along with frameworks and libraries
-                    like Django, GeoServer, and OpenLayers. My passion for
-                    showcasing projects on the web led me to delve deeper into
-                    frontend development.
+                    Throughout my studies,I have developed hands-on skills in GIS
+                    methods and remote sensing, focusing on data acquisition,
+                    processing, analysis, and visualization using QGIS and
+                    ArcGIS Pro/Online. I also gained backend development
+                    expertise, particularly in designing and developing spatial
+                    data infrastructures using PostgreSQL/PostGIS and Python, along with
+                    frameworks and libraries like Django, GeoServer, and
+                    OpenLayers. My passion for showcasing projects on the web
+                    led me to delve deeper into frontend development.
                   </p>
 
                   <p className="py-3">
