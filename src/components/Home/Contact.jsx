@@ -109,7 +109,9 @@ const Contact = ({ darkMode }) => {
   return (
     <>
       <section id="contact" className={`${darkMode ? "dark" : ""}`}>
-        <div className="satoshi bg-[#F0F0F4] dark:bg-[#151C25] min-h-screen flex flex-col justify-center items-center relative pt-10 md:pt-10">
+        <div className="satoshi bg-[#F0F0F4] dark:bg-[#151C25] min-h-screen flex flex-col justify-center items-center relative pt-10">
+         
+
           <h1 className="text-[#26313F] dark:text-white text-2xl md:text-3xl font-extrabold">
             Get in Touch
           </h1>

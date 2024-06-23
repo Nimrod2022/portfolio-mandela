@@ -1,13 +1,58 @@
-import React, { useState, useEffect } from 'react';
-import ScrollToAbout from '../custom/ScrollToAbout';
-
-const darkHomeProfile = "/assets/home-profile-dark.png";
-const lightHomeProfile = "/assets/home-profile-light.png";
-
-import scrollTo from 'react-scroll-into-view'
+import { useState, useEffect } from "react";
+import ScrollToAbout from "../custom/ScrollToAbout";
+import {
+  FaReact,
+  FaJs,
+  FaHtml5,
+  FaCss3Alt,
+  FaPython,
+  FaDatabase,
+  FaPlus,
+  FaMinus,
+} from "react-icons/fa";
+import { SiTailwindcss, SiPostgresql } from "react-icons/si";
 
 const Home = ({ darkMode, scrollToContact }) => {
   const [showScrollToAboutButton, setShowScrollToAboutButton] = useState(false);
+
+  const [expanded, setExpanded] = useState(false);
+
+  const icons = [
+    {
+      icon: (
+        <FaReact className="md:size-8 size-6 text-[#686565] dark:text-[#A9A9A9]" />
+      ),
+      name: "React",
+    },
+    {
+      icon: (
+        <FaJs className="md:size-8 size-6 text-[#686565] dark:text-[#A9A9A9]" />
+      ),
+      name: "JavaScript",
+    },
+    {
+      icon: (
+        <SiTailwindcss className="md:size-8 size-6 text-[#686565] dark:text-[#A9A9A9]" />
+      ),
+      name: "Tailwind CSS",
+    },
+    //  { icon: <FaHtml5 className="md:size-8 size-5" />, name: "HTML" },
+    //  { icon: <FaCss3Alt className="md:size-8 size-5" />, name: "CSS" },
+    {
+      icon: (
+        <FaPython className="md:size-8 size-6 text-[#686565] dark:text-[#A9A9A9]" />
+      ),
+      name: "Python",
+    },
+    {
+      icon: (
+        <SiPostgresql className="md:size-8 size-6 text-[#686565] dark:text-[#A9A9A9]" />
+      ),
+      name: "PostgreSQL",
+    },
+  ];
+
+  const displayedIcons = expanded ? icons : icons.slice(0, 3);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -28,8 +73,8 @@ const Home = ({ darkMode, scrollToContact }) => {
     // Initial check when the component mounts
     handleScroll();
 
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
   const handleAboutClick = () => {
@@ -39,20 +84,19 @@ const Home = ({ darkMode, scrollToContact }) => {
     }
   };
 
-    const handleGetInTouchClick = () => {
-      const contactSection = document.getElementById("contact");
-      if (contactSection) {
-        contactSection.scrollIntoView({ behavior: "smooth" });
-      }
-    };
-
+  const handleGetInTouchClick = () => {
+    const contactSection = document.getElementById("contact");
+    if (contactSection) {
+      contactSection.scrollIntoView({ behavior: "smooth" });
+    }
+  };
 
   return (
     <>
       <div id="home" className={darkMode ? "dark" : ""}>
         <div className="dark:bg-[#151C25] bg-[#F0F0F4] min-h-screen satoshi pt-20 md:pt-0 flex flex-col md:justify-center">
           <div className="px-8 text-white md:flex md:gap-5 md:justify-center">
-            <div className="items-center md:w-[40%]">
+            <div className="items-center md:w-[45%]">
               {/* <div className="flex items-center justify-center">
                 <div className="home-animation flex items-center justify-center">
                   <img src="/assets/imagekibe.png" alt="animation" className="h-"/>
@@ -71,22 +115,47 @@ const Home = ({ darkMode, scrollToContact }) => {
                 excel in harnessing the power of spatial data to uncover
                 actionable insights.
               </p>
-              <div className="items-center flex justify-center md:pb-0 pb-8 pt-8 md:pt-5">
-                <scrollTo selector="contact">
-                  <button
-                    onClick={handleGetInTouchClick}
-                    type="button"
-                    className="bg-[#26313F] dark:bg-[#55E5A4] text-#FAFAFA dark:text-black hover:bg-[#00142D] dark:hover:bg-[#00A359] font-semibold text-md rounded-lg px-2 py-2 mr-8"
-                  >
-                    Get in Touch
-                  </button>
-                </scrollTo>
+              <div className="items-center md:flex justify-center md:pb-0 pb-8 pt-8 md:pt-5">
+                <div className="flex flex-col items-center">
+                  <scrollTo selector="contact">
+                    <button
+                      onClick={handleGetInTouchClick}
+                      type="button"
+                      className="bg-[#26313F] dark:bg-[#55E5A4] text-#FAFAFA dark:text-black hover:bg-[#00142D] dark:hover:bg-[#00A359] font-semibold text-md rounded-lg px-2 py-2 md:py-3 mr-8"
+                    >
+                      Get in Touch
+                    </button>
+                  </scrollTo>
+                </div>
 
-                <div className="flex items-center">
+                {/* <div className="flex items-center">
                   <div className="circle"></div>
                   <p className="text-center text-[#686565] dark:text-[#A9A9A9] ml-3">
                     Available for work
                   </p>
+                </div> */}
+
+                <div className="flex justify-center md:pt-0 pt-8 items-center gap-3 md:gap-x-4">
+                  {displayedIcons.map((item, index) => (
+                    <div key={index} className="flex flex-col items-center">
+                      <div>{item.icon}</div>
+                      <span className="text-xs text-center md:text-sm text-[#686565] dark:text-[#A9A9A9]">
+                        {item.name}
+                      </span>
+                    </div>
+                  ))}
+                  <div
+                    className="flex flex-col items-center cursor-pointer"
+                    onClick={() => setExpanded(!expanded)}
+                  >
+                    <div className="">
+                      {expanded ? (
+                        <FaMinus className=" size-3 text-black dark:text-white" />
+                      ) : (
+                        <FaPlus className="size-3 text-black dark:text-white" />
+                      )}
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>

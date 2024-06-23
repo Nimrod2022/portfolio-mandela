@@ -17,7 +17,7 @@ const Footer = ({ darkMode }) => {
     <>
       <section className={darkMode ? "dark" : ""}>
         <div className="dark:bg-[#26313F] bg-[#F0F4F8] satoshi md:pt-0 pt-5 pb-2 md:pb-5 flex flex-col justify-center items-center">
-          <div className="dark:text-[#A9A9A9] flex gap-4 md:gap-8  md:mt-20 text-center font-extrabold text-lg md:text-2xl text-[#686565]">
+          <div className="dark:text-[#A9A9A9] flex gap-4 md:gap-8  md:mt-14 text-center font-extrabold text-lg md:text-2xl text-[#686565]">
             <Link
               to="/about"
               smooth={true}
@@ -98,8 +98,10 @@ const Footer = ({ darkMode }) => {
               />
             </a>
           </div>
-          <hr className="border border-[#A9A9A9] my-5 w-full"/>
-          <p className="text-[#A9A9A9] md:text-lg">© 2024 Nimrod Kibet. All Rights Reserved</p>
+          <hr className="border border-[#A9A9A9] my-5 w-full" />
+          <p className="text-[#A9A9A9] md:text-lg">
+            © 2024 Nimrod Kibet. All Rights Reserved
+          </p>
         </div>
       </section>
     </>

@@ -102,7 +102,7 @@ const Projects = ({ darkMode }) => {
             View all Projects
           </button>
         </div> */}
-
+          <hr className="border border-[#A9A9A9]  w-full" />
           <VideoModal
             isOpen={modalOpen}
             videourl={selectedVideoUrl}
@@ -110,7 +110,6 @@ const Projects = ({ darkMode }) => {
           />
         </div>
       </div>
-     
     </section>
   );
 };
