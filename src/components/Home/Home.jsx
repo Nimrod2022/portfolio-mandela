@@ -49,7 +49,7 @@ const Home = ({ darkMode, scrollToContact }) => {
   return (
     <>
       <div id="home" className={darkMode ? "dark" : ""}>
-        <div className="dark:bg-[#151C25] bg-[#F0F0F4] min-h-screen satoshi pt-20 md:pt-20 lg:pt-40 flex flex-col ">
+        <div className="dark:bg-[#151C25] bg-[#F0F0F4] min-h-screen satoshi pt-20  lg:pt-40 flex flex-col ">
           <div className="px-8 text-white md:flex md:gap-5 md:justify-center">
             <div className="items-center md:w-[45%]">
               <div className="flex items-center justify-center">
