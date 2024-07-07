@@ -75,7 +75,7 @@ const Home = ({ darkMode, scrollToContact }) => {
                 excel in harnessing the power of spatial data to uncover
                 actionable insights.
               </p>
-              <div className="items-center flex justify-center md:pb-0 pb-8 pt-8 md:pt-5">
+              <div className="items-center flex justify-center md:pb-5 pb-8 pt-8 md:pt-5">
                 <div className="flex flex-col items-center">
                   <scrollTo selector="contact">
                     <button
