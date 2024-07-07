@@ -74,7 +74,7 @@ const Home = ({ darkMode, scrollToContact }) => {
               </h1>
               <p className="text-xl text-[#686565] dark:text-[#A9A9A9] pt-3 text-center">
                 I am an innovative and detail-oriented Front End Developer with
-                a passion for creating responsive and user-friendly websites.
+                a passion for creating responsive and user-friendly web applications.
                 Additionally, my expertise extends to geoinformatics, where I
                 excel in harnessing the power of spatial data to uncover
                 actionable insights.
