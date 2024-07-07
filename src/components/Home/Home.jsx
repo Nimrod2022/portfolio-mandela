@@ -62,10 +62,10 @@ const Home = ({ darkMode, scrollToContact }) => {
                   />
                 </div>
               </div>
-              <p className="text-3xl md:text-5xl pt-3 md:pt-5 text-[#26313F] dark:text-white text-center">
+              <p className="text-3xl md:text-5xl pt-3 md:pt-4 text-[#26313F] dark:text-white text-center">
                 Nimrod Kibet
               </p>
-              <h1 className="text-[#55E5A4] pt-2 md:pt-5 font-extrabold text-2xl md:text-3xl text-center">
+              <h1 className="text-[#55E5A4] pt-2 md:pt-3 font-extrabold text-2xl md:text-3xl text-center">
                 Front-end Developer
               </h1>
               <p className="text-xl text-[#686565] dark:text-[#A9A9A9] pt-3 text-center">
