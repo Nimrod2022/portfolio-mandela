@@ -58,7 +58,7 @@ const Home = ({ darkMode, scrollToContact }) => {
                   <img
                     src="/assets/home-kibet.jpg"
                     alt="animation"
-                    className="rounded-full h-40 md:h-56"
+                    className="rounded-full h-40 md:h-44 lg:h-56"
                   />
                 </div>
               </div>
