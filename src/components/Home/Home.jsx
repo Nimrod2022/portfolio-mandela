@@ -52,11 +52,16 @@ const Home = ({ darkMode, scrollToContact }) => {
         <div className="dark:bg-[#151C25] bg-[#F0F0F4] min-h-screen satoshi pt-20 md:pt-0 flex flex-col md:justify-center">
           <div className="px-8 text-white md:flex md:gap-5 md:justify-center">
             <div className="items-center md:w-[45%]">
-              {/* <div className="flex items-center justify-center">
-                <div className="home-animation flex items-center justify-center">
-                  <img src="/assets/imagekibe.png" alt="animation" className="h-"/>
+              <div className="flex items-center justify-center">
+                {/*  className="home-animation flex items-center justify-center" */}
+                <div>
+                  <img
+                    src="/assets/home-kibet.jpg"
+                    alt="animation"
+                    className="rounded-full h-40 md:h-56"
+                  />
                 </div>
-              </div> */}
+              </div>
               <p className="text-3xl md:text-5xl pt-3 text-[#26313F] dark:text-white text-center">
                 Nimrod Kibet
               </p>
@@ -90,8 +95,6 @@ const Home = ({ darkMode, scrollToContact }) => {
                   </p>
                 </div>
               </div>
-
-             
             </div>
           </div>
           <div id="about"></div>
