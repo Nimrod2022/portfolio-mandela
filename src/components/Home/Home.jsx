@@ -56,7 +56,11 @@ const Home = ({ darkMode, scrollToContact }) => {
                 {/*  className="home-animation flex items-center justify-center" */}
                 <div>
                   <img
-                    src="/assets/home-kibet.jpg"
+                    src={`${
+                      darkMode
+                        ? "/assets/home-kibet-light.png"
+                        : "/assets/home-kibet-dark.png"
+                    }`}
                     alt="animation"
                     className="rounded-full size-44 md:size-36 lg:size-56"
                   />
